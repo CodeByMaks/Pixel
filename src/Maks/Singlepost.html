@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <title>Single Post</title>
+    <style>
+      .img_back {
+        background-image: url("./img/imagem.png");
+        width: 100%;
+        height: 499px;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body class="max-w-screen-2xl m-auto">
+    <header class="img_back">
+      <nav class="w-[80%] m-auto flex justify-between items-center py-5">
+        <div class="flex items-center gap-10">
+          <div>
+            <img src="./img/logom.png" alt="" />
+          </div>
+          <ul class="flex gap-5 text-gray-400">
+            <li>
+              <select
+                class="bg-[#eff0f4] hover:text-white cursor-pointer"
+                name=""
+                id="pageSelector"
+                onchange="navigateToPage()"
+              >
+                <option value="" disabled selected>
+                  <p style="font-size: 18px; font-weight: bold">Single Post</p>
+                </option>
+
+                <option value="index2.html">Homepage</option>
+                <option value="index3.html">Services</option>
+                <option value="index4.html">Service</option>
+                <option value="index5.html">Case Studies</option>
+                <option value="index6.html">Case Study</option>
+                <option value="About.html">About us</option>
+                <option value="index6.html">Careers</option>
+                <option value="index6.html">Blog</option>
+                <option value="Singlepost.html">Single Post</option>
+                <option value="index6.html">Contacts</option>
+              </select>
+
+              <script>
+                function navigateToPage() {
+                  const selector = document.getElementById("pageSelector");
+                  const selectedPage = selector.value;
+                  if (selectedPage) {
+                    window.location.href = selectedPage;
+                  }
+                }
+              </script>
+            </li>
+            <li class="hover:text-white cursor-pointer">Case Studies</li>
+            <li class="hover:text-white cursor-pointer">About Us</li>
+            <li class="hover:text-white cursor-pointer">Blog</li>
+            <li class="hover:text-white cursor-pointer">Contacts</li>
+          </ul>
+        </div>
+        <div>
+          <button class="py-3 px-8 bg-[#7772F1] rounded-md text-white">
+            Talk to a human
+          </button>
+        </div>
+      </nav>
+
+      
+    </header>
+
+    <main>
+       
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
