@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../output.css">
+    <style>
+           @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Flow+Circular&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unbounded:wght@200..900&family=Yellowtail&display=swap');
+        *
+        {
+            margin: 0;
+            max-width: 1440px;
+            margin: auto;
+            font-family: "Lato", sans-serif;
+        }
+        #back-header
+        {
+            background-image: url(./images/back-1.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        #but-1:hover
+        {
+            background-color: transparent;
+            color: #7772F1;
+            border: 2px solid #7772F1;
+            transition: all 0.7s ease;
+        }
+    </style>
+</head>
+<body>
+    <header id="back-header" class="w-full h-auto lg:h-[555px]">
+        <navbar class=" w-[95%] lg:w-[90%] flex justify-between gap-20 lg:gap-10 py-[20px]">
+            <section class="flex gap-10">
+                <aside class="m-0">
+                    <img src="./images/logos-1.png" alt="" class="m-0">
+                </aside>
+                    <aside class="flex gap-5 m-0">
+                        <select name="" id="" onchange="navigateToLink(this)" class="cursor-pointer text-[#fff] outline-none bg-transparent text-[25px] lg:text-[18px] m-0">
+                            <form action="">
+                              <option value="" selected>Services</option>
+                            </form>
+                          </select>
+                          <ul class="hidden lg:flex items-center gap-10 text-[#fff] ">
+                            <li><a href="" class="">Case Studies</a></li>
+                            <li><a href="" class="">About Us</a></li>
+                            <li><a href="" class="">Blog</a></li>
+                            <li><a href="" class="">Contacts</a></li>
+                          </ul>
+                    </aside>
+                </aside>
+            </section>
+                <aside class="hidden lg:block">
+                <button id="but-1" class="w-[199px] h-[52px]  bg-[#7772F1] rounded-[4px] text-[#fff]">Talk to a human</button>
+            </aside>
+        </navbar>
+        <section class="w-[90%] mt-[70px] text-center">
+            <aside class="">
+                <img src="./images/bar.png" alt="">
+                <h1 class="text-[30px] lg:text-[96px] text-[#fff] text-center font-bold">Our services</h1>
+                <p class="text-[#FFFFFF] m-auto text-[16px] py-[10px] lg:text-[20px] lg:w-[810px]">We offer more than services. Our agency provides solutions to your top-priority concerns, involving customer targeting, email performance and sales growth. If there is no existing solution readily available, we create one, specifically to suit your business.</p>
+            </aside>
+            <aside class="lg:w-[371px] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mt-[30px] pb-[50px] lg:pb-0">
+                <button class="w-[154px] h-[52px] bg-transparent border-2 rounded-[4px] text-[#fff] text-[16px] font-bold">Start now</button>
+                <div class="flex gap-[10px] items-center">
+                    <img src="./images/icon-phone.png" alt="" class="m-0"> 
+                    <div class="m-0">
+                        <p class="text-[#FFFFFF] text-start">Call us</p>
+                        <p class="text-[#fff] text-[18px] font-bold">(405) 555-0128</p>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </header>
+
+    <script>
+        function navigateToLink(selectElement) {
+          const url = selectElement.value;
+          if (url) {
+            window.location.href = url;
+          }
+        }
+      </script>
+</body>
+</html>
