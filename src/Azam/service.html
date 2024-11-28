@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../output.css" rel="stylesheet" />
+    <style>
+        .img_back100 {
+          background-image: url("./img/surat1\ \(2\)\ copy.png");
+          width: 100%;
+          height: 661px;
+          background-size: cover;
+        }
+      </style>
+
+</head>
+<body>
+    <header class="img_back100">
+        <nav class="w-[80%] m-auto flex justify-between items-center py-5">
+          <div class="flex items-center gap-10">
+            <div>
+              <img src="./img/surat.png" alt="" />
+            </div>
+            <ul class="flex gap-5 text-gray-400">
+              <li>
+                <select
+                  class="bg-[#1E212C] hover:text-white cursor-pointer"
+                  name=""
+                  id="pageSelector"
+                  onchange="navigateToPage()"
+                >
+                  <option value="" disabled selected>
+                    <p style="font-size: 18px; font-weight: bold">About</p>
+                  </option>
+                  <option value="index2.html">Homepage</option>
+                  <option value="index3.html">Services</option>
+                  <option value="index4.html">Service</option>
+                  <option value="index5.html">Case Studies</option>
+                  <option value="index6.html">Case Study</option>
+                  <option value="About.html">About us</option>
+                  <option value="index6.html">Careers</option>
+                  <option value="index6.html">Blog</option>
+                  <option value="Singlepost.html">Single Post</option>
+                  <option value="index6.html">Contacts</option>
+                </select>
+                <script>
+                  function navigateToPage() {
+                    const selector = document.getElementById("pageSelector");
+                    const selectedPage = selector.value;
+                    if (selectedPage) {
+                      window.location.href = selectedPage;
+                    }
+                  }
+                </script>
+              </li>
+              <li class="hover:text-white cursor-pointer">Case Studies</li>
+              <li class="hover:text-white cursor-pointer">About Us</li>
+              <li class="hover:text-white cursor-pointer">Blog</li>
+              <li class="hover:text-white cursor-pointer">Contacts</li>
+            </ul>
+          </div>
+          <div>
+                <button class="py-3 px-8 bg-[#7772F1] rounded-md text-white">
+                Talk to a human
+                </button>
+          </div>
+        </nav>
+        <div class="flex flex-col items-center">
+          <div class="flex items-center gap-2 text-gray-400 py-10">
+            <div>
+              <img src="" alt="" />
+            </div>
+            <p>></p>
+            <p>About us</p>
+          </div>
+          <h1 class="text-[72px] text-white font-bold">Search Engine Optimization</h1>
+          <p class="text-center text-gray-400 py-8 text-[20px]">
+            Ipsum blandit etiam nunc vitae. Duis lobortis odio vel morbi dui pellentesque enim integer <br> facilisi. Ultrices vitae tempor amet nec euismod non. <br> 
+          </p>
+        </div>
+      <div class="w-[70%] m-auto">
+            <div class="w-[60%] m-auto">
+                <p class="text-white">Your website URL</p>
+            </div>
+            <div class="flex justify-center"> 
+                <input class="w-[40%] py-2 px-3  bg-[#FFFFFF1F]" type="text" placeholder="http://yoursite.com">
+                <button class="py-2 px-8 bg-[#7772F1]  text-white">
+                    Talk to a human
+                  </button>
+            </div>
+        </div>
+      
+
+    </div>
+  
+      </header>
+      <section class="w-[70%] m-auto mt-10">
+        <div class="flex justify-between">
+            <img src="./img/kartin.png" alt="">
+            <img src="./img/kartin1.png" alt="">
+            <img src="./img/kartin3.png" alt="">
+            <img src="./img/kartin4.png" alt="">
+            <img src="./img/kartin5.png" alt="">
+            <img src="./img/kartin6.png" alt="">
+        </div>
+       </section>   
+       <section class="w-[70%] m-auto flex  mt-[90px]  gap-32">
+        <div class="w-[60%] m-auto">
+            <img class="h-[390px] w-[130%]" src="./img/kartin7.png" alt="">
+        </div>
+        <div class="w-[37%] m-auto h-36 mt-[-50px] ">
+            <h1 class="text-3xl font-semibold py-10">We go above and beyond to ensure successful SEO</h1>
+            <p class="text-xs">Lacus ac mollis vitae viverra. Tincidunt est, feugiat montes, viverra ullamcorper mi dui, nulla pharetra. Sapien urna nullam elit diam mauris orci. Volutpat quam tempus justo, aliquam. Tortor ultrices mattis eget orci eu nisi sed augue odio. Et senectus risus, pharetra, tristique libero. Dolor risus ac quam dictum mattis ultrices laoreet sapien. Feugiat lacus, suscipit eu sociis et quis hendrerit. Cras at ac magna ultricies orci.</p>
+        </div>
+       </section>
+       <section class="w-[80%] m-auto mt-[90px] border-b-2  border-gray-300">
+        <h1 class="text-center text-xl font-bold">SEO services include</h1>
+        <div class="flex w-[90%] m-auto mt-[30px] px-11 ">
+<div class="w-[40%]  border-r-2 py-10 ">
+    <img src="./img/kartin8.png" alt="">
+    <h1 class="text-lg py-3 font-semibold">SEO Strategy</h1>
+    <p>Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+</div>
+<div class="w-[40%]  border-r-2  px-9 py-10  ">
+    <img src="./img/kartin9.png" alt="">
+    <h1 class="text-lg py-3 font-semibold">SEO Strategy</h1>
+    <p>Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+</div>
+<div class="w-[40%]   px-10 py-10 ">
+    <img src="./img/kartin10.png" alt="">
+    <h1 class="text-lg py-3 font-semibold">SEO Strategy</h1>
+    <p>Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+</div>
+
+        </div>
+       </section>
+       <section class="w-[80%] m-auto mt-[-30px]  border-gray-300">
+          <div class="flex w-[90%] m-auto mt-[30px]  px-11 ">
+<div class="w-[40%]  border-r-2 py-10 ">
+    <img src="./img/kartin11.png" alt="">
+    <h1 class="text-lg py-3 font-semibold">SEO Strategy</h1>
+    <p>Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+</div>
+<div class="w-[40%]  border-r-2  px-9 py-10   ">
+    <img src="./img/kartin12.png" alt="">
+    <h1 class="text-lg py-3 font-semibold">SEO Strategy</h1>
+    <p>Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+</div>
+<div class="w-[40%]   px-10 py-10 ">
+    <img src="./img/kartin13.png" alt="">
+    <h1 class="text-lg py-3 font-semibold">SEO Strategy</h1>
+    <p>Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+</div>
+
+        </div>
+       </section>
+       <section class="w-[80%] m-auto bg-[#7772F1] rounded-lg mt-20 ">
+        <h1 class="text-center text-3xl text-white font-semibold py-10 ">Get a Free SEO Analysis!</h1>
+        
+        <img class="relative top-[-35px]  left-2" src="./img/kartin14.png" alt="">
+        
+<div class="flex  justify-between w-[90%] m-auto mt-[-90px] ">
+    <div>
+        <p class="text-white">Name</p>
+     
+        <input class="bg-[#F4F5F6] rounded-sm py-2 px-3 " type="text" placeholder="Your name">
+
+    </div>
+    <div>
+        <p class="text-white">Email</p>
+        
+        <input class="bg-[#F4F5F6] rounded-sm py-2 px-3 " type="text" placeholder="Your working email">
+
+    </div>
+    <div>
+        <p class="text-white">Your website URL</p>
+        
+        <input class="bg-[#F4F5F6] rounded-sm py-2 px-3 w-[120%] " type="text" placeholder="http://yoursite.com">
+
+    </div>
+    <br>
+
+    <button class="py-1 h-[40px] px-8 bg-[#1E212C] mt-6  text-white">
+        Talk to a human
+      </button>
+</div>
+
+       </section>
+      </html>
