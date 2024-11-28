@@ -1286,6 +1286,11 @@ video {
   padding-right: 50px;
 }
 
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
 .pb-\[50px\] {
   padding-bottom: 50px;
 }
