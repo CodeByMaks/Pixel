@@ -11,22 +11,278 @@
     header {
         background-image: url("img/background.png");
     }
+    .minibg{
+        background-image: url("img/image.png");
+    }
 </style>
 
 <body>
+    <nav class="px-[10%] m-auto flex justify-between items-center py-5 bg-[#1E212E]">
+        <div class="flex items-center gap-10">
+            <div>
+                <img src="./img/logo.png" alt="" />
+            </div>
+            <ul class="flex gap-5 text-gray-400">
+                <li>
+                    <select class="bg-[#1E212C] hover:text-white cursor-pointer" name="" id="pageSelector"
+                        onchange="navigateToPage()">
+                        <option value="" disabled selected>
+                            <p style="font-size: 18px; font-weight: bold">About</p>
+                        </option>
 
-    <header class="flex h-[800px] w-full m-0 p-10 bg-contain bg-no-repeat ">
+                        <option value="index2.html">Homepage</option>
+                        <option value="index3.html">Services</option>
+                        <option value="index4.html">Service</option>
+                        <option value="index5.html">Case Studies</option>
+                        <option value="index6.html">Case Study</option>
+                        <option value="About.html">About us</option>
+                        <option value="index6.html">Careers</option>
+                        <option value="index6.html">Blog</option>
+                        <option value="Singlepost.html">Single Post</option>
+                        <option value="index6.html">Contacts</option>
+                    </select>
+
+                    <script>
+                        function navigateToPage() {
+                            const selector = document.getElementById("pageSelector");
+                            const selectedPage = selector.value;
+                            if (selectedPage) {
+                                window.location.href = selectedPage;
+                            }
+                        }
+                    </script>
+                </li>
+                <li class="hover:text-white cursor-pointer">Case Studies</li>
+                <li class="hover:text-white cursor-pointer">About Us</li>
+                <li class="hover:text-white cursor-pointer">Blog</li>
+                <li class="hover:text-white cursor-pointer">Contacts</li>
+            </ul>
+        </div>
         <div>
-            <h1 class="font-bold text-[45px] text-white lg:max-w-[90%] m-auto pt-[15%] pl-[25%]">Best <span class="text-[#7772F1]">SEO
-                & Marketing</span> Solutions for You</h1>
-        <div class="flex items-center gap-[14px] pt-10">
-            <button class="border border-white rounded-[7px] px-6 py-[8px] text-white ml-[30%]">Get a free analysis</button>
-            <button class="text-white flex items-center gap-[3px]"><img src="./img/hover.png" alt="">Play video</button>
+            <button class="py-3 px-8 bg-[#7772F1] rounded-md text-white">
+                Talk to a human
+            </button>
         </div>
+    </nav>
+    <header>
+        <div class="flex h-[900px] w-full m-0 p-10 bg-contain bg-no-repeat ">
+            <div>
+                <h1 class="font-bold text-[45px] text-white lg:max-w-[90%] m-auto pt-[28%] pl-[28%]">Best <span
+                        class="text-[#7772F1]">SEO
+                        & Marketing</span> Solutions for You</h1>
+                <div class="flex items-center gap-[14px] pt-10">
+                    <button class="border border-white rounded-[7px] px-6 py-[8px] text-white ml-[30%]">Get a free
+                        analysis</button>
+                    <button class="text-white flex items-center gap-[3px]"><img src="./img/hover.png" alt="">Play
+                        video</button>
+                </div>
+            </div>
+            <img src="./img/illustration.png" alt="" class="w-[40%] object-contain">
         </div>
-        <img src="./img/illustration.png" alt="" class="w-[40%] object-contain">
+        <div class="text-[#FFFFFF] flex justify-center pl-5 gap-2 py-16 text-[14px]">
+            <p class="flex items-center gap-3 font-semibold px-5 w-[25%] border-r-2 border-gray-400">
+                <img src="./img/ic-chart.png" alt="">SEO Content Strategy
+            </p>
+            <p class="flex items-center gap-3 font-semibold px-5 w-[25%] border-r-2 border-gray-400">
+                <img src="./img/Group.png" alt="">Content Marketing
+            </p>
+            <p class="flex items-center gap-3 font-semibold px-5 w-[25%]">
+                <img src="./img/ic-chart.png" alt="">Website & Social Media Marketing
+            </p>
+        </div>
+
     </header>
 
+
+    <main>
+        <section>
+            <div class="flex text-[22px] text-[#1E212C] font-semibold px-[10%] gap-10 my-[13%] justify-center">
+                <p class="w-[47%]">Createx SEO Agency is a full-service digital marketing agency. We help businesses
+                    make
+                    more money through
+                    a wealth of performance data and market research. We create science-based SEO strategies to empower
+                    our
+                    clients.</p>
+
+                <div class=" items-start w-[40%]">
+                    <div class="flex gap-5">
+                        <p class="flex items-center gap-3 text-[14px] text-[#424551] font-normal"><img
+                                src="./img/mini1.png" alt="">Top SEO Companies 2020 by Clutch</p>
+                        <p class="flex items-center gap-3 text-[14px] text-[#424551] font-normal"><img
+                                src="./img/mini2.png" alt="">Top Digital Marketing Agency 2019 by UpCity</p>
+                    </div>
+                    <div class="flex">
+                        <p class="flex items-center gap-3 text-[14px] text-[#424551]  font-normal pt-10"><img
+                                src="./img/mini3.png" alt="">Official Member 2020 by Forbes Agency Council</p>
+                        <p class="flex items-center gap-3 text-[14px] text-[#424551]  font-normal pt-10"><img
+                                src="./img/mini4.png" alt="">Top SEO Companies 2020 by Top Developers</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/Clients.png" alt="" class="w-[80%] m-auto mb-10">
+        </section>
+
+        <section class="flex px-[10%] justify-center gap-[90px] items-center py-[10%]">
+            <div class="w-[37%]">
+                <h2 class="text-[40px] font-bold">Createx Agency </h2>
+                <p class="text-[#787A80] text-[16px] py-7">Lacus ac mollis vitae viverra. Tincidunt est, feugiat montes,
+                    viverra ullamcorper mi dui, nulla
+                    pharetra. Sapien urna nullam elit diam mauris orci. Volutpat quam tempus justo, aliquam. Tortor
+                    ultrices mattis eget orci eu nisi sed augue odio. Et senectus risus, pharetra, tristique libero.
+                    Dolor risus ac quam dictum mattis ultrices laoreet sapien. Feugiat lacus, suscipit eu sociis et quis
+                    hendrerit. Cras at ac magna ultricies orci.</p>
+                <button
+                    class="bg-[#7772F1] text-white font-semibold w-[44%] p-2 border rounded-lg mt-10 hover:bg-[#5f5cbd]">More
+                    about us</button>
+            </div>
+            <img src="./img/teampic.png" alt="" class="w-[50%]">
+        </section>
+
+        <section class="flex justify-center my-10 gap-[5%] font-semibold text-[17px]">
+            <p class="text-[#424551] flex flex-col gap-4 items-center"> <img src="./img/circle-progress.png"
+                    alt="">Years of
+                experience</p>
+            <p class="text-[#424551] flex flex-col gap-4 items-center"> <img src="./img/circle-progress (1).png"
+                    alt="">Awards</p>
+            <p class="text-[#424551] flex flex-col gap-4 items-center"> <img src="./img/circle-progress (2).png"
+                    alt="">Projects</p>
+            <p class="text-[#424551] flex flex-col gap-4 items-center"> <img src="./img/circle-progress (3).png"
+                    alt="">Happy clients</p>
+        </section>
+
+        <section class="my-[10%]">
+            <div class="flex justify-center items-center">
+                <h2 class=" text-[40px] font-semibold py-5">Our services</h2>
+            </div>
+            <div class=" flex justify-center pl-5 gap-2 py-16 text-[14px]">
+                <p class=" font-semibold w-[16%] py-2 border border-[#7772F1] text-center text-[#7772F1]">
+                    Social Media
+                </p>
+                <p class=" font-semibold w-[16%] py-2 text-center text-[#9A9CA5]">
+                    SEO
+                </p>
+                <p class=" font-semibold w-[16%] py-2 text-center text-[#9A9CA5]">
+                    Research
+                    Content & PR
+                </p>
+                <p class=" font-semibold w-[16%] py-2 text-center text-[#9A9CA5]">
+                    Content & PR
+                </p>
+                <p class=" font-semibold w-[16%] py-2 text-center text-[#9A9CA5]">
+                    Payed Traffic
+                </p>
+            </div>
+
+            <div class="flex justify-between px-[9%] pt-[8%] items-center">
+                <div class="w-[40%]">
+                    <h2 class="text-[33px] font-semibold py-5">Complete Worflow For Any SEO Professional</h2>
+                    <p class="flex gap-5 py-2 items-center"><img src="./img/Mark.png" alt="">Complete Worflow For Any
+                        SEO Professional</p>
+                    <p class="flex gap-5 py-2 items-center"><img src="./img/Mark.png" alt="">Nibh sapien volutpat lacus
+                        augue.</p>
+                    <p class="flex gap-5 py-2 items-center"><img src="./img/Mark.png" alt="">Vel in amet, placerat
+                        adipiscing est pharetra.</p>
+                    <p class="flex gap-5 py-2 items-center"><img src="./img/Mark.png" alt="">Gravida ornare sit in et ut
+                        sit sem id.</p>
+                    <p class="flex gap-5 py-2 items-center"><img src="./img/Mark.png" alt="">Ultrices pellentesque
+                        dictum enim egestas ac diam.</p>
+                    <p class="flex gap-5 py-2 items-center"><img src="./img/Mark.png" alt="">Sit semper enim senectus
+                        integer ut turpis et.</p>
+                    <div class="pt-10 flex gap-5">
+                        <button
+                            class="text-[#7772F1] border border-[#7772F1] py-3 px-7 rounded-lg hover:bg-[#a5a4bb]">Learn
+                            more</button>
+                        <button
+                            class="text-[white] border border-[#7772F1] bg-[#7772F1] py-3 px-7 rounded-lg hover:bg-[#8581e9] ">Try
+                            SEO toolkit</button>
+                    </div>
+                </div>
+                <img src="./img/illustration (1).png" alt="" class="w-[52%]">
+            </div>
+        </section>
+
+        <section class="bg-[#1E212C] px-[10%] py-[5%] flex justify-center gap-[15%]">
+            <img src="./img/illustration (2).png" alt="" class="w-[40%]">
+            <div class="lg:w-[50%]">
+                <h2 class="text-white text-[40px] font-bold">Get a Free SEO Analysis!</h2>
+                <form>
+                    <div class="flex mt-10 justify-between">
+                        <div class="flex flex-col gap-2">
+                            <label for="name" class="text-white">Name*</label>
+                            <input type="text" id="name"
+                                class="bg-[#393C45] w-[98%] py-3 px-[20px] outline-none border rounded-md border-transparent">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="lname" class="text-white">Last Name*</label>
+                            <input type="text" id="lname"
+                                class="bg-[#393C45] w-[98%] px-[20px] py-3 outline-none border rounded-md border-transparent">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 mt-10">
+                        <label for="name" class="text-white">Email*</label>
+                        <input type="email" id="name"
+                            class="bg-[#393C45] w-full py-3 outline-none border rounded-md border-transparent">
+                    </div>
+                    <div class="flex items-center justify-between mt-10">
+                        <div class="flex gap-4 w-[60%] text-white"> <input type="checkbox" name="" id="">
+                            <p>I agree to receive communications from Createx SEO Agency</p>
+                        </div>
+                        <button
+                            class="text-[white] border border-[#7772F1] bg-[#7772F1] py-3 px-7 rounded-lg hover:bg-[#8581e9] ">Get
+                            a free analysis</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="px-[10%] my-[10%] flex justify-between">
+            <div class="w-[50%]">
+                <h2 class="font-bold text-[40px]">Freequently Ask Questions</h2>
+                <div>
+                    <h3 class="flex font-semibold items-center text-[22px] gap-2"><span
+                            class="text-[#7772F1] text-[34px]">-</span>Aliquet lectus urna viverra in odio?</h3>
+                    <p class="text-[#787A80] pl-8">Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet
+                        elementum faucibus dignissim purus.
+                        Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis.</p>
+                </div>
+                <h3 class="flex font-semibold items-center text-[22px] gap-2 py-2"><span
+                    class="text-[#7772F1] text-[34px]">+</span>Orci commodo, viverra orci mollis ut euismod?</h3>
+                <h3 class="flex font-semibold items-center text-[22px] gap-2 py-2"><span
+                        class="text-[#7772F1] text-[34px]">+</span>Sagittis vitae facilisi rutrum amet mauris quisque vel
+                    convallis?</h3>
+                <h3 class="flex font-semibold items-center text-[22px] gap-2 py-2"><span
+                        class="text-[#7772F1] text-[34px]">+</span>In id dolor quis nunc, urna hendrerit pharetra?</h3>
+
+            <button
+                class="mt-10 text-[white] border border-[#7772F1] bg-[#7772F1] py-3 px-8 rounded-lg hover:bg-[#8581e9] ">Discover more &rarr;</button>
+            </div>
+           <img src="./img/illustration (3).png" alt="">
+        </section>
+
+        <section class="px-[8%]">
+            <h2 class="font-bold items-center text-[40px] flex justify-between">Freequently Ask Questions <img src="./img/hover1.png" alt="" class="hover:cursor-pointer"></h2>
+            <div>
+                <div class="w-[28%] p-[1%]">
+                    <img src="./img/client-logo1.png" alt="">
+                    <h2 class="font-semibold text-[14px]">Charity organisation</h2>
+                    <p class="text-[16px] text-[#787A80] ">Createx SEO Agency helped National Inc. increase their MQL to SQL conversion rate by 300%.</p>
+                    <div class="flex">
+                    <div class="flex items-center gap-4 "><img src="./img/minicircle1.png" alt="">
+                        <div> <p>90%</p>
+                            <p>Engagement</p></div>
+                    </div>
+                    <div class="flex items-center gap-4 "><img src="./img/minicircle1.png" alt="">
+                        <div> <p>90%</p>
+                            <p>Engagement</p></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="minibg w-[28% h-[300px]]">
+
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
