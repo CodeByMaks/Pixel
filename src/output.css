@@ -686,14 +686,6 @@ video {
   height: auto;
 }
 
-.h-\[508px\] {
-  height: 508px;
-}
-
-.h-\[800px\] {
-  height: 800px;
-}
-
 .w-20 {
   width: 5rem;
 }
@@ -732,14 +724,6 @@ video {
 
 .w-\[50\%\] {
   width: 50%;
-}
-
-.w-\[53\%\] {
-  width: 53%;
-}
-
-.w-\[55\%\] {
-  width: 55%;
 }
 
 .w-\[60\%\] {
@@ -1027,10 +1011,6 @@ video {
   padding: 5%;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1221,10 +1201,6 @@ video {
   padding-top: 4rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
 }
@@ -1247,14 +1223,6 @@ video {
 
 .pt-\[8\%\] {
   padding-top: 8%;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
-.pb-32 {
-  padding-bottom: 8rem;
 }
 
 .text-center {
@@ -1337,14 +1305,6 @@ video {
   font-size: 9px;
 }
 
-.text-\[28px\] {
-  font-size: 28px;
-}
-
-.text-\[25px\] {
-  font-size: 25px;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -1373,6 +1333,11 @@ video {
 .text-\[\#1E212C\] {
   --tw-text-opacity: 1;
   color: rgb(30 33 44 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#2a2a5f\] {
+  --tw-text-opacity: 1;
+  color: rgb(42 42 95 / var(--tw-text-opacity, 1));
 }
 
 .text-\[\#424551\] {
@@ -1413,16 +1378,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#101025\] {
-  --tw-text-opacity: 1;
-  color: rgb(16 16 37 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#2a2a5f\] {
-  --tw-text-opacity: 1;
-  color: rgb(42 42 95 / var(--tw-text-opacity, 1));
 }
 
 .shadow-lg {
@@ -1511,10 +1466,6 @@ video {
     display: block;
   }
 
-  .md\:h-\[508px\] {
-    height: 508px;
-  }
-
   .md\:w-\[75\%\] {
     width: 75%;
   }
@@ -1585,10 +1536,6 @@ video {
     height: 508px;
   }
 
-  .lg\:h-\[500px\] {
-    height: 500px;
-  }
-
   .lg\:w-\[16\%\] {
     width: 16%;
   }
@@ -1633,34 +1580,6 @@ video {
     width: 52%;
   }
 
-  .lg\:w-\[70\%\] {
-    width: 70%;
-  }
-
-  .lg\:w-\[75\%\] {
-    width: 75%;
-  }
-
-  .lg\:w-full {
-    width: 100%;
-  }
-
-  .lg\:w-\[76\%\] {
-    width: 76%;
-  }
-
-  .lg\:w-\[7\%\] {
-    width: 7%;
-  }
-
-  .lg\:w-\[77\%\] {
-    width: 77%;
-  }
-
-  .lg\:w-\[78\%\] {
-    width: 78%;
-  }
-
   .lg\:w-\[53\%\] {
     width: 53%;
   }
@@ -1669,16 +1588,24 @@ video {
     width: 55%;
   }
 
-  .lg\:max-w-\[99\%\] {
-    max-width: 99%;
+  .lg\:w-\[70\%\] {
+    width: 70%;
   }
 
-  .lg\:max-w-full {
+  .lg\:w-\[75\%\] {
+    width: 75%;
+  }
+
+  .lg\:w-\[78\%\] {
+    width: 78%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:max-w-\[100\%\] {
     max-width: 100%;
-  }
-
-  .lg\:max-w-\[80\%\] {
-    max-width: 80%;
   }
 
   .lg\:flex-row {
@@ -1709,11 +1636,6 @@ video {
     gap: 10px;
   }
 
-  .lg\:bg-\[\#1E212C\] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(30 33 44 / var(--tw-bg-opacity, 1));
-  }
-
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1734,14 +1656,14 @@ video {
     padding-bottom: 0px;
   }
 
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .lg\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-  }
-
-  .lg\:py-\[5\%\] {
-    padding-top: 5%;
-    padding-bottom: 5%;
   }
 
   .lg\:py-4 {
@@ -1749,9 +1671,9 @@ video {
     padding-bottom: 1rem;
   }
 
-  .lg\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  .lg\:py-\[5\%\] {
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   .lg\:pl-5 {
@@ -1762,28 +1684,24 @@ video {
     padding-left: 28%;
   }
 
-  .lg\:pt-10 {
-    padding-top: 2.5rem;
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
 
-  .lg\:pt-\[28\%\] {
-    padding-top: 28%;
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .lg\:pt-20 {
     padding-top: 5rem;
   }
 
-  .lg\:pt-0 {
-    padding-top: 0px;
+  .lg\:pt-\[22\%\] {
+    padding-top: 22%;
   }
 
-  .lg\:pb-0 {
-    padding-bottom: 0px;
-  }
-
-  .lg\:pt-\[18\%\] {
-    padding-top: 18%;
+  .lg\:text-\[13px\] {
+    font-size: 13px;
   }
 
   .lg\:text-\[16px\] {
@@ -1800,14 +1718,6 @@ video {
 
   .lg\:text-\[40px\] {
     font-size: 40px;
-  }
-
-  .lg\:text-\[45px\] {
-    font-size: 45px;
-  }
-
-  .lg\:text-\[13px\] {
-    font-size: 13px;
   }
 
   .lg\:text-white {
