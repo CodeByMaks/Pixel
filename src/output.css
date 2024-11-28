@@ -1249,6 +1249,14 @@ video {
   padding-top: 8%;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1323,6 +1331,18 @@ video {
 
 .text-\[48px\] {
   font-size: 48px;
+}
+
+.text-\[9px\] {
+  font-size: 9px;
+}
+
+.text-\[28px\] {
+  font-size: 28px;
+}
+
+.text-\[25px\] {
+  font-size: 25px;
 }
 
 .font-bold {
@@ -1653,6 +1673,14 @@ video {
     max-width: 99%;
   }
 
+  .lg\:max-w-full {
+    max-width: 100%;
+  }
+
+  .lg\:max-w-\[80\%\] {
+    max-width: 80%;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1675,6 +1703,10 @@ video {
 
   .lg\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .lg\:gap-\[10px\] {
+    gap: 10px;
   }
 
   .lg\:bg-\[\#1E212C\] {
@@ -1717,6 +1749,11 @@ video {
     padding-bottom: 1rem;
   }
 
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .lg\:pl-5 {
     padding-left: 1.25rem;
   }
@@ -1741,6 +1778,14 @@ video {
     padding-top: 0px;
   }
 
+  .lg\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .lg\:pt-\[18\%\] {
+    padding-top: 18%;
+  }
+
   .lg\:text-\[16px\] {
     font-size: 16px;
   }
@@ -1759,6 +1804,10 @@ video {
 
   .lg\:text-\[45px\] {
     font-size: 45px;
+  }
+
+  .lg\:text-\[13px\] {
+    font-size: 13px;
   }
 
   .lg\:text-white {
