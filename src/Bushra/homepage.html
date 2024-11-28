@@ -18,15 +18,14 @@
 </style>
 
 <body>
-    <nav
-        class="px-[10%] m-auto flex justify-between items-center py-5 bg-gradient-to-r from-custom1 via-custom1 to-custom2">
-        <div class="flex items-center gap-10">
+    <nav class="lg:w-full px-[15%] w-[100%] flex justify-between items-center py-5 bg-gradient-to-r from-custom1 via-custom1 to-custom2">
+        <div class="flex items-center lg:gap-10 gap-10">
             <div>
                 <img src="./img/logo.png" alt="" />
             </div>
-            <ul class="flex gap-5 text-gray-400">
+            <ul class="flex gap-3 lg:gap-5 text-gray-400">
                 <li>
-                    <select class="bg-[#1E212C] hover:text-white cursor-pointer" name="" id="pageSelector"
+                    <select class="bg-[#1E212C] hover:text-white cursor-pointer outline-none" name="" id="pageSelector"
                         onchange="navigateToPage()">
                         <option value="" disabled selected>
                             <p style="font-size: 18px; font-weight: bold">About</p>
@@ -54,20 +53,30 @@
                         }
                     </script>
                 </li>
-                <li class="hover:text-white cursor-pointer">Case Studies</li>
-                <li class="hover:text-white cursor-pointer">About Us</li>
-                <li class="hover:text-white cursor-pointer">Blog</li>
-                <li class="hover:text-white cursor-pointer">Contacts</li>
+                <li class="hover:text-white cursor-pointer hidden md:block">
+                    Case Studies
+                </li>
+                <li class="hover:text-white cursor-pointer hidden md:block">
+                    About Us
+                </li>
+                <li class="hover:text-white cursor-pointer hidden md:block">
+                    Blog
+                </li>
+                <li class="hover:text-white cursor-pointer hidden md:block">
+                    Contacts
+                </li>
             </ul>
         </div>
         <div>
-            <button class="py-3 px-8 bg-[#7772F1] rounded-md text-white">
+            <button id="but_1"
+                class="w-full lg:ml-0 pl-3 sm:w-auto lg:py-3 py-1 md:px-8 px-3 lg:text-[16px] text-[12px] bg-[#7772F1] hidden lg:block rounded-md text-white">
                 Talk to a human
             </button>
         </div>
     </nav>
+
     <header>
-        <div class="flex h-[900px] w-full m-0 p-10 bg-contain bg-no-repeat ">
+        <div class="flex lg:flex-row flex-col h-[900px] w-full m-0 p-10 bg-contain bg-no-repeat ">
             <div>
                 <h1 class="font-bold text-[45px] text-white lg:max-w-[90%] m-auto pt-[28%] pl-[28%]">Best <span
                         class="text-[#7772F1]">SEO
@@ -364,7 +373,7 @@
                     <button
                         class=" text-[white] border border-[#7772F1] bg-[#7772F1] py-2 px-16 hover:bg-[#8581e9] rounded-full">
                         Monthly</button>
-                    <button class=" text-[#7772F1] bg-[white] py-2 px-10 rounded-full hover:bg-[#8581e9] ">
+                    <button class=" text-[#7772F1] bg-[white] py-2 px-10 rounded-full hover:bg-[#9e9ecc] ">
                         Yearly <span class="font-thin text-[12px]">-12% Off</span></button>
                 </div>
             </div>
@@ -496,10 +505,11 @@
                     <p class="text-[#787A80] border-r-[2px] border-[#787A80] w-[20%]">Marketing</p>
                     <p class="text-[#787A80] border-r-[2px] border-[#787A80] w-[30%] flex gap-2 items-center"><img
                             src="./img/Clock.png" alt="">July 2, 2020</p>
-                    <p class="text-[#787A80] w-[45%] flex gap-2 items-center"><img
-                            src="./img/Profile.png" alt="">By Diane Mccoy</p>
+                    <p class="text-[#787A80] w-[45%] flex gap-2 items-center"><img src="./img/Profile.png" alt="">By
+                        Diane Mccoy</p>
                 </div>
-                <button class="text-[14px] mt-[150px] flex gap-2 font-bold">Read more <img src="./img/Right.png" alt=""></button>
+                <button class="text-[14px] mt-[150px] flex gap-2 font-bold">Read more <img src="./img/Right.png"
+                        alt=""></button>
             </div>
             <div class="w-[30%]">
                 <img src="./img/pichand.png" alt="">
@@ -507,15 +517,137 @@
                     <p class="text-[#787A80] border-r-[2px] border-[#787A80] w-[20%]">SEO</p>
                     <p class="text-[#787A80] border-r-[2px] border-[#787A80] w-[30%] flex gap-2 items-center"><img
                             src="./img/Clock.png" alt="">July 5, 2020</p>
-                    <p class="text-[#787A80] w-[45%] flex gap-2 items-center"><img
-                            src="./img/Profile.png" alt="">By Diane Mccoy</p>
+                    <p class="text-[#787A80] w-[45%] flex gap-2 items-center"><img src="./img/Profile.png" alt="">By
+                        Diane Mccoy</p>
                 </div>
                 <h2 class="font-semibold text-[20px] py-2">The Basics of Blogging Search Engine Optimization.</h2>
-                <p class="text-[#424551] text-[16px]">Mauris tincidunt sollicitudin tristique odio eget volutpat. Fringilla viverra amet, mi interdum blandit...</p>
-                <button class="text-[14px] mt-5 flex gap-2 font-bold">Read more <img src="./img/Right.png" alt=""></button>
+                <p class="text-[#424551] text-[16px]">Mauris tincidunt sollicitudin tristique odio eget volutpat.
+                    Fringilla viverra amet, mi interdum blandit...</p>
+                <button class="text-[14px] mt-5 flex gap-2 font-bold">Read more <img src="./img/Right.png"
+                        alt=""></button>
             </div>
         </section>
     </main>
+
+    <footer class="w-full md:h-[508px] h-auto bg-gray-900">
+        <div class="md:w-[76%] w-[90%] m-auto py-16 flex flex-wrap lg:flex-nowrap justify-between text-gray-400">
+            <div>
+                <div>
+                    <img src="./img/logo.png" alt="" />
+                </div>
+                <p class="text-gray-400 py-7">
+                    Createx SEO Agency is a full-service digital marketing
+                    <br class="hidden md:block" />
+                    agency. We help businesses make more money
+                    <br class="hidden md:block" />
+                    through a wealth of performance data and market
+                    <br class="hidden md:block" />
+                    research. We create science-based SEO strategies
+                    <br class="hidden md:block" />
+                    to empower our clients.
+                </p>
+                <div class="flex gap-4 py-3">
+                    <div>
+                        <img src="./img/Facebook.png" alt="" />
+                    </div>
+                    <div>
+                        <img src="./img/Vector.png" alt="" />
+                    </div>
+                    <div>
+                        <img src="./img/Twitter.png" alt="" />
+                    </div>
+                    <div>
+                        <img src="./img/Instagram.png" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-4 md:py-0">
+                <ul>
+                    <li class="text-white">COMPANY</li>
+                    <li class="py-2">About Us</li>
+                    <li class="py-2">Case Studies</li>
+                    <li class="py-2">Blog</li>
+                    <li class="py-2">Careers</li>
+                    <li class="py-2">Contacts</li>
+                </ul>
+            </div>
+            <div class="py-4 md:py-0">
+                <ul>
+                    <li class="text-white">SERVICES</li>
+                    <li class="py-2">Social Media</li>
+                    <li class="py-2">SEO</li>
+                    <li class="py-2">Research</li>
+                    <li class="py-2">Content & PR</li>
+                    <li class="py-2">Payed Traffic</li>
+                </ul>
+            </div>
+            <div class="py-4 md:py-0">
+                <ul>
+                    <li class="text-white">CONTACT US</li>
+                    <li class="py-2">
+                        <img class="inline-block" src="./img/iPhone.png" alt="" /> (405)
+                        555-0128
+                    </li>
+                    <li class="py-2">
+                        <img class="inline-block" src="./img/Mail.png" alt="" />
+                        hello@createx.com
+                    </li>
+                </ul>
+            </div>
+
+            <div class="py-5 md:py-0">
+                <h3 class="text-white">SIGN UP TO OUR NEWSLETTER</h3>
+                <div class="w-[280px] my-4 bg-[#1e212c] px-2 rounded-lg">
+                    <input class="w-[230px] bg-[#1e212c] py-2 outline-none" type="text" />
+                    <img class="inline-block " src="./img/Linemm (Stroke).png" alt="" />
+                </div>
+                <p class="text-[10px]">
+                    *Subscribe to our newsletter to receive communications and early
+                    <br />
+                    updates from Createx SEO Agency.
+                </p>
+            </div>
+        </div>
+
+        <div class="border-t-2 border-gray-800">
+            <div class="md:w-[75%] w-[90%] m-auto flex flex-wrap justify-between py-[20px]">
+                <div class="flex gap-7 flex-wrap justify-center lg:justify-start">
+                    <div>
+                        <img src="./img/imagem.png" alt="" />
+                    </div>
+
+                    <div>
+                        <img src="./img/image (1).png" alt="" />
+                    </div>
+
+                    <div>
+                        <img src="./img/google.png" alt="" />
+                    </div>
+
+                    <div>
+                        <img src="./img/image (2).png" alt="" />
+                    </div>
+                </div>
+
+                <div class="flex gap-4 items-center mt-6 lg:mt-0 ml-20 lg:ml-0">
+                    <p class="text-white">GO TO TOP</p>
+                    <button class="py-3 px-4 bg-[#7772F1] rounded-md">
+                        <img src="./img/Up-chevron.png" alt="" />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="py-5 bg-[#1e212c]">
+            <div class="md:w-[75%] w-[90%] m-auto text-white">
+                <p class="md:text-[16px] text-[10px] md:text-start text-center">
+                    © All rights reserved.Made with
+                    <img class="inline-block px-1" src="./img/Vector (Stroke).png" alt="" />by
+                    Createx Studio
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
