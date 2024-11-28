@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case study</title>
+    <link href="../output.css" rel="stylesheet">
+</head>
+<style>
+    header {
+        background-image: url("./img/background\ \(1\).png");
+    }
+</style>
+
+<body>
+    <header class="w-full h-[500px] m-0 p-1 bg-contain bg-no-repeat">
+        <nav class="lg:w-full px-[15%] w-[100%] flex justify-between items-center py-2 ">
+            <div class="flex items-center lg:gap-10 gap-10">
+                <div>
+                    <img src="./img/logo.png" alt="" />
+                </div>
+                <ul class="flex gap-3 lg:gap-5 text-gray-400">
+                    <li>
+                        <select class="bg-[#424751] hover:text-white cursor-pointer outline-none" name=""
+                            id="pageSelector" onchange="navigateToPage()">
+                            <option value="" disabled selected>
+                                <p style="font-size: 18px; font-weight: bold">Services</p>
+                            </option>
+
+                            <option value="index2.html">Homepage</option>
+                            <option value="index3.html">Services</option>
+                            <option value="index4.html">Service</option>
+                            <option value="index5.html">Case Studies</option>
+                            <option value="index6.html">Case Study</option>
+                            <option value="About.html">About us</option>
+                            <option value="index6.html">Careers</option>
+                            <option value="index6.html">Blog</option>
+                            <option value="Singlepost.html">Single Post</option>
+                            <option value="index6.html">Contacts</option>
+                        </select>
+
+                        <script>
+                            function navigateToPage() {
+                                const selector = document.getElementById("pageSelector");
+                                const selectedPage = selector.value;
+                                if (selectedPage) {
+                                    window.location.href = selectedPage;
+                                }
+                            }
+                        </script>
+                    </li>
+                    <li class="hover:text-white cursor-pointer hidden md:block">
+                        Case Studies
+                    </li>
+                    <li class="hover:text-white cursor-pointer hidden md:block">
+                        About Us
+                    </li>
+                    <li class="hover:text-white cursor-pointer hidden md:block">
+                        Blog
+                    </li>
+                    <li class="hover:text-white cursor-pointer hidden md:block">
+                        Contacts
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button id="but_1"
+                    class="w-full lg:ml-0 pl-3 sm:w-auto lg:py-3 py-1 md:px-8 px-3 lg:text-[16px] text-[12px] bg-[#7772F1] hidden lg:block rounded-md text-white">
+                    Talk to a human
+                </button>
+            </div>
+        </nav>
+
+        <div>
+            <div class="flex justify-center items-center gap-[10px] pt-20">
+                <img src="./img/Home.png" alt="">
+                <img src="./img/Right-chevron.png" alt="">
+                <p class="text-[16px] text-[white]">Case Studies</p>
+                <img src="./img/Right-chevron.png" alt="">
+                <p class="text-[#FFFFFF] text-[13px]">200% increase in conversion rate for Lovato Company</p>
+            </div>
+        </div>
+        <img src="./img/client-logo.png" alt="" class="m-auto">
+        <div class="flex justify-center text-center items-center py-4">
+            <h1 class="w-[53%] text-[40px] font-bold m-auto text-white">200% increase in conversion rate for Lovato
+                Company</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="px-[15%] flex justify-between">
+            <div class="w-[55%]">
+                <div class="flex justify-between  py-1O ">
+                    <div class="flex items-center gap-2 "><img src="./img/minicircle4.png" alt="">
+                        <div>
+                            <p class="font-bold text-[19px]">70%</p>
+                            <p class="text-[10px]">Open Rate</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 "><img src="./img/minicircle1.png" alt="">
+                        <div>
+                            <p class="font-bold text-[19px]">200%</p>
+                            <p class="text-[10px]">Growth in sales</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-bold text-[19px]">8,000</p>
+                        <p class="text-[10px]">DAU</p>
+                    </div>
+                </div>
+                <p class="font-semibold text-[20px] pt-10">The Company has been with us for 3 months. They are in our
+                    optimal package for SEO & our premium
+                    package for SEM plus Ad spend ($1,000). The client’s goal was to get growth in sales. We helped
+                    exceeding the client’s goals in generating new clients.</p>
+                <p class="text-[#424551] text-[16px] my-14">At facilisi sapien posuere eget nunc senectus proin nullam.
+                    Tortor senectus in et sagittis, vitae
+                    diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare
+                    pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia
+                    amet, odio. Mi varius viverra risus vel.</p>
+                <img src="./img/diagram.png" alt="" class="w-full my-5">
+                <div>
+                    <h2 class="text-[32px] font-semibold pb-5 ">Strategies</h2>
+                    <p class="flex gap-4 py-3 text-[#424551] items-center"><img src="./img/Mark.png" alt="">Gravida elit
+                        et libero, varius congue
+                        risus quisque enim.</p>
+                    <p class="flex gap-4 py-3 text-[#424551] items-center"><img src="./img/Mark.png" alt="">Sit quis
+                        vitae, gravida aliquam
+                        condimentum.</p>
+                    <p class="flex gap-4 py-3 text-[#424551] items-center"><img src="./img/Mark.png" alt="">Praesent et
+                        facilisis nam mus senectus
+                        massa dignissim.</p>
+                    <p class="flex gap-4 py-3 text-[#424551] items-center"><img src="./img/Mark.png" alt="">Fermentum
+                        diam elementum viverra proin.
+                    </p>
+                    <p class="text-[#424551] pt-10">Enim, vel massa odio diam. Blandit massa gravida feugiat elementum
+                        id nec sed leo. Nisi in ornare
+                        lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas.
+                        Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue
+                        mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet,
+                        nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.</p>
+                </div>
+                <img src="./img/illustration (5).png" alt="" class="my-10">
+                <div>
+                    <h2 class="text-[32px] font-semibold pb-5 ">Resieved goals</h2>
+                    <p class="flex gap-4 py-2 text-[#424551] items-center"><img src="./img/Mark.png" alt="">Bibendum
+                        malesuada mauris, id nisl enim diam.</p>
+                    <p class="flex gap-4 py-2 text-[#424551] items-center"><img src="./img/Mark.png" alt="">Nam id in
+                        non sed cras purus nunc et.</p>
+                    <p class="flex gap-4 py-2 text-[#424551] items-center"><img src="./img/Mark.png" alt="">Neque
+                        tortor, pellentesque amet est, eu accumsan condimentum nulla.</p>
+                    <p class="flex gap-4 py-2 text-[#424551] items-center"><img src="./img/Mark.png" alt="">Mauris orci,
+                        cursus nisl odio est adipiscing gravida magna eget.
+                    </p>
+                    <p class="flex gap-4 py-2 text-[#424551] items-center"><img src="./img/Mark.png" alt="">Sit turpis
+                        sit ultrices viverra adipiscing malesuada.
+                    </p>
+                </div>
+                <div class="my-16">
+                    <h2 class="text-[32px] font-semibold pb-5 ">Results</h2>
+                    <p class="flex gap-4 py-2 text-[#424551] items-center"><img src="./img/Mark.png" alt="">Mauris
+                        dignissim blandit cursus imperdiet accumsan lorem vel, tortor.</p>
+                    <p class="flex gap-4 py-2 text-[#424551] items-center"><img src="./img/Mark.png" alt="">Quis mauris
+                        vel felis convallis nulla dignissim.</p>
+                    <p class="flex gap-4 py-2 text-[#424551] items-center"><img src="./img/Mark.png" alt="">Cursus sit
+                        platea ac posuere non interdum in.</p>
+                    <p class="flex gap-4 py-2 text-[#424551] items-center"><img src="./img/Mark.png" alt="">Mattis
+                        pellentesque vel, venenatis, urna, quis ut.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-[30%]">
+                <h2 class="text-[24px] font-medium pb-5">About the client</h2>
+                <p class="text-[#424551] text-[14px]">At facilisi sapien posuere eget nunc senectus proin nullam. Tortor
+                    senectus in et sagittis, vitae
+                    diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare
+                    pharetra, neque, fermentum.</p>
+                <h2 class="text-[24px] font-medium pt-9 pb-4">Industry</h2>
+                <p class="text-[#424551] text-[14px]">Electric company - B2B</p>
+                <h2 class="text-[24px] font-medium pt-9 pb-4">Services rendered</h2>
+                <p class="text-[14px] text-[#424551] flex gap-2 items-center pt-6 pb-3"><img src="./img/Mark.png"
+                        alt="">Remarketing</p>
+                <p class="text-[14px] text-[#424551] flex gap-2 items-center pt-6 pb-3"><img src="./img/Mark.png"
+                        alt="">Conversion Rate Optimization</p>
+                <p class="text-[14px] text-[#424551] flex gap-2 items-center pt-6 pb-3"><img src="./img/Mark.png"
+                        alt="">User Testing</p>
+                <p class="text-[14px] text-[#424551] flex gap-2 items-center pt-6 pb-3"><img src="./img/Mark.png"
+                        alt="">PPC Management</p>
+                <p class="text-[14px] text-[#424551] flex gap-2 items-center pt-6 pb-3"><img src="./img/Mark.png"
+                        alt="">Usability Testing</p>
+                <div class="flex gap-2 text-[13px] my-10">
+                    <p class="border p-2 border-[#D7DADD] w-20 text-center">#SEO</p>
+                    <p class="border p-2 border-[#D7DADD] w-20 text-center">#research</p>
+                    <p class="border p-2 border-[#D7DADD] w-24 bg-[#7772F1] text-center text-white hover:bg-[#9c99d4] hover:cursor-pointer">#payed_traffic</p>
+                </div>
+                <p class="text-[20px] flex gap-2 items-center">Share:<img src="./img/socials (1).png" alt=""></p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
