@@ -17,65 +17,81 @@
 
 <body>
     <header class="img_backi">
-        <nav class="lg:w-[70%] md:w-[75%] w-[90%] m-auto flex justify-between items-center py-5">
-            <div class="flex items-center sm:gap-10 gap-5">
-                <div>
-                    <img src="./img/logom.png" alt="" />
-                </div>
-                <ul class="flex gap-3 sm:gap-5 text-gray-400">
-                    <li>
-                        <select class="bg-[#1E212C] hover:text-white cursor-pointer" name="" id="pageSelector"
-                            onchange="navigateToPage()">
-                            <option value="" disabled selected>
-                                <p style="font-size: 18px; font-weight: bold">About</p>
-                            </option>
+        <nav
+        class="w-[90%] m-auto flex justify-between items-center py-5"
+      >
+        <div class="flex items-center gap-[200px] lg:gap-10 sm:gap-10">
+          <div>
+            <img src="../Maks/img/logom.png" alt="" />
+          </div>
+          <ul class="flex gap-3 text-gray-400 sm:gap-5">
+            <li>
+              <select
+                class="bg-[#1E212C] hover:text-white cursor-pointer outline-none"
+                name=""
+                id="pageSelector"
+                onchange="navigateToPage()"
+              >
+                <option value="" disabled selected>
+                  <p style="font-size: 18px; font-weight: bold">About</p>
+                </option>
 
-                            <option value="index2.html">Homepage</option>
-                            <option value="index3.html">Services</option>
-                            <option value="index4.html">Service</option>
-                            <option value="index5.html">Case Studies</option>
-                            <option value="index6.html">Case Study</option>
-                            <option value="About.html">About us</option>
-                            <option value="index6.html">Careers</option>
-                            <option value="index6.html">Blog</option>
-                            <option value="Singlepost.html">Single Post</option>
-                            <option value="index6.html">Contacts</option>
-                        </select>
+                <option value="">Homepage</option>
+                <option value="index3.html">Services</option>
+                <option value="index4.html">Service</option>
+                <option value="index5.html">Case Studies</option>
+                <option value="index6.html">Case Study</option>
+                <option value="About.html">About us</option>
+                <option value="index6.html">Careers</option>
+                <option value="index6.html">Blog</option>
+                <option value="Singlepost.html">Single Post</option>
+                <option value="index6.html">Contacts</option>
+              </select>
 
-                        <script>
-                            function navigateToPage() {
-                                const selector = document.getElementById("pageSelector");
-                                const selectedPage = selector.value;
-                                if (selectedPage) {
-                                    window.location.href = selectedPage;
-                                }
-                            }
-                        </script>
-                    </li>
-                    <li class="hover:text-white cursor-pointer hidden md:block">Case Studies</li>
-                    <li class="hover:text-white cursor-pointer hidden md:block">About Us</li>
-                    <li class="hover:text-white cursor-pointer hidden md:block">Blog</li>
-                    <li class="hover:text-white cursor-pointer hidden md:block">Contacts</li>
-                </ul>
-            </div>
-            <div>
-                <button
-                    class="w-full md:ml-0 ml-3 sm:w-auto md:py-3 py-1 md:px-8 px-3 md:text-[16px] text-[12px] bg-[#7772F1] rounded-md text-white">
-                    Talk to a human
-                </button>
-            </div>
-        </nav>
+              <script>
+                function navigateToPage() {
+                  const selector = document.getElementById("pageSelector");
+                  const selectedPage = selector.value;
+                  if (selectedPage) {
+                    window.location.href = selectedPage;
+                  }
+                }
+              </script>
+            </li>
+            <li class="hidden cursor-pointer hover:text-white md:block">
+              Case Studies
+            </li>
+            <li class="hidden cursor-pointer hover:text-white md:block">
+              About Us
+            </li>
+            <li class="hidden cursor-pointer hover:text-white md:block">
+              Blog
+            </li>
+            <li class="hidden cursor-pointer hover:text-white md:block">
+              Contacts
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button
+           id="but_1" class="w-full md:ml-0 ml-3 sm:w-auto md:py-3 py-1 md:px-8 px-3 md:text-[16px] text-[12px] bg-[#7772F1] hidden md:block rounded-md text-white"
+          >
+            Talk to a human
+          </button>
+        </div>
+      </nav>
+
 
         <div class="flex flex-col items-center">
-            <div class="flex items-center gap-2 text-gray-400 py-10">
+            <div class="flex items-center gap-2 py-10 text-gray-400">
                 <div>
                     <img src="./image/Home.png" alt="" />
                 </div>
                 <p>></p>
                 <p>About us</p>
             </div>
-            <h1 class="text-[72px] text-white font-bold">About Us</h1>
-            <p class="text-center text-gray-400 py-8 text-[20px]">
+            <h1 class="text-[25px] lg:text-[72px] text-white font-bold">About Us</h1>
+            <p class="text-center text-gray-400 py-8 text-[16px]  lg:text-[20px]">
                 Our agency has been successfully operating in digital marketing since
                 2012. We are proud to <br />
                 offer you quality and exemplary service. We help our clients get
@@ -107,21 +123,21 @@
     </header>
 
     <main>
-        <div class="bg-[#F4F5F6] -mt-[30px] h-[800px]">
-            <div class="flex justify-center mt-[30px]">
+        <div class="bg-[#F4F5F6] -mt-[30px]  lg:h-[800px]">
+            <div class="w-[90%] flex flex-col lg:flex-row justify-center mt-[30px]">
                 <div>
                     <div class="flex gap-5">
                         <p class="text-6xl text-[#7772F1]">-</p>
                         <p class="text-4xl mt-[15px]">Digital Marketing Strategist</p>
                     </div>
-                    <p class="text-gray-400 w-[800px] ml-[50px] mt-3">Blandit quam eget fames nisl. Vel vestibulum
+                    <p class="text-gray-400 lg:w-[800px] ml-[50px] mt-3">Blandit quam eget fames nisl. Vel vestibulum
                         dictum morbi risus. Mauris dictumst vitae convallis aliquam ullamcorper. Quis non non ac massa
                         augue id scelerisque. Egestas eget cursus egestas habitant orci. In posuere tempus, vulputate
                         est, diam arcu.</p>
                 </div>
                 <div>
                     <button
-                        class="w-[150px] rounded-xl text-[#7772F1] mt-[30px] h-[40px] border-2 border-[#7772F1]">Apply
+                        class=" w-[150px] rounded-xl text-[#7772F1] mt-[30px] h-[40px] border-2 border-[#7772F1]">Apply
                         now</button>
                 </div>
             </div>
@@ -140,7 +156,7 @@
                     Nascetur id turpis facilisis faucibus vel, iaculis etiam.Nascetur id turpis facilisis faucibus vel,
                     iaculis etiam.
                 </li>
-                <p class="text-2xl text-gray-400 mt-3">Responsibilities:</p>
+                <p class="mt-3 text-2xl text-gray-400">Responsibilities:</p>
                 <li class="mt-[20px]">
                     Dui, lectus at dui magna vitae vitae egestas sed.
                 </li>
@@ -153,22 +169,21 @@
                 <li class="mt-3">
                     Etiam duis lobortis in fames ultrices commodo nibh.
                 </li>
-                <img class="-mt-[745px] ml-[598px]" src="./image/lines (20).png" alt="">
-                <img class="-ml-[250px] -mt-[300px]" src="./image/shapes (9).png" alt="">
-                <div class="flex justify-center -ml-[150px] -mt-[220px] gap-[645px]">
+                <img class="-ml-[250px] -mt-[300px] hidden lg:block" src="./image/shapes (9).png" alt="">
+                <div class="hidden lg:flex justify-center -ml-[150px] -mt-[0px] gap-[645px]">
                     <div class="flex gap-[20px]">
                         <p class="text-4xl text-[#7772F1]">+</p>
-                        <p class="text-2xl mt-2">Sales Executive</p>
+                        <p class="mt-2 text-2xl">Sales Executive</p>
                     </div>
                     <div>
                         <button class="w-[150px] h-[40px] text-[#7772F1] rounded-xl border-2 border-[#7772F1]">Apply
                             now</button>
                     </div>
                 </div>
-                <div class="flex justify-center gap-[500px] -ml-[150px] mt-3">
+                <div class="hidden lg:flex justify-center gap-[500px] -ml-[150px] mt-3">
                     <div class="flex gap-[20px]">
                         <p class="text-4xl text-[#7772F1]">+</p>
-                        <p class="text-2xl mt-2">Social Media Content Manager</p>
+                        <p class="mt-2 text-2xl">Social Media Content Manager</p>
                     </div>
                     <div>
                         <button
@@ -176,7 +191,7 @@
                             now</button>
                     </div>
                 </div>
-                <div class="flex justify-center gap-[410px] -ml-[150px] mt-3">
+                <div class="hidden lg:flex justify-center gap-[410px] -ml-[150px] mt-3">
                     <div class="flex gap-[20px]">
                         <p class="text-4xl text-[#7772F1]">+</p>
                         <p class="text-2xl mt-2 w-[400px]"> Digital Marketing Account Manager</p>
@@ -186,10 +201,10 @@
                             now</button>
                     </div>
                 </div>
-                <div class="flex justify-center gap-[660px] -ml-[150px] mt-3">
+                <div class="hidden lg:flex justify-center gap-[660px] -ml-[150px] mt-3">
                     <div class="flex gap-[20px]">
                         <p class="text-4xl text-[#7772F1]">+</p>
-                        <p class="text-2xl mt-2">SEO Strategist</p>
+                        <p class="mt-2 text-2xl">SEO Strategist</p>
                     </div>
                     <div>
                         <button class="w-[150px] h-[40px] text-[#7772F1] rounded-xl border-2 border-[#7772F1]">Apply
@@ -198,9 +213,9 @@
                 </div>
             </ul>
         </div>
-        <div class="flex justify-center mt-[40px] gap-[40px]">
+        <div class="flex flex-col lg:flex-row justify-center mt-[40px] gap-[40px]">
             <div>
-                <p class="text-4xl w-[400px]">Didn’t find what you were looking for?</p>
+                <p class="text-4xl lg:w-[400px]">Didn’t find what you were looking for?</p>
                 <p class="text-gray-400 w-[400px] mt-3">Send your CV or subscribe to our newsletter to receive
                     information about new vacancies.</p>
             </div>
@@ -208,30 +223,30 @@
                 <div class="flex gap-5">
                     <div>
                         <p>Name*</p>
-                        <input class="w-[300px] rounded-xl pl-[20px] mt-3 h-[40px] bg-[#F4F5F6]" placeholder="Your name"
+                        <input class="lg:w-[300px] rounded-xl pl-[20px] mt-3 h-[40px] bg-[#F4F5F6]" placeholder="Your name"
                             type="text">
                     </div>
                     <div>
                         <p>Phone*</p>
-                        <input class="w-[300px] rounded-xl pl-[20px] mt-3 h-[40px] bg-[#F4F5F6]"
+                        <input class="lg:w-[300px] rounded-xl pl-[20px] mt-3 h-[40px] bg-[#F4F5F6]"
                             placeholder="Your phone number" type="text">
                     </div>
                 </div>
                 <div class="flex gap-5">
                     <div>
                         <p class="mt-5">Email</p>
-                        <input class="w-[300px] rounded-xl pl-[20px] mt-3 h-[40px] bg-[#F4F5F6]"
+                        <input class="lg:w-[300px] rounded-xl pl-[20px] mt-3 h-[40px] bg-[#F4F5F6]"
                             placeholder="Your working email" type="text">
                     </div>
                     <div>
                         <p class="mt-5">Phone*</p>
-                        <select class="w-[300px] h-[40px] border-2 bg-[#F4F5F6] rounded-xl mt-3" name="" id="">
+                        <select class="lg:w-[300px] h-[40px] border-2 bg-[#F4F5F6] rounded-xl mt-3" name="" id="">
                             <option value="">Choose...</option>
                         </select>
                     </div>
                 </div>
                 <p class="mt-5">Cover letter</p>
-                <textarea class="w-[615px] pl-[20px] pt-[10px] mt-3 h-[130px] bg-[#F4F5F6] rounded-xl border-2"
+                <textarea class="lg:w-[615px] pl-[20px] pt-[10px] mt-3 h-[130px] bg-[#F4F5F6] rounded-xl border-2"
                     placeholder="Your cover letter" name="" id=""></textarea>
                 <div class="flex gap-3 mt-3">
                     <img class="w-[20px] h-[20px] mt-1" src="./image/Attach.png" alt="">
@@ -320,7 +335,7 @@
 
         <div class="border-t-2 border-gray-800">
             <div class="md:w-[75%] w-[90%] m-auto flex flex-wrap justify-between py-10">
-                <div class="flex gap-7 flex-wrap justify-center lg:justify-start">
+                <div class="flex flex-wrap justify-center gap-7 lg:justify-start">
                     <div>
                         <img src="./image/award (1).png" alt="">
                     </div>
@@ -338,7 +353,7 @@
                     </div>
                 </div>
 
-                <div class="flex gap-4 items-center mt-6 lg:mt-0 ml-20 lg:ml-0">
+                <div class="flex items-center gap-4 mt-6 ml-20 lg:mt-0 lg:ml-0">
                     <p class="text-white">GO TO TOP</p>
                     <button class="py-4 px-4 bg-[#7772F1] rounded-md"><img src="./image/Up-chevron.png" alt=""></button>
                 </div>
