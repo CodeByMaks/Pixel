@@ -40,34 +40,79 @@
             background-size: 100% 100%;
             filter: brightness(0.6);
         }
+        #but_1:hover{
+        background-color: transparent;
+        color: #7772F1;
+        border: 2px solid #7772F1;
+        transition: all 0.7s ease;
+      }
     </style>
 </head>
 <body>
     <header id="back-header" class="w-full h-auto lg:h-[555px]">
-        <navbar class=" w-[95%] lg:w-[90%] flex justify-between gap-20 lg:gap-10 py-[20px]">
-            <section class="flex gap-10">
-                <aside class="m-0">
-                    <img src="./images/logos-1.png" alt="" class="m-0">
-                </aside>
-                    <aside class="flex gap-5 m-0">
-                        <select name="" id="" onchange="navigateToLink(this)" class="cursor-pointer text-[#fff] outline-none bg-transparent text-[25px] lg:text-[18px] m-0">
-                            <form action="">
-                              <option value="" selected>Services</option>
-                            </form>
-                          </select>
-                          <ul class="hidden lg:flex items-center gap-10 text-[#fff] ">
-                            <li><a href="" class="">Case Studies</a></li>
-                            <li><a href="" class="">About Us</a></li>
-                            <li><a href="" class="">Blog</a></li>
-                            <li><a href="" class="">Contacts</a></li>
-                          </ul>
-                    </aside>
-                </aside>
-            </section>
-                <aside class="hidden lg:block">
-                <button id="but-01" class="w-[199px] h-[52px]  bg-[#7772F1] rounded-[4px] text-[#fff]">Talk to a human</button>
-            </aside>
-        </navbar>
+        <nav
+        class="w-[90%] m-auto flex justify-between items-center py-5"
+      >
+        <div class="flex items-center gap-10 sm:gap-10">
+          <div>
+            <img src="./images/logos-1.png" alt="" />
+          </div>
+          <ul class="flex gap-3 text-gray-400 sm:gap-5">
+            <li>
+              <select
+                class="bg-[#1E212C] hover:text-white cursor-pointer outline-none"
+                name=""
+                id="pageSelector"
+                onchange="navigateToPage()"
+              >
+                <option value="" disabled selected>
+                  <p style="font-size: 18px; font-weight: bold">About</p>
+                </option>
+
+                <option value="index2.html">Homepage</option>
+                <option value="index3.html">Services</option>
+                <option value="index4.html">Service</option>
+                <option value="index5.html">Case Studies</option>
+                <option value="index6.html">Case Study</option>
+                <option value="About.html">About us</option>
+                <option value="index6.html">Careers</option>
+                <option value="index6.html">Blog</option>
+                <option value="Singlepost.html">Single Post</option>
+                <option value="index6.html">Contacts</option>
+              </select>
+
+              <script>
+                function navigateToPage() {
+                  const selector = document.getElementById("pageSelector");
+                  const selectedPage = selector.value;
+                  if (selectedPage) {
+                    window.location.href = selectedPage;
+                  }
+                }
+              </script>
+            </li>
+            <li class="hidden cursor-pointer hover:text-white md:block">
+              Case Studies
+            </li>
+            <li class="hidden cursor-pointer hover:text-white md:block">
+              About Us
+            </li>
+            <li class="hidden cursor-pointer hover:text-white md:block">
+              Blog
+            </li>
+            <li class="hidden cursor-pointer hover:text-white md:block">
+              Contacts
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button
+           id="but_1" class="w-full md:ml-0 ml-3 sm:w-auto md:py-3 py-1 md:px-8 px-3 md:text-[16px] text-[12px] bg-[#7772F1] hidden md:block rounded-md text-white"
+          >
+            Talk to a human
+          </button>
+        </div>
+      </nav>
         <section class="w-[90%] mt-[70px] text-center">
             <aside class="">
                 <img src="./images/bar.png" alt="">
