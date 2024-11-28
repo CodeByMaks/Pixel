@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <title>Single Post</title>
+    <style>
+      .img_back {
+        background-image: url("./img/imagem.png");
+        width: 100%;
+        height: 499px;
+        background-size: cover;
+      }
+      #but_1:hover{
+        background-color: transparent;
+        color: #7772F1;
+        border: 2px solid #7772F1;
+        transition: all 0.7s ease;
+      }
+    </style>
+  </head>
+  <body class="m-auto max-w-screen-2xl">
+    <header class="img_back">
+      <nav class="lg:w-[70%] md:w-[75%] w-[90%] m-auto flex justify-between items-center py-5">
+        <div class="flex items-center gap-5 sm:gap-10">
+          <div>
+            <img src="./img/logom.png" alt="" />
+          </div>
+          <ul class="flex gap-3 sm:gap-5">
+            <li>
+              <select
+                class="bg-[#eceef52e] cursor-pointer"
+                name=""
+                id="pageSelector"
+                onchange="navigateToPage()"
+              >
+                <option value="" disabled selected>
+                  <p style="font-size: 18px; font-weight: bold">Single Post</p>
+                </option>
+
+                <option value="index2.html">Homepage</option>
+                <option value="index3.html">Services</option>
+                <option value="index4.html">Service</option>
+                <option value="index5.html">Case Studies</option>
+                <option value="index6.html">Case Study</option>
+                <option value="About.html">About us</option>
+                <option value="index6.html">Careers</option>
+                <option value="index6.html">Blog</option>
+                <option value="Singlepost.html">Single Post</option>
+                <option value="index6.html">Contacts</option>
+              </select>
+
+              <script>
+                function navigateToPage() {
+                  const selector = document.getElementById("pageSelector");
+                  const selectedPage = selector.value;
+                  if (selectedPage) {
+                    window.location.href = selectedPage;
+                  }
+                }
+              </script>
+            </li>
+            <li class="hidden cursor-pointer hover:text-white md:block">Case Studies</li>
+            <li class="hidden cursor-pointer hover:text-white md:block">About Us</li>
+            <li class="hidden cursor-pointer hover:text-white md:block">Blog</li>
+            <li class="hidden cursor-pointer hover:text-white md:block">Contacts</li>
+          </ul>
+        </div>
+        <div>
+          <button id="but_1" class="w-full md:ml-0 ml-3 sm:w-auto md:py-3 py-1 md:px-8 px-3 md:text-[16px] text-[12px] bg-[#7772F1] rounded-md text-white">
+            Talk to a human
+          </button>
+        </div>
+      </nav>
+      
+    </header>
+
+    <main>
+       
+    </main>
+
+    <footer class="w-full md:h-[508px] h-auto bg-gray-900">
+      <div class="md:w-[75%] w-[90%] m-auto py-16 flex flex-wrap lg:flex-nowrap justify-between text-gray-400">
+        <div>
+          <div>
+            <img src="./img/logom.png" alt="" />
+          </div>
+          <p class="text-gray-400 py-7">
+            Createx SEO Agency is a full-service digital marketing <br class="hidden md:block"> agency.
+            We help businesses make more money <br class="hidden md:block"> through a wealth of performance
+            data and market <br class="hidden md:block"> research. We create science-based SEO strategies <br class="hidden md:block">
+            to empower our clients.
+          </p>
+          <div class="flex gap-4 py-3">
+            <div>
+                <img src="./img/Facebookm.png" alt="">
+            </div>
+            <div>
+                <img src="./img/Linked-Inm.png" alt="">
+            </div>
+            <div>
+                <img src="./img/Twitterm.png" alt="">
+            </div>
+            <div>
+                <img src="./img/Instagramm.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="py-4 md:py-0">
+            <ul>
+                <li class="text-white">COMPANY</li>
+                <li class="py-2">About Us</li>
+                <li class="py-2">Case Studies</li>
+                <li class="py-2">Blog</li>
+                <li class="py-2">Careers</li>
+                <li class="py-2">Contacts</li>
+            </ul>
+        </div>
+        <div class="py-4 md:py-0">
+            <ul>
+                <li class="text-white">SERVICES</li>
+                <li class="py-2">Social Media</li>
+                <li class="py-2">SEO</li>
+                <li class="py-2">Research</li>
+                <li class="py-2">Content & PR</li>
+                <li class="py-2">Payed Traffic</li>
+            </ul>
+        </div>
+        <div class="py-4 md:py-0">
+            <ul>
+                <li class="text-white">CONTACT US</li>
+                <li class="py-2"><img class="inline-block" src="./img/iPhonem.png" alt=""> (405) 555-0128</li>
+                <li class="py-2"><img class="inline-block" src="./img/Mailm.png" alt=""> hello@createx.com</li>
+            </ul>
+        </div>
+
+        <div class="py-5 md:py-0">
+            <h3 class="text-white">SIGN UP TO OUR NEWSLETTER</h3>
+            <div class="w-[280px] my-4 bg-[#1e212c] px-2 rounded-lg">
+                <input class="w-[230px] bg-[#1e212c] py-2 outline-none" type="text">
+                <img class="inline-block px-2" src="./img/Linemm (Stroke).png" alt="">
+            </div>
+            <p class="text-[10px]">*Subscribe to our newsletter to receive communications and early <br> updates from Createx SEO Agency.</p>
+        </div>
+      </div>
+
+      <div class="border-t-2 border-gray-800">
+        <div class="md:w-[75%] w-[90%] m-auto flex flex-wrap justify-between py-[20px]">
+          <div class="flex flex-wrap justify-center gap-7 lg:justify-start">
+            <div>
+              <img src="./img/imagem (1).png" alt="">
+            </div>
+  
+            <div>
+              <img src="./img/awardm.png" alt="">
+            </div>
+  
+            <div>
+              <img src="./img/awardm (1).png" alt="">
+            </div>
+  
+            <div>
+              <img src="./img/awardm (2).png" alt="">
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 mt-6 ml-20 lg:mt-0 lg:ml-0">
+            <p class="text-white">GO TO TOP</p>
+            <button class="py-4 px-4 bg-[#7772F1] rounded-md"><img src="./img/Linem (Stroke).png" alt=""></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="py-5 bg-[#1e212c]">
+        <div class="md:w-[75%] w-[90%] m-auto text-white">
+          <p class="md:text-[16px] text-[10px] md:text-start text-center">© All rights reserved.Made with <img class="inline-block px-1" src="./img/Heartm.png" alt="">by Createx Studio </p>
+        </div>
+      </div>
+
+    </footer>
+  </body>
+</html>
