@@ -14,6 +14,11 @@
 
     .minibg {
         background-image: url("img/image.png");
+        backdrop-filter: none;
+        background-size: cover;
+        background-position: center;
+        filter: brightness(0.75);
+
     }
 </style>
 
@@ -272,10 +277,10 @@
             <img src="./img/illustration (3).png" alt="" class="mt-5 lg:mt-0">
         </section>
 
-        <section class="px-[8%] bg-[#F4F5F6] py-10">
+        <section class="px-[8%] bg-[#F4F5F6] py-7">
             <h2 class="font-bold items-center text-[40px] flex justify-between">Freequently Ask Questions <img
                     src="./img/hover1.png" alt="" class="hover:cursor-pointer"></h2>
-            <div class="lg:flex justify-center gap-10 my-[5%]">
+            <div class="lg:flex justify-center gap-10 lg:my-[5%] my-10">
                 <div class="lg:w-[30%] p-[1%] shadow-md border shadow-gray-400">
                     <img src="./img/client-logo1.png" alt="">
                     <h2 class="font-semibold text-[14px] py-3">Charity organisation</h2>
@@ -297,7 +302,7 @@
                     </div>
                 </div>
 
-                <div class="minibg lg:w-[30%] p-[1%] h-[400px]  backdrop-filter-none bg-cover bg-center brightness-75">
+                <div class="minibg lg:w-[30%] p-[1%] h-[400px] my-10 lg:my-0">
                     <img src="./img/National Health Logo 1.png" alt="" class="mt-8 ml-10 z-10">
                     <div class="flex justify-center gap-[5%] py-10 mt-[50%] text-white font-bold">
                         <div class="flex items-center gap-2 "><img src="./img/minicircle3.png" alt="">
@@ -315,8 +320,8 @@
                     </div>
                 </div>
 
-                <div class="w-[30%] p-[1%] shadow-md border shadow-gray-400">
-                    <img src="./img/clientlogo.png" alt="">
+                <div class="lg:w-[30%] p-[1%] shadow-md border shadow-gray-400 my-10 lg:my-0">
+                    <img src="./img/clientlogo.png" alt="" class="ml-10 lg:ml-0 lg:mt-0 mt-10">
 
                     <div class="flex justify-center gap-[10%] py-1O mt-[70%]">
                         <div class="flex items-center gap-2 "><img src="./img/minicircle4.png" alt="">
@@ -335,9 +340,9 @@
                 </div>
             </div>
             <div class="flex justify-center items-center gap-[10px] my-20">
-                <h2 class="font-semibold text-[30px]">Explore more case studies</h2>
+                <h2 class="font-semibold lg:text-[30px] text-[22px]">Explore more case studies</h2>
                 <button
-                    class=" text-[white] border border-[#7772F1] bg-[#7772F1] py-3 px-5 rounded-md hover:bg-[#8581e9] ">View
+                    class=" text-[white] border border-[#7772F1] bg-[#7772F1] lg:py-3 lg:px-5 rounded-md hover:bg-[#8581e9] ">View
                     all case studies</button>
             </div>
         </section>
@@ -347,21 +352,21 @@
                 <h2 class="font-bold text-[40px] m-auto">Our benefits</h2>
             </div>
             <div class="flex items-center">
-                <div class="flex flex-col items-center">
-                    <div class="w-[75%] flex flex-col justify-center items-center my-10">
-                        <img src="./img/ic-speaker.png" alt="">
+                <div class="flex flex-col flex-wrap lg:items-center">
+                    <div class="lg:w-[75%] w-[90%] flex flex-col justify-center items-center my-10">
+                        <img src="./img/ic-speaker.png" alt="" class="w-[20%] lg:w-[20%]">
                         <h3 class="font-medium text-[20px] pt-5 pb-3">Social Advertising Experts</h3>
                         <p class="text-[14px] text-[#787A80] text-center">Culpa nostrud commodo ea consequat aliquip
                             reprehenderit. Veniam velit nostrud aliquip sunt.</p>
                     </div>
-                    <img src="./img/card.png" alt="">
-                    <img src="./img/card11.png" alt="">
+                    <img src="./img/card.png" alt="" class="hidden lg:block">
+                    <img src="./img/card11.png" alt="" class="hidden lg:block">
                 </div>
-                <img src="./img/illustration (4).png" alt="">
+                <img src="./img/illustration (4).png" alt="" class="hidden lg:block">
                 <div>
-                    <img src="./img/card.png" alt="">
-                    <img src="./img/card11.png" alt="">
-                    <img src="./img/card11.png" alt="">
+                    <img src="./img/card.png" alt="" class="hidden lg:block">
+                    <img src="./img/card11.png" alt="" class="hidden lg:block">
+                    <img src="./img/card11.png" alt="" class="hidden lg:block">
                 </div>
             </div>
         </section>
@@ -378,9 +383,9 @@
                 </div>
             </div>
 
-            <div class="px-[10%] flex justify-center gap-10 my-10">
+            <div class="px-[10%] lg:flex justify-center gap-10 my-10">
                 <div
-                    class="flex flex-col justify-center items-center text-center w-[30%] border border-gray-200 p-[1%] py-[2%] mt-10 shadow-lg shadow-gray-400 hover:shadow-gray-700 hover:cursor-pointer">
+                    class="flex flex-col justify-center items-center text-center lg:w-[30%] border border-gray-200 p-[1%] py-[2%] mt-10 shadow-lg shadow-gray-400 hover:shadow-gray-700 hover:cursor-pointer">
                     <h2 class="font-semibold text-[40px]">Basic</h2>
                     <span class="text-[48px] font-semibold text-[#7772F1] border-b-2 border-gray-200 px-20">
                         24<sup class="text-[20px]">/mon</sup>
@@ -407,7 +412,7 @@
                         plan</button>
                 </div>
                 <div
-                    class="bg-[#1E212C] rounded-md py-[2%] flex flex-col justify-center items-center text-center w-[32%] border  border-transparent p-[1%] mt-10 shadow-lg shadow-gray-400 hover:shadow-gray-700 hover:cursor-pointer">
+                    class="bg-[#1E212C] rounded-md py-[2%] flex flex-col justify-center items-center text-center lg:w-[32%] border  border-transparent p-[1%] mt-10 shadow-lg shadow-gray-400 hover:shadow-gray-700 hover:cursor-pointer">
                     <span
                         class="pt-12 text-[48px] font-semibold text-[#03CEA4] border-b-[1px] border-gray-50 px-[100px]">
                         <sup class="text-[20px] text-[#03CEA4]">/mon</sup>
@@ -435,7 +440,7 @@
                 </div>
 
                 <div
-                    class="flex flex-col justify-center items-center text-center w-[30%] border border-gray-200 p-[1%] py-[2%] mt-10 shadow-lg shadow-gray-400 hover:shadow-gray-700 hover:cursor-pointer">
+                    class="flex flex-col justify-center items-center text-center lg:w-[30%] border border-gray-200 p-[1%] py-[2%] mt-10 shadow-lg shadow-gray-400 hover:shadow-gray-700 hover:cursor-pointer">
                     <h2 class="font-semibold text-[40px]"></h2>
                     <span class="pt-16 text-[48px] font-semibold text-[#7772F1] border-b-2 border-gray-200 px-20">
                         <sup class="text-[20px]">/mon</sup>
@@ -466,12 +471,12 @@
 
         <section class="my-10 mt-[10%] px-[10%]">
             <div class="flex justify-center pb-5">
-                <h2 class="font-bold text-[40px]">What our clients say</h2>
+                <h2 class="font-bold lg:text-[40px] text-[30px]">What our clients say</h2>
             </div>
             <div class="flex justify-center items-center gap-[10%]">
-                <img src="./img/prev-btn.png" alt="">
+                <img src="./img/prev-btn.png" alt="" class="hidden lg:block">
                 <div
-                    class="bg-white border rounded-md p-[5%] flex items-start gap-5 w-[70%] shadow-md shadow-gray-300 hover:shadow-gray-700">
+                    class="bg-white border rounded-md p-[5%] flex items-start gap-5 lg:w-[70%] shadow-md shadow-gray-300 hover:shadow-gray-700">
                     <img src="./img/braces.png" alt="">
                     <div>
                         <p class="text-[#424551] pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
@@ -488,18 +493,18 @@
                         </div>
                     </div>
                 </div>
-                <img src="./img/prevbutton2.png" alt="">
+                <img src="./img/prevbutton2.png" alt="" class="hidden lg:block">
             </div>
         </section>
 
-        <section class="flex px-[10%] my-[10%] gap-5">
-            <div class="w-[30%]">
+        <section class="lg:flex px-[10%] my-[10%] gap-5">
+            <div class="lg:w-[30%]">
                 <h2 class="text-[40px] font-semibold pb-10">Latest news</h2>
                 <p class="text-[#424551] py-8">Check more posts in our blog for featured news and advertising insights
                 </p>
                 <button class="bg-[#7772F1] text-white w-[40%] py-2 px-5">Go to blog</button>
             </div>
-            <div class="w-[30%]">
+            <div class="lg:w-[30%] mt-10 lg:mt-0">
                 <img src="./img/laptop.png" alt="">
                 <div class="py-2 flex gap-2 text-[12px] justify-center items-center px-2">
                     <p class="text-[#787A80] border-r-[2px] border-[#787A80] w-[20%]">Marketing</p>
@@ -508,10 +513,10 @@
                     <p class="text-[#787A80] w-[45%] flex gap-2 items-center"><img src="./img/Profile.png" alt="">By
                         Diane Mccoy</p>
                 </div>
-                <button class="text-[14px] mt-[150px] flex gap-2 font-bold">Read more <img src="./img/Right.png"
+                <button class="text-[14px] lg:mt-[150px] mt-20 flex gap-2 font-bold">Read more <img src="./img/Right.png"
                         alt=""></button>
             </div>
-            <div class="w-[30%]">
+            <div class="lg:w-[30%] mt-10 lg:mt-0">
                 <img src="./img/pichand.png" alt="">
                 <div class="py-2 flex gap-2 text-[12px] justify-center items-center px-2">
                     <p class="text-[#787A80] border-r-[2px] border-[#787A80] w-[20%]">SEO</p>
