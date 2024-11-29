@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Case Studies</title>
     <link href="../output.css" rel="stylesheet" />
     <style>
         .img_back100 {
@@ -16,69 +16,55 @@
 </head>
 <body>
     <header class="img_back100">
-        <nav
-        class="w-[90%] m-auto flex justify-between items-center py-5"
-      >
-        <div class="flex items-center gap-[200px] lg:gap-10">
-          <div>
-            <img src="./img/surat copy.png" alt="" />
-          </div>
-          <ul class="flex gap-3 text-gray-400 sm:gap-5">
-            <li>
-              <select
-                class="bg-[#1E212C] hover:text-white cursor-pointer outline-none"
-                name=""
-                id="pageSelector"
-                onchange="navigateToPage()"
-              >
-                <option value="" disabled selected>
-                  <p style="font-size: 18px; font-weight: bold">About</p>
-                </option>
-
-                <option value="../Bushra/homepage.html">Homepage</option>
-                <option value="../Shohrukh/services.html">Services</option>
-                <option value="../Azam/service.html">Service</option>
-                <option value="../Azam/case studies.html">Case Studies</option>
-                <option value="../Bushra/casestudy.html">Case Study</option>
-                <option value="../Maks/About.html">About us</option>
-                <option value="../Inom/carrers.html">Careers</option>
-                <option value="../Inom/Blog.html">Blog</option>
-                <option value="../Maks/Singlepost.html">Single Post</option>
-                <option value="../Inom/contacts.html">Contacts</option>
-              </select>
-  
-              <script>
-                function navigateToPage() {
-                  const selector = document.getElementById("pageSelector");
-                  const selectedPage = selector.value;
-                  if (selectedPage) {
-                    window.location.href = selectedPage;
+        <nav class="w-[80%] m-auto flex justify-between items-center py-5">
+          <div class="flex items-center gap-10">
+            <div>
+              <img src="./img/surat.png" alt="" />
+            </div>
+            <ul class="flex gap-5 text-gray-400">
+              <li>
+                <select
+                  class="bg-[#1E212C] hover:text-white cursor-pointer"
+                  name=""
+                  id="pageSelector"
+                  onchange="navigateToPage()"
+                >
+                  <option value="" disabled selected>
+                    <p style="font-size: 18px; font-weight: bold">About</p>
+                  </option>
+                  <option value="index2.html">Homepage</option>
+                  <option value="index3.html">Services</option>
+                  <option value="index4.html">Service</option>
+                  <option value="index5.html">Case Studies</option>
+                  <option value="index6.html">Case Study</option>
+                  <option value="About.html">About us</option>
+                  <option value="index6.html">Careers</option>
+                  <option value="index6.html">Blog</option>
+                  <option value="Singlepost.html">Single Post</option>
+                  <option value="index6.html">Contacts</option>
+                </select>
+                <script>
+                  function navigateToPage() {
+                    const selector = document.getElementById("pageSelector");
+                    const selectedPage = selector.value;
+                    if (selectedPage) {
+                      window.location.href = selectedPage;
+                    }
                   }
-                }
-              </script>
-            </li>
-            <li class="hidden cursor-pointer hover:text-white md:block">
-             <a href="../Azam/case studies.html">Case Studies</a>
-            </li>
-            <li class="hidden cursor-pointer hover:text-white md:block">
-              <a href="../Maks/About.html">About Us</a>
-            </li>
-            <li class="hidden cursor-pointer hover:text-white md:block">
-             <a href="../Inom/Blog.html">Blog</a> 
-            </li>
-            <li class="hidden cursor-pointer hover:text-white md:block">
-             <a href="../Inom/contacts.html">Contacts</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <button
-           id="but_1" class="w-full md:ml-0 ml-3 sm:w-auto md:py-3 py-1 md:px-8 px-3 md:text-[16px] text-[12px] bg-[#7772F1] hidden md:block rounded-md text-white"
-          >
-            Talk to a human
-          </button>
-        </div>
-      </nav>
+                </script>
+              </li>
+              <li class="hover:text-white cursor-pointer">Case Studies</li>
+              <li class="hover:text-white cursor-pointer">About Us</li>
+              <li class="hover:text-white cursor-pointer">Blog</li>
+              <li class="hover:text-white cursor-pointer">Contacts</li>
+            </ul>
+          </div>
+          <div>
+                <button class="py-3 px-8 bg-[#7772F1] rounded-md text-white">
+                Talk to a human
+                </button>
+          </div>
+        </nav>
         <div class="flex flex-col items-center">
           <div class="flex items-center gap-2 text-gray-400 py-10">
             <div>
@@ -87,7 +73,7 @@
             <p>></p>
             <p>About us</p>
           </div>
-          <h1 class="text-[72px] text-white font-bold">Case Studies</h1>
+          <h1 class="text-[72px] text-white font-bold">SCase Studies</h1>
           <p class="text-center text-gray-400 py-8 text-[20px]">
             We help our clients get better results with our creative and data-driven approach to online <br>
              advertising. View our case study portfolio and learn more about the process that sets us <br> apart.<br> 
@@ -109,31 +95,31 @@
     </div>
   
       </header>
-      <div class="flex justify-center lg:pl-5 gap-2 py-16 text-[14px] px-5 lg:px-0">
-        <p class=" font-semibold lg:w-[16%] py-2 border border-[#7772F1] text-center text-[#7772F1]">
+      <div class="lg:flex justify-center lg:pl-5 gap-2 py-16 text-[14px] px-5 lg:px-0">
+        <p class=" font-semibold lg:w-[16%] w-[90%] mx-[5%] lg:mx-0 py-2 border border-[#7772F1] text-center text-[#7772F1]">
             All case studies
         </p>
-        <p class=" font-semibold lg:w-[16%] py-2 text-center text-[#9A9CA5]">
+        <p class=" font-semibold lg:w-[16%] w-[90%] mx-[5%] lg:mx-0 py-2 text-center text-[#9A9CA5]">
             Social Media
         </p>
-        <p class=" font-semibold lg:w-[16%] py-2 text-center text-[#9A9CA5]">
+        <p class=" font-semibold lg:w-[16%] w-[90%] mx-[5%] lg:mx-0 py-2 text-center text-[#9A9CA5]">
             SEO
         </p>
-        <p class=" font-semibold lg:w-[16%] py-2 text-center text-[#9A9CA5]">
+        <p class=" font-semibold lg:w-[16%] w-[90%] mx-[5%] lg:mx-0 py-2 text-center text-[#9A9CA5]">
             Research
         </p>
-        <p class=" font-semibold lg:w-[16%] py-2 text-center text-[#9A9CA5]">
+        <p class=" font-semibold lg:w-[16%] w-[90%] mx-[5%] lg:mx-0 py-2 text-center text-[#9A9CA5]">
             Content & PR
         </p>
-        <p class=" font-semibold lg:w-[16%] py-2 text-center text-[#9A9CA5]">
+        <p class=" font-semibold lg:w-[16%] w-[90%] mx-[5%] lg:mx-0 py-2 text-center text-[#9A9CA5]">
             Payed Traffic
         </p>    
     </div>
-<section class="w-[80%] m-auto">
-   <div class="flex gap-9">
-    <div class=" bg-white shadow-lg shadow-slate-200 w-[50%]">
+<section class="lg:w-[80%] m-auto ">
+   <div class="lg:flex gap-9 mt-20 lg:mt-0">
+    <div class=" bg-white shadow-lg shadow-slate-200 lg:w-[50%]">
         <div>
-            <img class="w-[110%]  " src="./img/kartin33.png" alt="">
+            <img class="lg:w-[100%]  " src="./img/kartin33.png" alt="">
             </div>
             <div class="relative  top-[-120px] left-3">
                 <img  src="./img/kartin18.png" alt="">
@@ -159,16 +145,16 @@
             </div>
             <button class="px-10 py-5 font-black">
                 View case -->    </button>
-       </div><div class=" bg-white shadow-lg shadow-slate-200 w-[50%]">
+       </div><div class=" bg-white shadow-lg shadow-slate-200 lg:w-[50%] mt-20 lg:mt-0">
         <div>
-            <img class="w-[110%]  " src="./img/kartin34.png" alt="">
+            <img class="lg:w-[100%] w-[100%]  " src="./img/kartin34.png" alt="">
             </div>
             <div class="relative  top-[-120px] left-3">
                 <img  src="./img/kartin6.png" alt="">
                 <p class="text-white font-medium">Charity organisation</p>
         
             </div>
-            <div class="flex  gap-20 border-b-2 px-10    mb-[30px] py-10  w-[100%]"> 
+            <div class="flex  gap-20 border-b-2 px-10    mb-[30px] py-10  lg:w-[100%]"> 
                 <div class="flex items-center  "><img src="./img/kartin51.png" alt="">
                     <div>
                         <p class="font-bold">200%  
@@ -192,11 +178,11 @@
        </div>
    </div>
 </section>
-<section class="w-[80%] m-auto mt-8">
-    <div class="flex gap-9">
-     <div class=" bg-white shadow-lg shadow-slate-200 w-[50%]">
+<section class="lg:w-[80%] m-auto mt-8">
+    <div class="lg:flex gap-9">
+     <div class=" bg-white shadow-lg shadow-slate-200 lg:w-[50%] mt-20 lg:mt-0">
          <div>
-             <img class="w-[110%]  " src="./img/kartin35.png" alt="">
+             <img class="w-[100%]  " src="./img/kartin35.png" alt="">
              </div>
              <div class="relative  top-[-120px] left-3">
                  <img  src="./img/kartin36.png" alt="">
@@ -223,9 +209,9 @@
              </div>
              <button class="px-10 py-5 font-black">
                  View case -->    </button>
-        </div><div class=" bg-white shadow-lg shadow-slate-200 w-[50%]">
+        </div><div class=" bg-white shadow-lg shadow-slate-200 lg:w-[50%] mt-20 lg:mt-0">
          <div>
-             <img class="w-[110%]  " src="./img/kartin37.png" alt="">
+             <img class="w-[100%]  " src="./img/kartin37.png" alt="">
              </div>
              <div class="relative  top-[-120px] left-3">
                  <img  src="./img/kartin6.png" alt="">
@@ -254,11 +240,11 @@
         </div>
     </div>
  </section>
- <section class="w-[80%] m-auto mt-8">
-    <div class="flex gap-9">
-     <div class=" bg-white shadow-lg shadow-slate-200 w-[50%]">
+ <section class="lg:w-[80%] m-auto mt-8">
+    <div class="lg:flex gap-9">
+     <div class=" bg-white shadow-lg shadow-slate-200 lg:w-[50%]">
          <div>
-             <img class="w-[110%]  " src="./img/kartin38.png" alt="">
+             <img class="w-[100%]  " src="./img/kartin38.png" alt="">
              </div>
              <div class="relative  top-[-120px] left-3">
                  <img  src="./img/kartin39.png" alt="">
@@ -283,9 +269,9 @@
              </div>
              <button class="px-10 py-5 font-black">
                  View case -->    </button>
-        </div><div class=" bg-white shadow-lg shadow-slate-200 w-[50%]">
+        </div><div class=" bg-white shadow-lg shadow-slate-200 lg:w-[50%] mt-20 lg:mt-0">
          <div>
-             <img class="w-[110%]  " src="./img/kartin46.png" alt="">
+             <img class="w-[100%]  " src="./img/kartin46.png" alt="">
              </div>
              <div class="relative  top-[-120px] left-3">
                  <img  src="./img/kartin41.png" alt="">
@@ -315,7 +301,7 @@
         </div>
     </div>
  </section>
-<section class="w-[70%] m-auto mt-10 ">
+<section class="hidden lg:block w-[70%] m-auto mt-10 ">
     <div class="flex justify-between">
         <img src="./img/kartin.png" alt="">
         <img src="./img/kartin1.png" alt="">
