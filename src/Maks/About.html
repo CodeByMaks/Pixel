@@ -12,10 +12,10 @@
         height: 661px;
         background-size: cover;
       }
-      #but_1:hover{
+      #but_1:hover {
         background-color: transparent;
-        color: #7772F1;
-        border: 2px solid #7772F1;
+        color: #7772f1;
+        border: 2px solid #7772f1;
         transition: all 0.7s ease;
       }
     </style>
@@ -23,9 +23,9 @@
   <body class="m-auto max-w-screen-2xl">
     <header class="img_back">
       <nav
-        class="w-[90%] m-auto flex justify-between items-center py-5"
+        class="lg:w-[70%] md:w-[75%] w-[90%] m-auto flex justify-between items-center py-5"
       >
-        <div class="flex items-center gap-10 sm:gap-10">
+        <div class="flex items-center sm:gap-10 gap-10">
           <div>
             <img src="./img/logom.png" alt="" />
           </div>
@@ -79,7 +79,8 @@
         </div>
         <div>
           <button
-           id="but_1" class="w-full md:ml-0 ml-3 sm:w-auto md:py-3 py-1 md:px-8 px-3 md:text-[16px] text-[12px] bg-[#7772F1] hidden md:block rounded-md text-white"
+            id="but_1"
+            class="w-full md:ml-0 ml-3 sm:w-auto md:py-3 py-1 md:px-8 px-3 md:text-[16px] text-[12px] bg-[#7772F1] hidden md:block rounded-md text-white"
           >
             Talk to a human
           </button>
@@ -109,7 +110,7 @@
       </div>
 
       <div
-        class="md:w-[75%] w-[90%] m-auto md:text-[17px] text-[15px] text-white flex flex-col md:flex-row justify-between py-12 gap-6"
+        class="md:w-[80%] w-[90%] m-auto md:text-[17px] text-[15px] text-white flex flex-col md:flex-row justify-between py-12 gap-6"
       >
         <div
           class="md:w-[30%] w-full flex items-center gap-4 justify-center md:justify-start md:border-r-2 border-[#DADBDD80]"
@@ -133,7 +134,9 @@
           <div>
             <img src="./img/ic-computerm.png" alt="" />
           </div>
-          <p class="text-center md:text-right">Website & Social Media Marketing</p>
+          <p class="text-center md:text-right">
+            Website & Social Media Marketing
+          </p>
         </div>
       </div>
     </header>
@@ -171,58 +174,573 @@
         </div>
       </section>
 
-      <section class="w-[75%] m-auto">
-        <img src="./img/imagem (2).png" alt="">
-      </section>
-
-      <section class="w-[75%] m-auto py-36 flex justify-between">
-        <div>
-          <h2 class="text-[46px] font-bold">The core values <br> we stand for</h2>
-        </div>
-
-        <div class="grid grid-cols-2 grid-rows-2 gap-10">
-          <div class="w-[350px] h-[200px]">
-            <div class="py-3">
-              <img src="./img/ic-likem.png" alt="">
-            </div>
-            <h2 class="font-bold text-[20px] py-3">Respect</h2>
-            <p>Odio posuere netus quisque faucibus lectus arcu <br> donec. Eget dictum eu viverra faucibus. Viverra <br> scelerisque consequat.</p>
+      <section class="w-[80%] m-auto">
+        <div class="relative">
+          <img src="./img/imagem (2).png" alt="" />
+        
+          <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <img src="./img/largem.png" alt="">
           </div>
+        </div>        
 
-          <div class="w-[350px] h-[200px]">
-            <div class="py-3">
-              <img src="./img/ic-viewmm.png" alt="">
-            </div>
-            <h2 class="font-bold text-[20px] py-3">Transparency</h2>
-            <p>Adipiscing nunc arcu enim elit mattis eu placerat <br> proin. Imperdiet elementum faucibus dignissim <br> purus. </p>
-          </div>
-
-          <div class="w-[350px] h-[200px]">
-            <div class="py-3">
-              <img src="./img/ic-checklist.png" alt="">
-            </div>
-            <h2 class="font-bold text-[20px] py-3">Commitment</h2>
-            <p>Fusce parturient diam magna ullamcorper morbi <br> semper massa ac facilisisViverra scelerisque <br> consequat.</p>
-          </div>
-
-          <div class="w-[350px] h-[200px]">
-            <div class="py-3">
-              <img src="./img/ic-management.png" alt="">
-            </div>
-            <h2 class="font-bold text-[20px] py-3">Cooperation</h2>
-            <p>Porttitor diam consectetur aliquam vitae urna, <br> pharetra, at ipsum. Pretium placerat turpis sed <br> viverra consequat.</p>
-          </div>
+        <div class="absolute right-0 hidden lg:block">
+          <img src="./img/Vectorm.png" alt="" />
         </div>
       </section>
 
-      <section class="w-[80%] m-auto py-24">
+      <section
+        class="lg:w-[80%] w-[90%] m-auto py-36 flex flex-col lg:flex-row justify-between relative z-10"
+      >
+        <div class="relative z-10 text-center lg:text-left">
+          <h2 class="text-[36px] md:text-[46px] font-bold">
+            The core values <br />
+            we stand for
+          </h2>
+        </div>
 
+        <div
+          class="grid lg:grid-cols-2 grid-rows-2 gap-10 mt-10 lg:mt-0 relative z-10"
+        >
+          <div class="w-full max-w-[350px] h-auto mx-auto lg:mx-0">
+            <div class="py-3 flex justify-center lg:justify-start">
+              <img src="./img/ic-likem.png" alt="" />
+            </div>
+            <h2 class="font-bold text-[20px] py-3 text-center lg:text-left">
+              Respect
+            </h2>
+            <p class="text-center lg:text-left">
+              Odio posuere netus quisque faucibus lectus arcu <br />
+              donec. Eget dictum eu viverra faucibus. Viverra <br />
+              scelerisque consequat.
+            </p>
+          </div>
+
+          <div class="w-full max-w-[350px] h-auto mx-auto lg:mx-0">
+            <div class="py-3 flex justify-center lg:justify-start">
+              <img src="./img/ic-viewmm.png" alt="" />
+            </div>
+            <h2 class="font-bold text-[20px] py-3 text-center lg:text-left">
+              Transparency
+            </h2>
+            <p class="text-center lg:text-left">
+              Adipiscing nunc arcu enim elit mattis eu placerat <br />
+              proin. Imperdiet elementum faucibus dignissim <br />
+              purus.
+            </p>
+          </div>
+
+          <div class="w-full max-w-[350px] h-auto mx-auto lg:mx-0">
+            <div class="py-3 flex justify-center lg:justify-start">
+              <img src="./img/ic-checklist.png" alt="" />
+            </div>
+            <h2 class="font-bold text-[20px] py-3 text-center lg:text-left">
+              Commitment
+            </h2>
+            <p class="text-center lg:text-left">
+              Fusce parturient diam magna ullamcorper morbi <br />
+              semper massa ac facilisisViverra scelerisque <br />
+              consequat.
+            </p>
+          </div>
+
+          <div class="w-full max-w-[350px] h-auto mx-auto lg:mx-0">
+            <div class="py-3 flex justify-center lg:justify-start">
+              <img src="./img/ic-management.png" alt="" />
+            </div>
+            <h2 class="font-bold text-[20px] py-3 text-center lg:text-left">
+              Cooperation
+            </h2>
+            <p class="text-center lg:text-left">
+              Porttitor diam consectetur aliquam vitae urna, <br />
+              pharetra, at ipsum. Pretium placerat turpis sed <br />
+              viverra consequat.
+            </p>
+          </div>
+        </div>
+
+        <div class="absolute bottom-7 left-0">
+          <img src="./img/linesm (3).png" alt="" />
+        </div>
+      </section>
+
+      <section
+        class="w-[90%] lg:w-[80%] m-auto gap-7 flex flex-col lg:flex-row relative z-10"
+      >
+        <div class="flex flex-col gap-5 mt-10 lg:mt-20">
+          <div>
+            <img src="./img/imagem (3).png" alt="" />
+          </div>
+          <div>
+            <img src="./img/imagem (4).png" alt="" />
+          </div>
+        </div>
+
+        <div class="mx-auto lg:mx-0">
+          <img src="./img/imagem (5).png" alt="" />
+        </div>
+        <div class="mt-10 lg:mt-32 mx-auto lg:mx-0">
+          <img src="./img/imagem (6).png" alt="" />
+        </div>
+
+        <div
+          class="w-[90%] lg:w-[800px] h-auto bg-white absolute top-[75%] left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:top-[75%] lg:left-[15%] px-8 py-10 shadow-xl"
+        >
+          <h2 class="text-[24px] lg:text-[32px] font-bold">
+            More than SEO agency
+          </h2>
+          <p class="text-gray-400 py-4">
+            Eleifend orci massa et facilisis orci feugiat ac. Congue in ut
+            lacus, turpis accumsan gravida. Aliquet mattis dignissim massa
+            sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget
+            molestie. Turpis enim arcu, amet donec massa pellentesque nulla
+            duis. Arcu dictum metus sed purus senectus faucibus eget elementum
+            pretium.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="mt-64 w-[90%] lg:w-[80%] m-auto flex flex-col lg:flex-row justify-center lg:justify-evenly gap-11 items-center"
+      >
+        <div class="w-full max-w-[400px] mx-auto">
+          <img src="./img/illustrationm.png" alt="Illustration" />
+        </div>
+
+        <div class="w-full lg:max-w-[500px] text-center lg:text-left">
+          <h2 class="text-[32px] md:text-[46px] font-bold">
+            We are proud of our awards
+          </h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-10">
+            <div class="flex items-center gap-3">
+              <div>
+                <img src="./img/imagem (7).png" alt="Award 1" />
+              </div>
+              <p>
+                Top SEO Companies 2020 by <br />
+                Clutch
+              </p>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div>
+                <img src="./img/imagem (8).png" alt="Award 2" />
+              </div>
+              <p>
+                Top Digital Marketing Agency 2019 <br />
+                by UpCity
+              </p>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div>
+                <img src="./img/imagem (9).png" alt="Award 3" />
+              </div>
+              <p>
+                Top SEO Companies 2020 by <br />
+                Clutch
+              </p>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div>
+                <img src="./img/imagem (10).png" alt="Award 4" />
+              </div>
+              <p>
+                Top SEO Companies 2020 by Top <br />
+                Developers
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="my-28 w-[90%] md:w-[80%] m-auto bg-[#7772F1] rounded-lg relative z-10"
+      >
+        <h2
+          class="text-[24px] md:text-[32px] text-center py-8 text-white font-bold"
+        >
+          Get a Free SEO Analysis!
+        </h2>
+        <div class="flex flex-wrap py-8 w-full gap-6 justify-center">
+          <div class="flex flex-col w-[90%] sm:w-[45%] md:w-auto">
+            <label class="text-white mb-2" for="name1">Name</label>
+            <input
+              placeholder="Your name"
+              id="name1"
+              type="text"
+              class="w-full md:w-[260px] py-2 px-3 rounded-lg h-[44px] box-border"
+            />
+          </div>
+          <div class="flex flex-col w-[90%] sm:w-[45%] md:w-auto">
+            <label class="text-white mb-2" for="name2">Email</label>
+            <input
+              placeholder="Your working email"
+              id="name2"
+              type="email"
+              class="w-full md:w-[260px] py-2 px-3 rounded-lg h-[44px] box-border"
+            />
+          </div>
+          <div class="flex flex-col w-[90%] sm:w-[45%] md:w-auto">
+            <label class="text-white mb-2" for="name3">Website</label>
+            <input
+              placeholder="http://yoursite.com"
+              id="name3"
+              type="text"
+              class="w-full md:w-[260px] py-2 px-3 rounded-lg h-[44px] box-border"
+            />
+          </div>
+          <div class="flex flex-col w-[90%] sm:w-[45%] md:w-auto justify-end">
+            <button
+              class="py-2 px-8 bg-[#1E212C] text-white rounded-lg h-[44px] w-full md:w-auto"
+            >
+              Analyse your site
+            </button>
+          </div>
+        </div>
+
+        <div class="absolute top-0 left-2">
+          <img src="./img/linesm (4).png" alt="decorative lines" />
+        </div>
+      </section>
+
+      <section class="w-[90%] md:w-[80%] m-auto mb-28 relative">
+        <h2 class="text-[32px] md:text-[46px] font-bold text-center">
+          240+ satisfied clients
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 py-9">
+          <div class="flex justify-center">
+            <img src="./img/client-logom.png" alt="Client Logo" />
+          </div>
+          <div class="flex justify-center">
+            <img src="./img/client-logo.png" alt="Client Logo" />
+          </div>
+          <div class="flex justify-center">
+            <img src="./img/client-logom (1).png" alt="Client Logo" />
+          </div>
+          <div class="flex justify-center">
+            <img src="./img/client-logom (2).png" alt="Client Logo" />
+          </div>
+          <div class="flex justify-center">
+            <img src="./img/client-logom (3).png" alt="Client Logo" />
+          </div>
+          <div class="flex justify-center">
+            <img src="./img/client-logom (4).png" alt="Client Logo" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 py-4">
+          <div class="flex justify-center">
+            <img src="./img/client-logo (9).png" alt="Client Logo" />
+          </div>
+          <div class="flex justify-center">
+            <img src="./img/client-logo (10).png" alt="Client Logo" />
+          </div>
+          <div class="flex justify-center">
+            <img src="./img/client-logom (5).png" alt="Client Logo" />
+          </div>
+          <div class="flex justify-center">
+            <img src="./img/client-logom (6).png" alt="Client Logo" />
+          </div>
+          <div class="flex justify-center">
+            <img src="./img/client-logom (7).png" alt="Client Logo" />
+          </div>
+          <div class="flex justify-center">
+            <img src="./img/client-logom (8).png" alt="Client Logo" />
+          </div>
+        </div>
+        <div class="absolute top-0 right-0">
+          <img src="./img/linesm (2).png" alt="Decorative Lines" />
+        </div>
+      </section>
+
+      <section class="w-[90%] md:w-[80%] m-auto my-24 relative z-10">
+        <h2 class="text-[32px] md:text-[46px] py-10 font-bold text-center">
+          Meet our team
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <img
+              src="./img/imagemm.png"
+              alt="Courtney Alexander"
+              class="w-full h-auto"
+            />
+            <h3 class="text-[20px] font-bold py-1">Courtney Alexander</h3>
+            <p class="text-gray-400">Founder and CEO</p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="./img/imagem1.png"
+              alt="Johnny Lane"
+              class="w-full h-auto"
+            />
+            <h3 class="text-[20px] font-bold py-1">Johnny Lane</h3>
+            <p class="text-gray-400">Director of Client Services</p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="./img/photo1.png"
+              alt="Diane Mccoy"
+              class="w-full h-auto"
+            />
+            <h3 class="text-[20px] font-bold py-1">Diane Mccoy</h3>
+            <p class="text-gray-400">Lead Digital PR Strategist</p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="./img/imagem2.png"
+              alt="Judith Warren"
+              class="w-full h-auto"
+            />
+            <h3 class="text-[20px] font-bold py-1">Judith Warren</h3>
+            <p class="text-gray-400">Founder and CEO</p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="./img/imagem3.png"
+              alt="Floyd Simmons"
+              class="w-full h-auto"
+            />
+            <h3 class="text-[20px] font-bold py-1">Floyd Simmons</h3>
+            <p class="text-gray-400">Account Director</p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="./img/imagem4.png"
+              alt="Shawn Edwards"
+              class="w-full h-auto"
+            />
+            <h3 class="text-[20px] font-bold py-1">Shawn Edwards</h3>
+            <p class="text-gray-400">Director of PPC</p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="./img/imagem5.png"
+              alt="Jane Cooper"
+              class="w-full h-auto"
+            />
+            <h3 class="text-[20px] font-bold py-1">Jane Cooper</h3>
+            <p class="text-gray-400">Digital Marketing Manager</p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="./img/imagem6.png"
+              alt="Soham Alexander"
+              class="w-full h-auto"
+            />
+            <h3 class="text-[20px] font-bold py-1">Soham Alexander</h3>
+            <p class="text-gray-400">Director of SEO</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="w-[90%] md:w-[80%] m-auto flex flex-wrap md:flex-nowrap items-center justify-between gap-8 py-16 relative"
+      >
+        <div class="relative z-10 w-full md:w-1/2">
+          <h2 class="text-[32px] md:text-[46px] py-6 font-bold">
+            Frequently Asked Questions
+          </h2>
+
+          <div class="w-full">
+            <p class="text-[18px] md:text-[20px] font-bold">
+              <span class="text-[30px] md:text-[40px] text-blue-400 px-3"
+                >-</span
+              >
+              Aliquet lectus urna viverra in odio?
+            </p>
+            <p class="text-[14px] md:text-[16px] text-gray-400 pl-10">
+              Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet
+              elementum faucibus dignissim purus. Fusce parturient diam magna
+              ullamcorper morbi semper massa ac facilisis.
+            </p>
+
+            <p class="text-[18px] md:text-[20px] font-bold">
+              <span class="text-[30px] text-blue-400 px-3">+</span> Orci
+              commodo, viverra orci mollis ut euismod?
+            </p>
+
+            <p class="text-[18px] md:text-[20px] font-bold">
+              <span class="text-[30px] text-blue-400 px-3">+</span> Sagittis
+              vitae facilisi rutrum amet mauris quisque vel convallis?
+            </p>
+
+            <p class="text-[18px] md:text-[20px] font-bold">
+              <span class="text-[30px] text-blue-400 px-3">+</span> In id dolor
+              quis nunc, urna hendrerit pharetra?
+            </p>
+
+            <p class="text-[18px] md:text-[20px] font-bold">
+              <span class="text-[30px] text-blue-400 px-3">+</span> Est, ut
+              tempus id rutrum facilisi?
+            </p>
+
+            <p class="text-[18px] md:text-[20px] font-bold">
+              <span class="text-[30px] text-blue-400 px-3">+</span> Amet nec in
+              pellentesque tincidunt vulputate vivamus?
+            </p>
+
+            <p class="text-[17px] md:text-[18px] font-bold">
+              <span class="text-[30px] text-blue-400 px-3">+</span> Neque,
+              cursus sapien nullam id. Massa vel arcu mauris, id mattis quis?
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2">
+          <img
+            src="./img/illustrationm (1).png"
+            alt="FAQ Illustration"
+            class="w-full h-auto"
+          />
+        </div>
+
+        <div class="absolute top-0 left-0">
+          <img src="./img/shapesm.png" alt="Decorative shape" />
+        </div>
+      </section>
+
+      <section class="bg-[#F4F5F6] py-10 relative">
+        <div
+          class="w-[90%] md:w-[80%] m-auto flex flex-wrap md:flex-nowrap items-center justify-between gap-8"
+        >
+          <div class="w-full md:w-auto">
+            <img
+              src="./img/illustrationm (2).png"
+              alt="Career Illustration"
+              class="w-full md:w-auto h-auto"
+            />
+          </div>
+          <div class="w-full md:w-[600px]">
+            <h3 class="text-[32px] md:text-[46px] font-bold">
+              Careers at Createx Agency
+            </h3>
+            <p class="py-5 text-[16px] md:text-[18px] text-gray-600">
+              Ready to join us on our mission to deliver the best sales
+              development services to businesses around the globe? We’re hiring!
+            </p>
+            <div class="py-4 md:py-7">
+              <button
+                class="py-3 px-8 bg-[#7772F1] text-white rounded-md flex items-center gap-2"
+              >
+                See careers
+                <img src="./img/Linemm (Stroke).png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-0 right-0">
+          <img src="./img/linesm (1).png" alt="Decorative shape" />
+        </div>
+      </section>
+
+      <section
+        class="lg:w-[80%] w-[90%] m-auto py-24 flex flex-col lg:flex-row justify-between gap-12"
+      >
+        <div class="lg:w-[40%] relative z-10">
+          <h2 class="text-[32px] lg:text-[46px] font-bold">Latest news</h2>
+          <p class="text-gray-400 py-6">
+            Check more posts in our blog for <br />
+            featured news and advertising <br />
+            insights
+          </p>
+          <div>
+            <button class="py-3 px-9 bg-[#7772F1] text-white rounded-md">
+              Go to blog
+            </button>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 lg:w-[55%]">
+          <div>
+            <div class="mb-4">
+              <img
+                src="./img/picm.png"
+                alt="Post image"
+                class="w-full rounded-md"
+              />
+            </div>
+            <p class="text-gray-500 py-2 text-sm">
+              SEO |
+              <img
+                class="inline-block w-4 h-4"
+                src="./img/Clockm.png"
+                alt="Calendar icon"
+              />
+              July 5, 2020 |
+              <img
+                class="inline-block w-4 h-4"
+                src="./img/Profilem.png"
+                alt="Clock icon"
+              />
+              By Diane Mccoy
+            </p>
+            <h3 class="font-bold text-[20px]">
+              How to Maximize Your ROI Through Scientific SEM?
+            </h3>
+            <p class="text-[16px] text-gray-600 py-2">
+              Vulputate vitae pellentesque scelerisque luctus consequat mattis
+              pellentesque dui odio...
+            </p>
+            <p class="font-medium cursor-pointer">
+              Read more <span class="text-blue-600">➔</span>
+            </p>
+          </div>
+
+          <div>
+            <div class="mb-4">
+              <img
+                src="./img/picmm.png"
+                alt="Post image"
+                class="w-full rounded-md"
+              />
+            </div>
+            <p class="text-gray-500 py-2 text-sm">
+              Marketing |
+              <img
+                class="inline-block w-4 h-4"
+                src="./img/Clockm.png"
+                alt="Calendar icon"
+              />
+              July 2, 2020 |
+              <img
+                class="inline-block w-4 h-4"
+                src="./img/Profilem.png"
+                alt="Clock icon"
+              />
+              By Diane Mccoy
+            </p>
+            <h3 class="font-bold text-[20px]">
+              The Basics of Blogging Search Engine Optimization.
+            </h3>
+            <p class="text-[16px] text-gray-600 py-2">
+              Mauris tincidunt sollicitudin tristique odio eget volutpat.
+              Fringilla viverra amet, mi interdum blandit...
+            </p>
+            <p class="font-medium cursor-pointer">
+              Read more <span class="text-blue-600">➔</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="absolute left-0">
+          <img src="./img/linesm.png" alt="" />
+        </div>
       </section>
     </main>
 
     <footer class="w-full md:h-[508px] h-auto bg-gray-900">
       <div
-        class="md:w-[75%] w-[90%] m-auto py-16 flex flex-wrap lg:flex-nowrap justify-between text-gray-400"
+        class="md:w-[80%] w-[90%] m-auto py-16 flex flex-wrap lg:flex-nowrap justify-between text-gray-400"
       >
         <div>
           <div>
@@ -312,7 +830,7 @@
 
       <div class="border-t-2 border-gray-800">
         <div
-          class="md:w-[75%] w-[90%] m-auto flex flex-wrap justify-between py-[20px]"
+          class="md:w-[80%] w-[90%] m-auto flex flex-wrap justify-between py-[20px]"
         >
           <div class="flex flex-wrap justify-center gap-7 lg:justify-start">
             <div>
@@ -332,7 +850,7 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-4 mt-6 ml-20 lg:mt-0 lg:ml-0">
+          <div class="flex gap-4 items-center mt-6 lg:mt-0 ml-20 lg:ml-0">
             <p class="text-white">GO TO TOP</p>
             <button class="py-4 px-4 bg-[#7772F1] rounded-md">
               <img src="./img/Linem (Stroke).png" alt="" />
@@ -341,8 +859,8 @@
         </div>
       </div>
       <div class="py-5 bg-[#1e212c]">
-        <div class="md:w-[75%] w-[90%] m-auto text-white">
-          <p class="md:text-[16px] text-[10px] md:text-start text-center">
+        <div class="lg:w-[80%] w-[90%] m-auto text-white">
+          <p class="lg:text-[16px] text-[10px] md:text-start text-center">
             © All rights reserved.Made with
             <img class="inline-block px-1" src="./img/Heartm.png" alt="" />by
             Createx Studio
