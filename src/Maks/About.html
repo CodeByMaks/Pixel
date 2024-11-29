@@ -23,69 +23,69 @@
   <body class="m-auto max-w-screen-2xl">
     <header class="img_back">
       <nav
-        class="lg:w-[70%] md:w-[75%] w-[90%] m-auto flex justify-between items-center py-5"
-      >
-        <div class="flex items-center sm:gap-10 gap-10">
-          <div>
-            <img src="./img/logom.png" alt="" />
-          </div>
-          <ul class="flex gap-3 text-gray-400 sm:gap-5">
-            <li>
-              <select
-                class="bg-[#1E212C] hover:text-white cursor-pointer outline-none"
-                name=""
-                id="pageSelector"
-                onchange="navigateToPage()"
-              >
-                <option value="" disabled selected>
-                  <p style="font-size: 18px; font-weight: bold">About</p>
-                </option>
-
-                <option value="">Homepage</option>
-                <option value="index3.html">Services</option>
-                <option value="index4.html">Service</option>
-                <option value="index5.html">Case Studies</option>
-                <option value="index6.html">Case Study</option>
-                <option value="About.html">About us</option>
-                <option value="index6.html">Careers</option>
-                <option value="index6.html">Blog</option>
-                <option value="Singlepost.html">Single Post</option>
-                <option value="index6.html">Contacts</option>
-              </select>
-
-              <script>
-                function navigateToPage() {
-                  const selector = document.getElementById("pageSelector");
-                  const selectedPage = selector.value;
-                  if (selectedPage) {
-                    window.location.href = selectedPage;
-                  }
-                }
-              </script>
-            </li>
-            <li class="hidden cursor-pointer hover:text-white md:block">
-              Case Studies
-            </li>
-            <li class="hidden cursor-pointer hover:text-white md:block">
-              About Us
-            </li>
-            <li class="hidden cursor-pointer hover:text-white md:block">
-              Blog
-            </li>
-            <li class="hidden cursor-pointer hover:text-white md:block">
-              Contacts
-            </li>
-          </ul>
-        </div>
+      class="w-[90%] m-auto flex justify-between items-center py-5"
+    >
+      <div class="flex items-center gap-[200px] lg:gap-10">
         <div>
-          <button
-            id="but_1"
-            class="w-full md:ml-0 ml-3 sm:w-auto md:py-3 py-1 md:px-8 px-3 md:text-[16px] text-[12px] bg-[#7772F1] hidden md:block rounded-md text-white"
-          >
-            Talk to a human
-          </button>
+          <img src="./img/logom.png" alt="" />
         </div>
-      </nav>
+        <ul class="flex gap-3 text-gray-400 sm:gap-5">
+          <li>
+            <select
+              class="bg-[#1E212C] hover:text-white cursor-pointer outline-none"
+              name=""
+              id="pageSelector"
+              onchange="navigateToPage()"
+            >
+              <option value="" disabled selected>
+                <p style="font-size: 18px; font-weight: bold">About</p>
+              </option>
+
+              <a href="../Inom/contacts.html"></a>
+              <option value="../Bushra/homepage.html">Homepage</option>
+              <option value="../Shohrukh/services.html">Services</option>
+              <option value="../Azam/service.html">Service</option>
+              <option value="../Azam/case studies.html">Case Studies</option>
+              <option value="../Bushra/casestudy.html">Case Study</option>
+              <option value="../Maks/About.html">About us</option>
+              <option value="../Inom/carrers.html">Careers</option>
+              <option value="../Inom/Blog.html">Blog</option>
+              <option value="../Maks/Singlepost.html">Single Post</option>
+              <option value="../Inom/contacts.html">Contacts</option>
+            </select>
+
+            <script>
+              function navigateToPage() {
+                const selector = document.getElementById("pageSelector");
+                const selectedPage = selector.value;
+                if (selectedPage) {
+                  window.location.href = selectedPage;
+                }
+              }
+            </script>
+          </li>
+          <li class="hidden cursor-pointer hover:text-white md:block">
+           <a href="../Azam/case studies.html">Case Studies</a>
+          </li>
+          <li class="hidden cursor-pointer hover:text-white md:block">
+            <a href="../Maks/About.html">About Us</a>
+          </li>
+          <li class="hidden cursor-pointer hover:text-white md:block">
+           <a href="../Inom/Blog.html">Blog</a> 
+          </li>
+          <li class="hidden cursor-pointer hover:text-white md:block">
+           <a href="../Inom/contacts.html">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <button
+         id="but_1" class="w-full md:ml-0 ml-3 sm:w-auto md:py-3 py-1 md:px-8 px-3 md:text-[16px] text-[12px] bg-[#7772F1] hidden md:block rounded-md text-white"
+        >
+          Talk to a human
+        </button>
+      </div>
+    </nav>
 
       <div class="flex flex-col items-center">
         <div class="flex items-center gap-2 py-3 text-gray-400 md:py-10">
