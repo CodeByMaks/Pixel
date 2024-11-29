@@ -1,658 +1,909 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link href="../output.css" rel="stylesheet">
-</head>
-<style>
+    <link href="../output.css" rel="stylesheet" />
+  </head>
+  <style>
     header {
-        background-image: url("img/background.png");
+      background-image: url("img/background.png");
     }
 
     .minibg {
-        background-image: url("img/image.png");
-        backdrop-filter: none;
-        background-size: cover;
-        background-position: center;
-        filter: brightness(0.75);
-
+      background-image: url("img/image.png");
+      backdrop-filter: none;
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.75);
     }
-</style>
+  </style>
 
-<body>
-    <nav class="lg:w-full px-[15%] w-[100%] flex justify-between items-center py-5 bg-gradient-to-r from-custom1 via-custom1 to-custom2">
-        <div class="flex items-center lg:gap-10 gap-10">
-            <div>
-                <img src="./img/logo.png" alt="" />
-            </div>
-            <ul class="flex gap-3 lg:gap-5 text-gray-400">
-                <li>
-                    <select class="bg-[#1E212C] hover:text-white cursor-pointer outline-none" name="" id="pageSelector"
-                        onchange="navigateToPage()">
-                        <option value="" disabled selected>
-                            <p style="font-size: 18px; font-weight: bold">About</p>
-                        </option>
-
-                        <option value="index2.html">Homepage</option>
-                        <option value="index3.html">Services</option>
-                        <option value="index4.html">Service</option>
-                        <option value="index5.html">Case Studies</option>
-                        <option value="index6.html">Case Study</option>
-                        <option value="About.html">About us</option>
-                        <option value="index6.html">Careers</option>
-                        <option value="index6.html">Blog</option>
-                        <option value="Singlepost.html">Single Post</option>
-                        <option value="index6.html">Contacts</option>
-                    </select>
-
-                    <script>
-                        function navigateToPage() {
-                            const selector = document.getElementById("pageSelector");
-                            const selectedPage = selector.value;
-                            if (selectedPage) {
-                                window.location.href = selectedPage;
-                            }
-                        }
-                    </script>
-                </li>
-                <li class="hover:text-white cursor-pointer hidden md:block">
-                    Case Studies
-                </li>
-                <li class="hover:text-white cursor-pointer hidden md:block">
-                    About Us
-                </li>
-                <li class="hover:text-white cursor-pointer hidden md:block">
-                    Blog
-                </li>
-                <li class="hover:text-white cursor-pointer hidden md:block">
-                    Contacts
-                </li>
-            </ul>
-        </div>
+  <body>
+    <nav
+      class="lg:w-full px-[15%] w-[100%] flex justify-between items-center py-5 bg-gradient-to-r from-custom1 via-custom1 to-custom2"
+    >
+      <div class="flex items-center lg:gap-10 gap-10">
         <div>
-            <button id="but_1"
-                class="w-full lg:ml-0 pl-3 sm:w-auto lg:py-3 py-1 md:px-8 px-3 lg:text-[16px] text-[12px] bg-[#7772F1] hidden lg:block rounded-md text-white">
-                Talk to a human
-            </button>
+          <img src="./img/logo.png" alt="" />
         </div>
+        <ul class="flex gap-3 lg:gap-5 text-gray-400">
+          <li>
+            <select
+              class="bg-[#1E212C] hover:text-white cursor-pointer outline-none"
+              name=""
+              id="pageSelector"
+              onchange="navigateToPage()"
+            >
+              <option value="" disabled selected>
+                <p style="font-size: 18px; font-weight: bold">About</p>
+              </option>
+
+              <option value="../Bushra/homepage.html">Homepage</option>
+              <option value="../Shohrukh/services.html">Services</option>
+              <option value="../Azam/service.html">Service</option>
+              <option value="../Azam/case studies.html">Case Studies</option>
+              <option value="../Bushra/casestudy.html">Case Study</option>
+              <option value="../Maks/About.html">About us</option>
+              <option value="../Inom/carrers.html">Careers</option>
+              <option value="../Inom/Blog.html">Blog</option>
+              <option value="../Maks/Singlepost.html">Single Post</option>
+              <option value="../Inom/contacts.html">Contacts</option>
+            </select>
+
+            <script>
+              function navigateToPage() {
+                const selector = document.getElementById("pageSelector");
+                const selectedPage = selector.value;
+                if (selectedPage) {
+                  window.location.href = selectedPage;
+                }
+              }
+            </script>
+          </li>
+          <li class="hidden cursor-pointer hover:text-white md:block">
+            <a href="../Azam/case studies.html">Case Studies</a>
+           </li>
+           <li class="hidden cursor-pointer hover:text-white md:block">
+             <a href="../Maks/About.html">About Us</a>
+           </li>
+           <li class="hidden cursor-pointer hover:text-white md:block">
+            <a href="../Inom/Blog.html">Blog</a> 
+           </li>
+           <li class="hidden cursor-pointer hover:text-white md:block">
+            <a href="../Inom/contacts.html">Contacts</a>
+           </li>
+        </ul>
+      </div>
+      <div>
+        <button
+          id="but_1"
+          class="w-full lg:ml-0 pl-3 sm:w-auto lg:py-3 py-1 md:px-8 px-3 lg:text-[16px] text-[12px] bg-[#7772F1] hidden lg:block rounded-md text-white"
+        >
+          Talk to a human
+        </button>
+      </div>
     </nav>
 
     <header>
-        <div class="flex lg:flex-row flex-col h-[900px] w-full m-0 p-10 bg-contain bg-no-repeat ">
-            <div>
-                <h1 class="font-bold lg:text-[45px] text-[30px] text-white lg:max-w-[99%] lg:m-auto lg:pt-[28%] pt-[20%] px-[8%] lg:pl-[28%]">Best <span
-                        class="text-[#7772F1]">SEO
-                        & Marketing</span> Solutions for You</h1>
-                <div class="flex items-center gap-[14px] lg:pt-10 pt-[20%]">
-                    <button class="border border-white rounded-[7px] px-6 py-[8px] text-white lg:ml-[30%]">Get a free
-                        analysis</button>
-                    <button class="text-white flex items-center gap-[3px]"><img src="./img/hover.png" alt="">Play
-                        video</button>
-                </div>
-            </div>
-            <img src="./img/illustration.png" alt="" class="lg:w-[40%] object-contain w-[80%] ml-[100px] mt-[10%]">
+      <div
+        class="flex lg:flex-row flex-col h-[900px] w-full m-0 p-10 bg-contain bg-no-repeat"
+      >
+        <div>
+          <h1
+            class="font-bold lg:text-[45px] text-[30px] text-white lg:max-w-[99%] lg:m-auto lg:pt-[28%] pt-[20%] px-[8%] lg:pl-[28%]"
+          >
+            Best <span class="text-[#7772F1]">SEO & Marketing</span> Solutions
+            for You
+          </h1>
+          <div class="flex items-center gap-[14px] lg:pt-10 pt-[20%]">
+            <button
+              class="border border-white rounded-[7px] px-6 py-[8px] text-white lg:ml-[30%]"
+            >
+              Get a free analysis
+            </button>
+            <button class="text-white flex items-center gap-[3px]">
+              <img src="./img/hover.png" alt="" />Play video
+            </button>
+          </div>
         </div>
-        <div class="text-[#FFFFFF] lg:flex justify-center pl-5 gap-2 py-16 text-[14px]">
-            <p class="flex items-center gap-3 font-semibold px-5 lg:w-[25%] border-r-2 border-gray-400 py-5 lg:py-0">
-                <img src="./img/ic-chart.png" alt="">SEO Content Strategy
-            </p>
-            <p class="flex items-center gap-3 font-semibold px-5 lg:w-[25%] border-r-2 border-gray-400 py-5 lg:py-0">
-                <img src="./img/Group.png" alt="">Content Marketing
-            </p>
-            <p class="flex items-center gap-3 font-semibold px-5 lg:w-[25%] py-5 lg:py-0">
-                <img src="./img/ic-chart.png" alt="">Website & Social Media Marketing
-            </p>
-        </div>
-
+        <img
+          src="./img/illustration.png"
+          alt=""
+          class="lg:w-[40%] object-contain w-[80%] ml-[100px] mt-[10%]"
+        />
+      </div>
+      <div
+        class="text-[#FFFFFF] lg:flex justify-center pl-5 gap-2 py-16 text-[14px]"
+      >
+        <p
+          class="flex items-center gap-3 font-semibold px-5 lg:w-[25%] border-r-2 border-gray-400 py-5 lg:py-0"
+        >
+          <img src="./img/ic-chart.png" alt="" />SEO Content Strategy
+        </p>
+        <p
+          class="flex items-center gap-3 font-semibold px-5 lg:w-[25%] border-r-2 border-gray-400 py-5 lg:py-0"
+        >
+          <img src="./img/Group.png" alt="" />Content Marketing
+        </p>
+        <p
+          class="flex items-center gap-3 font-semibold px-5 lg:w-[25%] py-5 lg:py-0"
+        >
+          <img src="./img/ic-chart.png" alt="" />Website & Social Media
+          Marketing
+        </p>
+      </div>
     </header>
 
-
     <main>
-        <section>
-            <div class="lg:flex lg:text-[22px] text-[#1E212C] font-semibold px-[10%] gap-10 my-[13%] justify-center">
-                <p class="lg:w-[47%]">Createx SEO Agency is a full-service digital marketing agency. We help businesses
-                    make
-                    more money through
-                    a wealth of performance data and market research. We create science-based SEO strategies to empower
-                    our
-                    clients.</p>
+      <section>
+        <div
+          class="lg:flex lg:text-[22px] text-[#1E212C] font-semibold px-[10%] gap-10 my-[13%] justify-center"
+        >
+          <p class="lg:w-[47%]">
+            Createx SEO Agency is a full-service digital marketing agency.
+            We help businesses make more money through a wealth of performance
+            data and market research. We create science-based SEO strategies
+            to empower our clients.
+          </p>
 
-                <div class=" items-start lg:w-[40%] mt-10 lg:mt-0">
-                    <div class="flex gap-5">
-                        <p class="flex items-center gap-3 text-[14px] text-[#424551] font-normal"><img
-                                src="./img/mini1.png" alt="">Top SEO Companies 2020 by Clutch</p>
-                        <p class="flex items-center gap-3 text-[14px] text-[#424551] font-normal"><img
-                                src="./img/mini2.png" alt="">Top Digital Marketing Agency 2019 by UpCity</p>
-                    </div>
-                    <div class="flex">
-                        <p class="flex items-center gap-3 text-[14px] text-[#424551]  font-normal pt-10"><img
-                                src="./img/mini3.png" alt="">Official Member 2020 by Forbes Agency Council</p>
-                        <p class="flex items-center gap-3 text-[14px] text-[#424551]  font-normal pt-10"><img
-                                src="./img/mini4.png" alt="">Top SEO Companies 2020 by Top Developers</p>
-                    </div>
-                </div>
+          <div class="items-start lg:w-[40%] mt-10 lg:mt-0">
+            <div class="flex gap-5">
+              <p
+                class="flex items-center gap-3 text-[14px] text-[#424551] font-normal"
+              >
+                <img src="./img/mini1.png" alt="" />Top SEO Companies 2020 by
+                Clutch
+              </p>
+              <p
+                class="flex items-center gap-3 text-[14px] text-[#424551] font-normal"
+              >
+                <img src="./img/mini2.png" alt="" />Top Digital Marketing Agency
+                2019 by UpCity
+              </p>
             </div>
-            <img src="./img/Clients.png" alt="" class="hidden lg:block w-[80%] m-auto mb-10">
-        </section>
-
-        <section class="lg:flex px-[10%] justify-center gap-[90px] items-center py-[10%]">
-            <div class="lg:w-[37%]">
-                <h2 class="text-[40px] font-bold">Createx Agency </h2>
-                <p class="text-[#787A80] text-[16px] py-7">Lacus ac mollis vitae viverra. Tincidunt est, feugiat montes,
-                    viverra ullamcorper mi dui, nulla
-                    pharetra. Sapien urna nullam elit diam mauris orci. Volutpat quam tempus justo, aliquam. Tortor
-                    ultrices mattis eget orci eu nisi sed augue odio. Et senectus risus, pharetra, tristique libero.
-                    Dolor risus ac quam dictum mattis ultrices laoreet sapien. Feugiat lacus, suscipit eu sociis et quis
-                    hendrerit. Cras at ac magna ultricies orci.</p>
-                <button
-                    class="bg-[#7772F1] text-white font-semibold lg:w-[44%] p-2 border rounded-lg mt-10 hover:bg-[#5f5cbd]">More
-                    about us</button>
+            <div class="flex">
+              <p
+                class="flex items-center gap-3 text-[14px] text-[#424551] font-normal pt-10"
+              >
+                <img src="./img/mini3.png" alt="" />Official Member 2020 by
+                Forbes Agency Council
+              </p>
+              <p
+                class="flex items-center gap-3 text-[14px] text-[#424551] font-normal pt-10"
+              >
+                <img src="./img/mini4.png" alt="" />Top SEO Companies 2020 by
+                Top Developers
+              </p>
             </div>
-            <img src="./img/teampic.png" alt="" class="lg:w-[50%] mt-20 lg:mt-0">
-        </section>
+          </div>
+        </div>
+        <img
+          src="./img/Clients.png"
+          alt=""
+          class="hidden lg:block w-[80%] m-auto mb-10"
+        />
+      </section>
 
-        <section class="flex flex-col lg:flex-row justify-center my-10 gap-[5%] font-semibold text-[17px]">
-            <p class="text-[#424551] flex flex-col gap-4 items-center py-10 lg:py-0"> <img src="./img/circle-progress.png"
-                    alt="">Years of
-                experience</p>
-            <p class="text-[#424551] flex flex-col gap-4 items-center py-10 lg:py-0"> <img src="./img/circle-progress (1).png"
-                    alt="">Awards</p>
-            <p class="text-[#424551] flex flex-col gap-4 items-center py-10 lg:py-0"> <img src="./img/circle-progress (2).png"
-                    alt="">Projects</p>
-            <p class="text-[#424551] flex flex-col gap-4 items-center py-10 lg:py-0"> <img src="./img/circle-progress (3).png"
-                    alt="">Happy clients</p>
-        </section>
+      <section
+        class="lg:flex px-[10%] justify-center gap-[90px] items-center py-[10%]"
+      >
+        <div class="lg:w-[37%]">
+          <h2 class="text-[40px] font-bold">Createx Agency</h2>
+          <p class="text-[#787A80] text-[16px] py-7">
+            Lacus ac mollis vitae viverra. Tincidunt est, feugiat montes,
+            viverra ullamcorper mi dui, nulla pharetra. Sapien urna nullam elit
+            diam mauris orci. Volutpat quam tempus justo, aliquam. Tortor
+            ultrices mattis eget orci eu nisi sed augue odio. Et senectus risus,
+            pharetra, tristique libero. Dolor risus ac quam dictum mattis
+            ultrices laoreet sapien. Feugiat lacus, suscipit eu sociis et quis
+            hendrerit. Cras at ac magna ultricies orci.
+          </p>
+          <button
+            class="bg-[#7772F1] text-white font-semibold lg:w-[44%] p-2 border rounded-lg mt-10 hover:bg-[#5f5cbd]"
+          >
+            More about us
+          </button>
+        </div>
+        <img src="./img/teampic.png" alt="" class="lg:w-[50%] mt-20 lg:mt-0" />
+      </section>
 
-        <section class="my-[10%]">
-            <div class="flex justify-center items-center">
-                <h2 class=" text-[40px] font-semibold py-5">Our services</h2>
+      <section
+        class="flex flex-col lg:flex-row justify-center my-10 gap-[5%] font-semibold text-[17px]"
+      >
+        <p
+          class="text-[#424551] flex flex-col gap-4 items-center py-10 lg:py-0"
+        >
+          <img src="./img/circle-progress.png" alt="" />Years of experience
+        </p>
+        <p
+          class="text-[#424551] flex flex-col gap-4 items-center py-10 lg:py-0"
+        >
+          <img src="./img/circle-progress (1).png" alt="" />Awards
+        </p>
+        <p
+          class="text-[#424551] flex flex-col gap-4 items-center py-10 lg:py-0"
+        >
+          <img src="./img/circle-progress (2).png" alt="" />Projects
+        </p>
+        <p
+          class="text-[#424551] flex flex-col gap-4 items-center py-10 lg:py-0"
+        >
+          <img src="./img/circle-progress (3).png" alt="" />Happy clients
+        </p>
+      </section>
+
+      <section class="my-[10%]">
+        <div class="flex justify-center items-center">
+          <h2 class="text-[40px] font-semibold py-5">Our services</h2>
+        </div>
+        <div
+          class="flex justify-center lg:pl-5 gap-2 py-16 text-[14px] px-5 lg:px-0"
+        >
+          <p
+            class="font-semibold lg:w-[16%] py-2 border border-[#7772F1] text-center text-[#7772F1]"
+          >
+            Social Media
+          </p>
+          <p class="font-semibold lg:w-[16%] py-2 text-center text-[#9A9CA5]">
+            SEO
+          </p>
+          <p class="font-semibold lg:w-[16%] py-2 text-center text-[#9A9CA5]">
+            Research Content & PR
+          </p>
+          <p class="font-semibold lg:w-[16%] py-2 text-center text-[#9A9CA5]">
+            Content & PR
+          </p>
+          <p class="font-semibold lg:w-[16%] py-2 text-center text-[#9A9CA5]">
+            Payed Traffic
+          </p>
+        </div>
+
+        <div class="lg:flex justify-between px-[9%] pt-[8%] items-center">
+          <div class="lg:w-[40%]">
+            <h2 class="text-[33px] font-semibold py-5">
+              Complete Worflow For Any SEO Professional
+            </h2>
+            <p class="flex gap-5 py-2 items-center">
+              <img src="./img/Mark.png" alt="" />Complete Worflow For Any SEO
+              Professional
+            </p>
+            <p class="flex gap-5 py-2 items-center">
+              <img src="./img/Mark.png" alt="" />Nibh sapien volutpat lacus
+              augue.
+            </p>
+            <p class="flex gap-5 py-2 items-center">
+              <img src="./img/Mark.png" alt="" />Vel in amet, placerat
+              adipiscing est pharetra.
+            </p>
+            <p class="flex gap-5 py-2 items-center">
+              <img src="./img/Mark.png" alt="" />Gravida ornare sit in et ut sit
+              sem id.
+            </p>
+            <p class="flex gap-5 py-2 items-center">
+              <img src="./img/Mark.png" alt="" />Ultrices pellentesque dictum
+              enim egestas ac diam.
+            </p>
+            <p class="flex gap-5 py-2 items-center">
+              <img src="./img/Mark.png" alt="" />Sit semper enim senectus
+              integer ut turpis et.
+            </p>
+            <div class="pt-10 flex gap-5">
+              <button
+                class="text-[#7772F1] border border-[#7772F1] py-3 px-7 rounded-lg hover:bg-[#a5a4bb]"
+              >
+                Learn more
+              </button>
+              <button
+                class="text-[white] border border-[#7772F1] bg-[#7772F1] py-3 px-7 rounded-lg hover:bg-[#8581e9]"
+              >
+                Try SEO toolkit
+              </button>
             </div>
-            <div class="flex justify-center lg:pl-5 gap-2 py-16 text-[14px] px-5 lg:px-0">
-                <p class=" font-semibold lg:w-[16%] py-2 border border-[#7772F1] text-center text-[#7772F1]">
-                    Social Media
-                </p>
-                <p class=" font-semibold lg:w-[16%] py-2 text-center text-[#9A9CA5]">
-                    SEO
-                </p>
-                <p class=" font-semibold lg:w-[16%] py-2 text-center text-[#9A9CA5]">
-                    Research
-                    Content & PR
-                </p>
-                <p class=" font-semibold lg:w-[16%] py-2 text-center text-[#9A9CA5]">
-                    Content & PR
-                </p>
-                <p class=" font-semibold lg:w-[16%] py-2 text-center text-[#9A9CA5]">
-                    Payed Traffic
-                </p>
-            </div>
+          </div>
+          <img
+            src="./img/illustration (1).png"
+            alt=""
+            class="lg:w-[52%] mt-10 lg:mt-0"
+          />
+        </div>
+      </section>
 
-            <div class="lg:flex justify-between px-[9%] pt-[8%] items-center">
-                <div class="lg:w-[40%]">
-                    <h2 class="text-[33px] font-semibold py-5">Complete Worflow For Any SEO Professional</h2>
-                    <p class="flex gap-5 py-2 items-center"><img src="./img/Mark.png" alt="">Complete Worflow For Any
-                        SEO Professional</p>
-                    <p class="flex gap-5 py-2 items-center"><img src="./img/Mark.png" alt="">Nibh sapien volutpat lacus
-                        augue.</p>
-                    <p class="flex gap-5 py-2 items-center"><img src="./img/Mark.png" alt="">Vel in amet, placerat
-                        adipiscing est pharetra.</p>
-                    <p class="flex gap-5 py-2 items-center"><img src="./img/Mark.png" alt="">Gravida ornare sit in et ut
-                        sit sem id.</p>
-                    <p class="flex gap-5 py-2 items-center"><img src="./img/Mark.png" alt="">Ultrices pellentesque
-                        dictum enim egestas ac diam.</p>
-                    <p class="flex gap-5 py-2 items-center"><img src="./img/Mark.png" alt="">Sit semper enim senectus
-                        integer ut turpis et.</p>
-                    <div class="pt-10 flex gap-5">
-                        <button
-                            class="text-[#7772F1] border border-[#7772F1] py-3 px-7 rounded-lg hover:bg-[#a5a4bb]">Learn
-                            more</button>
-                        <button
-                            class="text-[white] border border-[#7772F1] bg-[#7772F1] py-3 px-7 rounded-lg hover:bg-[#8581e9] ">Try
-                            SEO toolkit</button>
-                    </div>
-                </div>
-                <img src="./img/illustration (1).png" alt="" class="lg:w-[52%] mt-10 lg:mt-0">
+      <section
+        class="bg-[#1E212C] px-[10%] lg:py-[5%] py-[10%] lg:flex justify-center gap-[15%]"
+      >
+        <img src="./img/illustration (2).png" alt="" class="lg:w-[40%]" />
+        <div class="lg:w-[50%]">
+          <h2 class="text-white lg:text-[40px] text-[30px] font-bold">
+            Get a Free SEO Analysis!
+          </h2>
+          <form>
+            <div class="flex mt-10 justify-between">
+              <div class="flex flex-col gap-2">
+                <label for="name" class="text-white">Name*</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="bg-[#393C45] w-[98%] py-3 px-[20px] outline-none border rounded-md border-transparent"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label for="lname" class="text-white">Last Name*</label>
+                <input
+                  type="text"
+                  id="lname"
+                  class="bg-[#393C45] w-[98%] px-[20px] py-3 outline-none border rounded-md border-transparent"
+                />
+              </div>
             </div>
-        </section>
-
-        <section class="bg-[#1E212C] px-[10%] lg:py-[5%] py-[10%] lg:flex justify-center gap-[15%]">
-            <img src="./img/illustration (2).png" alt="" class="lg:w-[40%]">
-            <div class="lg:w-[50%]">
-                <h2 class="text-white lg:text-[40px] text-[30px] font-bold">Get a Free SEO Analysis!</h2>
-                <form>
-                    <div class="flex mt-10 justify-between">
-                        <div class="flex flex-col gap-2">
-                            <label for="name" class="text-white">Name*</label>
-                            <input type="text" id="name"
-                                class="bg-[#393C45] w-[98%] py-3 px-[20px] outline-none border rounded-md border-transparent">
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <label for="lname" class="text-white">Last Name*</label>
-                            <input type="text" id="lname"
-                                class="bg-[#393C45] w-[98%] px-[20px] py-3 outline-none border rounded-md border-transparent">
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-2 mt-10">
-                        <label for="name" class="text-white">Email*</label>
-                        <input type="email" id="name"
-                            class="bg-[#393C45] w-full py-3 outline-none border rounded-md border-transparent">
-                    </div>
-                    <div class="flex items-center justify-between mt-10">
-                        <div class="flex gap-4 w-[60%] text-white"> <input type="checkbox" name="" id="">
-                            <p>I agree to receive communications from Createx SEO Agency</p>
-                        </div>
-                        <button
-                            class="text-[white] border border-[#7772F1] bg-[#7772F1] py-3 lg:px-7 px-3 rounded-lg hover:bg-[#8581e9] ">Get
-                            a free analysis</button>
-                    </div>
-                </form>
+            <div class="flex flex-col gap-2 mt-10">
+              <label for="name" class="text-white">Email*</label>
+              <input
+                type="email"
+                id="name"
+                class="bg-[#393C45] w-full py-3 outline-none border rounded-md border-transparent"
+              />
             </div>
-        </section>
+            <div class="flex items-center justify-between mt-10">
+              <div class="flex gap-4 w-[60%] text-white">
+                <input type="checkbox" name="" id="" />
+                <p>I agree to receive communications from Createx SEO Agency</p>
+              </div>
+              <button
+                class="text-[white] border border-[#7772F1] bg-[#7772F1] py-3 lg:px-7 px-3 rounded-lg hover:bg-[#8581e9]"
+              >
+                Get a free analysis
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
 
-        <section class="px-[10%] my-[10%] lg:flex justify-between">
-            <div class="lg:w-[50%]">
-                <h2 class="font-bold text-[40px]">Freequently Ask Questions</h2>
+      <section class="px-[10%] my-[10%] lg:flex justify-between">
+        <div class="lg:w-[50%]">
+          <h2 class="font-bold text-[40px]">Freequently Ask Questions</h2>
+          <div>
+            <h3 class="flex font-semibold items-center text-[22px] gap-2">
+              <span class="text-[#7772F1] text-[34px]">-</span>Aliquet lectus
+              urna viverra in odio?
+            </h3>
+            <p class="text-[#787A80] pl-8">
+              Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet
+              elementum faucibus dignissim purus. Fusce parturient diam magna
+              ullamcorper morbi semper massa ac facilisis.
+            </p>
+          </div>
+          <h3 class="flex font-semibold items-center text-[22px] gap-2 py-2">
+            <span class="text-[#7772F1] text-[34px]">+</span>Orci commodo,
+            viverra orci mollis ut euismod?
+          </h3>
+          <h3 class="flex font-semibold items-center text-[22px] gap-2 py-2">
+            <span class="text-[#7772F1] text-[34px]">+</span>Sagittis vitae
+            facilisi rutrum amet mauris quisque vel convallis?
+          </h3>
+          <h3 class="flex font-semibold items-center text-[22px] gap-2 py-2">
+            <span class="text-[#7772F1] text-[34px]">+</span>In id dolor quis
+            nunc, urna hendrerit pharetra?
+          </h3>
+
+          <button
+            class="mt-10 text-[white] border border-[#7772F1] bg-[#7772F1] py-3 px-8 rounded-lg hover:bg-[#8581e9]"
+          >
+            Discover more &rarr;
+          </button>
+        </div>
+        <img src="./img/illustration (3).png" alt="" class="mt-5 lg:mt-0" />
+      </section>
+
+      <section class="px-[8%] bg-[#F4F5F6] py-7">
+        <h2 class="font-bold items-center text-[40px] flex justify-between">
+          Freequently Ask Questions
+          <img src="./img/hover1.png" alt="" class="hover:cursor-pointer" />
+        </h2>
+        <div class="lg:flex justify-center gap-10 lg:my-[5%] my-10">
+          <div class="lg:w-[30%] p-[1%] shadow-md border shadow-gray-400">
+            <img src="./img/client-logo1.png" alt="" />
+            <h2 class="font-semibold text-[14px] py-3">Charity organisation</h2>
+            <p class="text-[16px] text-[#787A80] py-8">
+              Createx SEO Agency helped National Inc. increase their MQL to SQL
+              conversion rate by 300%.
+            </p>
+            <div class="flex justify-between py-7 pt-12">
+              <div class="flex items-center gap-2">
+                <img src="./img/minicircle1.png" alt="" />
                 <div>
-                    <h3 class="flex font-semibold items-center text-[22px] gap-2"><span
-                            class="text-[#7772F1] text-[34px]">-</span>Aliquet lectus urna viverra in odio?</h3>
-                    <p class="text-[#787A80] pl-8">Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet
-                        elementum faucibus dignissim purus.
-                        Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis.</p>
+                  <p class="font-bold">90%</p>
+                  <p class="text-[10px]">Engagement</p>
                 </div>
-                <h3 class="flex font-semibold items-center text-[22px] gap-2 py-2"><span
-                        class="text-[#7772F1] text-[34px]">+</span>Orci commodo, viverra orci mollis ut euismod?</h3>
-                <h3 class="flex font-semibold items-center text-[22px] gap-2 py-2"><span
-                        class="text-[#7772F1] text-[34px]">+</span>Sagittis vitae facilisi rutrum amet mauris quisque
-                    vel
-                    convallis?</h3>
-                <h3 class="flex font-semibold items-center text-[22px] gap-2 py-2"><span
-                        class="text-[#7772F1] text-[34px]">+</span>In id dolor quis nunc, urna hendrerit pharetra?</h3>
-
-                <button
-                    class="mt-10 text-[white] border border-[#7772F1] bg-[#7772F1] py-3 px-8 rounded-lg hover:bg-[#8581e9] ">Discover
-                    more &rarr;</button>
-            </div>
-            <img src="./img/illustration (3).png" alt="" class="mt-5 lg:mt-0">
-        </section>
-
-        <section class="px-[8%] bg-[#F4F5F6] py-7">
-            <h2 class="font-bold items-center text-[40px] flex justify-between">Freequently Ask Questions <img
-                    src="./img/hover1.png" alt="" class="hover:cursor-pointer"></h2>
-            <div class="lg:flex justify-center gap-10 lg:my-[5%] my-10">
-                <div class="lg:w-[30%] p-[1%] shadow-md border shadow-gray-400">
-                    <img src="./img/client-logo1.png" alt="">
-                    <h2 class="font-semibold text-[14px] py-3">Charity organisation</h2>
-                    <p class="text-[16px] text-[#787A80] py-8">Createx SEO Agency helped National Inc. increase their
-                        MQL to SQL conversion rate by 300%.</p>
-                    <div class="flex justify-between py-7 pt-12">
-                        <div class="flex items-center gap-2 "><img src="./img/minicircle1.png" alt="">
-                            <div>
-                                <p class="font-bold">90%</p>
-                                <p class="text-[10px]">Engagement</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-2 "><img src="./img/minicircle2.png" alt="">
-                            <div>
-                                <p>90%</p>
-                                <p>Deliverability</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="minibg lg:w-[30%] p-[1%] h-[400px] my-10 lg:my-0">
-                    <img src="./img/National Health Logo 1.png" alt="" class="mt-8 ml-10 z-10">
-                    <div class="flex justify-center gap-[5%] py-10 mt-[50%] text-white font-bold">
-                        <div class="flex items-center gap-2 "><img src="./img/minicircle3.png" alt="">
-                            <div>
-                                <p class="font-bold">200%</p>
-                                <p class="text-[10px]">Growth in sales</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-2 ">
-                            <div>
-                                <p>1400</p>
-                                <p class="text-[10px]">Target investors</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:w-[30%] p-[1%] shadow-md border shadow-gray-400 my-10 lg:my-0">
-                    <img src="./img/clientlogo.png" alt="" class="ml-10 lg:ml-0 lg:mt-0 mt-10">
-
-                    <div class="flex justify-center gap-[10%] py-1O mt-[70%]">
-                        <div class="flex items-center gap-2 "><img src="./img/minicircle4.png" alt="">
-                            <div>
-                                <p class="font-bold">70%</p>
-                                <p class="text-[10px]">Open Rate</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-2 "><img src="./img/minicircle1.png" alt="">
-                            <div>
-                                <p>200%</p>
-                                <p>Growth in sales</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex justify-center items-center gap-[10px] my-20">
-                <h2 class="font-semibold lg:text-[30px] text-[22px]">Explore more case studies</h2>
-                <button
-                    class=" text-[white] border border-[#7772F1] bg-[#7772F1] lg:py-3 lg:px-5 rounded-md hover:bg-[#8581e9] ">View
-                    all case studies</button>
-            </div>
-        </section>
-
-        <section class="my-[10%] px-[10%]">
-            <div class="flex justify-center">
-                <h2 class="font-bold text-[40px] m-auto">Our benefits</h2>
-            </div>
-            <div class="flex items-center">
-                <div class="flex flex-col flex-wrap lg:items-center">
-                    <div class="lg:w-[75%] w-[90%] flex flex-col justify-center items-center my-10">
-                        <img src="./img/ic-speaker.png" alt="" class="w-[20%] lg:w-[20%]">
-                        <h3 class="font-medium text-[20px] pt-5 pb-3">Social Advertising Experts</h3>
-                        <p class="text-[14px] text-[#787A80] text-center">Culpa nostrud commodo ea consequat aliquip
-                            reprehenderit. Veniam velit nostrud aliquip sunt.</p>
-                    </div>
-                    <img src="./img/card.png" alt="" class="hidden lg:block">
-                    <img src="./img/card11.png" alt="" class="hidden lg:block">
-                </div>
-                <img src="./img/illustration (4).png" alt="" class="hidden lg:block">
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./img/minicircle2.png" alt="" />
                 <div>
-                    <img src="./img/card.png" alt="" class="hidden lg:block">
-                    <img src="./img/card11.png" alt="" class="hidden lg:block">
-                    <img src="./img/card11.png" alt="" class="hidden lg:block">
+                  <p>90%</p>
+                  <p>Deliverability</p>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <section>
-            <div class="flex flex-col items-center justify-center">
-                <h2 class="font-bold text-[40px] py-3">Flexible pricing plans</h2>
-                <div class="flex border border-[#7772F1] rounded-full">
-                    <button
-                        class=" text-[white] border border-[#7772F1] bg-[#7772F1] py-2 px-16 hover:bg-[#8581e9] rounded-full">
-                        Monthly</button>
-                    <button class=" text-[#7772F1] bg-[white] py-2 px-10 rounded-full hover:bg-[#9e9ecc] ">
-                        Yearly <span class="font-thin text-[12px]">-12% Off</span></button>
+          <div class="minibg lg:w-[30%] p-[1%] h-[400px] my-10 lg:my-0">
+            <img
+              src="./img/National Health Logo 1.png"
+              alt=""
+              class="mt-8 ml-10 z-10"
+            />
+            <div
+              class="flex justify-center gap-[5%] py-10 mt-[50%] text-white font-bold"
+            >
+              <div class="flex items-center gap-2">
+                <img src="./img/minicircle3.png" alt="" />
+                <div>
+                  <p class="font-bold">200%</p>
+                  <p class="text-[10px]">Growth in sales</p>
                 </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div>
+                  <p>1400</p>
+                  <p class="text-[10px]">Target investors</p>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="px-[10%] lg:flex justify-center gap-10 my-10">
-                <div
-                    class="flex flex-col justify-center items-center text-center lg:w-[30%] border border-gray-200 p-[1%] py-[2%] mt-10 shadow-lg shadow-gray-400 hover:shadow-gray-700 hover:cursor-pointer">
-                    <h2 class="font-semibold text-[40px]">Basic</h2>
-                    <span class="text-[48px] font-semibold text-[#7772F1] border-b-2 border-gray-200 px-20">
-                        24<sup class="text-[20px]">/mon</sup>
-                    </span>
-                    <div class="flex flex-col justify-start">
-                        <p class="flex items-center gap-2 text-[18px] py-2 pt-4 text-start"><img src="./img/Mark.png"
-                                alt="">Advanced
-                            Analytics</p>
-                        <p class="flex items-center gap-2 text-[18px] py-2 "><img src="./img/Mark.png" alt="">Change
-                            Management</p>
-                        <p class="flex items-center gap-2 text-[18px] py-2 "><img src="./img/Mark.png" alt="">Corporate
-                            Finance</p>
-                        <p class="flex items-center gap-2 text-[18px] py-2 "><img src="./img/Mark.png" alt="">One Way
-                            Link Building</p>
-                        <p class="flex items-center gap-2 text-[18px] py-2 "><img src="./img/Mark.png" alt="">Social
-                            Media Marketing</p>
-                        <p class="flex items-center gap-2 text-[#9A9CA5] text-[18px] py-2"><img src="./img/Cross.png"
-                                alt="">Strategy & Marketing</p>
-                        <p class="flex items-center gap-2 text-[#9A9CA5] text-[18px] py-2"><img src="./img/Cross.png"
-                                alt="">Information Technology</p>
-                    </div>
-                    <button
-                        class="text-[#7772F1] border border-[#7772F1] bg-white w-[50%] py-2 rounded-md mt-[20px]">Choose
-                        plan</button>
-                </div>
-                <div
-                    class="bg-[#1E212C] rounded-md py-[2%] flex flex-col justify-center items-center text-center lg:w-[32%] border  border-transparent p-[1%] mt-10 shadow-lg shadow-gray-400 hover:shadow-gray-700 hover:cursor-pointer">
-                    <span
-                        class="pt-12 text-[48px] font-semibold text-[#03CEA4] border-b-[1px] border-gray-50 px-[100px]">
-                        <sup class="text-[20px] text-[#03CEA4]">/mon</sup>
-                    </span>
-                    <div class="flex flex-col justify-start">
-                        <p class="flex items-center gap-2 text-[18px] py-2 pt-4 text-[white]"><img src="./img/Mark.png"
-                                alt="">Advanced
-                            Analytics</p>
-                        <p class="flex items-center gap-2 text-[18px] py-2 text-[white]"><img src="./img/Mark.png"
-                                alt="">Change Management</p>
-                        <p class="flex items-center gap-2 text-[18px] py-2 text-[white]"><img src="./img/Mark.png"
-                                alt="">Corporate Finance</p>
-                        <p class="flex items-center gap-2 text-[18px] py-2 text-[white]"><img src="./img/Mark.png"
-                                alt="">One Way Link Building</p>
-                        <p class="flex items-center gap-2 text-[18px] py-2 text-[white]"><img src="./img/Mark.png"
-                                alt="">Social Media Marketing</p>
-                        <p class="flex items-center gap-2 text-[18px] py-2 text-[white]"><img src="./img/Mark.png"
-                                alt="">Strategy & Marketing</p>
-                        <p class="flex items-center gap-2 text-[#9A9CA5] text-[18px] py-2 "><img src="./img/Cross.png"
-                                alt="">Information Technology</p>
-                    </div>
-                    <button
-                        class="text-[white] border border-[#7772F1] bg-[#7772F1] w-[50%] py-3 rounded-md mt-10">Choose
-                        plan</button>
-                </div>
+          <div
+            class="lg:w-[30%] p-[1%] shadow-md border shadow-gray-400 my-10 lg:my-0"
+          >
+            <img
+              src="./img/clientlogo.png"
+              alt=""
+              class="ml-10 lg:ml-0 lg:mt-0 mt-10"
+            />
 
-                <div
-                    class="flex flex-col justify-center items-center text-center lg:w-[30%] border border-gray-200 p-[1%] py-[2%] mt-10 shadow-lg shadow-gray-400 hover:shadow-gray-700 hover:cursor-pointer">
-                    <h2 class="font-semibold text-[40px]"></h2>
-                    <span class="pt-16 text-[48px] font-semibold text-[#7772F1] border-b-2 border-gray-200 px-20">
-                        <sup class="text-[20px]">/mon</sup>
-                    </span>
-                    <div class="flex justify-start flex-col">
-                        <p class="flex items-center gap-2 text-[18px] py-2 pt-4"><img src="./img/Mark.png"
-                                alt="">Advanced
-                            Analytics</p>
-                        <p class="flex items-center gap-2 text-[18px] py-2"><img src="./img/Mark.png" alt="">Change
-                            Management</p>
-                        <p class="flex items-center gap-2 text-[18px] py-2"><img src="./img/Mark.png" alt="">Corporate
-                            Finance</p>
-                        <p class="flex items-center gap-2 text-[18px] py-2"><img src="./img/Mark.png" alt="">One Way
-                            Link Building</p>
-                        <p class="flex items-center gap-2 text-[18px] py-2"><img src="./img/Mark.png" alt="">Social
-                            Media Marketing</p>
-                        <p class="flex items-center gap-2 text-[#9A9CA5] text-[18px] py-2"><img src="./img/Cross.png"
-                                alt="">Strategy & Marketing</p>
-                        <p class="flex items-center gap-2 text-[#9A9CA5] text-[18px] py-2"><img src="./img/Cross.png"
-                                alt="">Information Technology</p>
-                    </div>
-                    <button
-                        class="text-[#7772F1] border border-[#7772F1] bg-white w-[50%] py-2 rounded-md mt-[20px]">Choose
-                        plan</button>
+            <div class="flex justify-center gap-[10%] py-1O mt-[70%]">
+              <div class="flex items-center gap-2">
+                <img src="./img/minicircle4.png" alt="" />
+                <div>
+                  <p class="font-bold">70%</p>
+                  <p class="text-[10px]">Open Rate</p>
                 </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./img/minicircle1.png" alt="" />
+                <div>
+                  <p>200%</p>
+                  <p>Growth in sales</p>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-[10px] my-20">
+          <h2 class="font-semibold lg:text-[30px] text-[22px]">
+            Explore more case studies
+          </h2>
+          <button
+            class="text-[white] border border-[#7772F1] bg-[#7772F1] lg:py-3 lg:px-5 rounded-md hover:bg-[#8581e9]"
+          >
+            View all case studies
+          </button>
+        </div>
+      </section>
 
-        <section class="my-10 mt-[10%] px-[10%]">
-            <div class="flex justify-center pb-5">
-                <h2 class="font-bold lg:text-[40px] text-[30px]">What our clients say</h2>
+      <section class="my-[10%] px-[10%]">
+        <div class="flex justify-center">
+          <h2 class="font-bold text-[40px] m-auto">Our benefits</h2>
+        </div>
+        <div class="flex items-center">
+          <div class="flex flex-col flex-wrap lg:items-center">
+            <div
+              class="lg:w-[75%] w-[90%] flex flex-col justify-center items-center my-10"
+            >
+              <img
+                src="./img/ic-speaker.png"
+                alt=""
+                class="w-[20%] lg:w-[20%]"
+              />
+              <h3 class="font-medium text-[20px] pt-5 pb-3">
+                Social Advertising Experts
+              </h3>
+              <p class="text-[14px] text-[#787A80] text-center">
+                Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam
+                velit nostrud aliquip sunt.
+              </p>
             </div>
-            <div class="flex justify-center items-center gap-[10%]">
-                <img src="./img/prev-btn.png" alt="" class="hidden lg:block">
-                <div
-                    class="bg-white border rounded-md p-[5%] flex items-start gap-5 lg:w-[70%] shadow-md shadow-gray-300 hover:shadow-gray-700">
-                    <img src="./img/braces.png" alt="">
-                    <div>
-                        <p class="text-[#424551] pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
-                            amet lectus quam viverra mus
-                            lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare
-                            turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu
-                            diam maecenas diam integer in.</p>
-                        <div class="flex items-center gap-2">
-                            <img src="./img/image22.png" alt="">
-                            <div>
-                                <p class="text-[16px] font-medium">Courtney Alexander</p>
-                                <p class="text-[14px] text-[#787A80]">Position, Company name</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img src="./img/prevbutton2.png" alt="" class="hidden lg:block">
-            </div>
-        </section>
+            <img src="./img/card.png" alt="" class="hidden lg:block" />
+            <img src="./img/card11.png" alt="" class="hidden lg:block" />
+          </div>
+          <img
+            src="./img/illustration (4).png"
+            alt=""
+            class="hidden lg:block"
+          />
+          <div>
+            <img src="./img/card.png" alt="" class="hidden lg:block" />
+            <img src="./img/card11.png" alt="" class="hidden lg:block" />
+            <img src="./img/card11.png" alt="" class="hidden lg:block" />
+          </div>
+        </div>
+      </section>
 
-        <section class="lg:flex px-[10%] my-[10%] gap-5">
-            <div class="lg:w-[30%]">
-                <h2 class="text-[40px] font-semibold pb-10">Latest news</h2>
-                <p class="text-[#424551] py-8">Check more posts in our blog for featured news and advertising insights
-                </p>
-                <button class="bg-[#7772F1] text-white w-[40%] py-2 px-5">Go to blog</button>
+      <section>
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="font-bold text-[40px] py-3">Flexible pricing plans</h2>
+          <div class="flex border border-[#7772F1] rounded-full">
+            <button
+              class="text-[white] border border-[#7772F1] bg-[#7772F1] py-2 px-16 hover:bg-[#8581e9] rounded-full"
+            >
+              Monthly
+            </button>
+            <button
+              class="text-[#7772F1] bg-[white] py-2 px-10 rounded-full hover:bg-[#9e9ecc]"
+            >
+              Yearly <span class="font-thin text-[12px]">-12% Off</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="px-[10%] lg:flex justify-center gap-10 my-10">
+          <div
+            class="flex flex-col justify-center items-center text-center lg:w-[30%] border border-gray-200 p-[1%] py-[2%] mt-10 shadow-lg shadow-gray-400 hover:shadow-gray-700 hover:cursor-pointer"
+          >
+            <h2 class="font-semibold text-[40px]">Basic</h2>
+            <span
+              class="text-[48px] font-semibold text-[#7772F1] border-b-2 border-gray-200 px-20"
+            >
+              24<sup class="text-[20px]">/mon</sup>
+            </span>
+            <div class="flex flex-col justify-start">
+              <p
+                class="flex items-center gap-2 text-[18px] py-2 pt-4 text-start"
+              >
+                <img src="./img/Mark.png" alt="" />Advanced Analytics
+              </p>
+              <p class="flex items-center gap-2 text-[18px] py-2">
+                <img src="./img/Mark.png" alt="" />Change Management
+              </p>
+              <p class="flex items-center gap-2 text-[18px] py-2">
+                <img src="./img/Mark.png" alt="" />Corporate Finance
+              </p>
+              <p class="flex items-center gap-2 text-[18px] py-2">
+                <img src="./img/Mark.png" alt="" />One Way Link Building
+              </p>
+              <p class="flex items-center gap-2 text-[18px] py-2">
+                <img src="./img/Mark.png" alt="" />Social Media Marketing
+              </p>
+              <p
+                class="flex items-center gap-2 text-[#9A9CA5] text-[18px] py-2"
+              >
+                <img src="./img/Cross.png" alt="" />Strategy & Marketing
+              </p>
+              <p
+                class="flex items-center gap-2 text-[#9A9CA5] text-[18px] py-2"
+              >
+                <img src="./img/Cross.png" alt="" />Information Technology
+              </p>
             </div>
-            <div class="lg:w-[30%] mt-10 lg:mt-0">
-                <img src="./img/laptop.png" alt="">
-                <div class="py-2 flex gap-2 text-[12px] justify-center items-center px-2">
-                    <p class="text-[#787A80] border-r-[2px] border-[#787A80] w-[20%]">Marketing</p>
-                    <p class="text-[#787A80] border-r-[2px] border-[#787A80] w-[30%] flex gap-2 items-center"><img
-                            src="./img/Clock.png" alt="">July 2, 2020</p>
-                    <p class="text-[#787A80] w-[45%] flex gap-2 items-center"><img src="./img/Profile.png" alt="">By
-                        Diane Mccoy</p>
+            <button
+              class="text-[#7772F1] border border-[#7772F1] bg-white w-[50%] py-2 rounded-md mt-[20px]"
+            >
+              Choose plan
+            </button>
+          </div>
+          <div
+            class="bg-[#1E212C] rounded-md py-[2%] flex flex-col justify-center items-center text-center lg:w-[32%] border border-transparent p-[1%] mt-10 shadow-lg shadow-gray-400 hover:shadow-gray-700 hover:cursor-pointer"
+          >
+            <span
+              class="pt-12 text-[48px] font-semibold text-[#03CEA4] border-b-[1px] border-gray-50 px-[100px]"
+            >
+              <sup class="text-[20px] text-[#03CEA4]">/mon</sup>
+            </span>
+            <div class="flex flex-col justify-start">
+              <p
+                class="flex items-center gap-2 text-[18px] py-2 pt-4 text-[white]"
+              >
+                <img src="./img/Mark.png" alt="" />Advanced Analytics
+              </p>
+              <p class="flex items-center gap-2 text-[18px] py-2 text-[white]">
+                <img src="./img/Mark.png" alt="" />Change Management
+              </p>
+              <p class="flex items-center gap-2 text-[18px] py-2 text-[white]">
+                <img src="./img/Mark.png" alt="" />Corporate Finance
+              </p>
+              <p class="flex items-center gap-2 text-[18px] py-2 text-[white]">
+                <img src="./img/Mark.png" alt="" />One Way Link Building
+              </p>
+              <p class="flex items-center gap-2 text-[18px] py-2 text-[white]">
+                <img src="./img/Mark.png" alt="" />Social Media Marketing
+              </p>
+              <p class="flex items-center gap-2 text-[18px] py-2 text-[white]">
+                <img src="./img/Mark.png" alt="" />Strategy & Marketing
+              </p>
+              <p
+                class="flex items-center gap-2 text-[#9A9CA5] text-[18px] py-2"
+              >
+                <img src="./img/Cross.png" alt="" />Information Technology
+              </p>
+            </div>
+            <button
+              class="text-[white] border border-[#7772F1] bg-[#7772F1] w-[50%] py-3 rounded-md mt-10"
+            >
+              Choose plan
+            </button>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center text-center lg:w-[30%] border border-gray-200 p-[1%] py-[2%] mt-10 shadow-lg shadow-gray-400 hover:shadow-gray-700 hover:cursor-pointer"
+          >
+            <h2 class="font-semibold text-[40px]"></h2>
+            <span
+              class="pt-16 text-[48px] font-semibold text-[#7772F1] border-b-2 border-gray-200 px-20"
+            >
+              <sup class="text-[20px]">/mon</sup>
+            </span>
+            <div class="flex justify-start flex-col">
+              <p class="flex items-center gap-2 text-[18px] py-2 pt-4">
+                <img src="./img/Mark.png" alt="" />Advanced Analytics
+              </p>
+              <p class="flex items-center gap-2 text-[18px] py-2">
+                <img src="./img/Mark.png" alt="" />Change Management
+              </p>
+              <p class="flex items-center gap-2 text-[18px] py-2">
+                <img src="./img/Mark.png" alt="" />Corporate Finance
+              </p>
+              <p class="flex items-center gap-2 text-[18px] py-2">
+                <img src="./img/Mark.png" alt="" />One Way Link Building
+              </p>
+              <p class="flex items-center gap-2 text-[18px] py-2">
+                <img src="./img/Mark.png" alt="" />Social Media Marketing
+              </p>
+              <p
+                class="flex items-center gap-2 text-[#9A9CA5] text-[18px] py-2"
+              >
+                <img src="./img/Cross.png" alt="" />Strategy & Marketing
+              </p>
+              <p
+                class="flex items-center gap-2 text-[#9A9CA5] text-[18px] py-2"
+              >
+                <img src="./img/Cross.png" alt="" />Information Technology
+              </p>
+            </div>
+            <button
+              class="text-[#7772F1] border border-[#7772F1] bg-white w-[50%] py-2 rounded-md mt-[20px]"
+            >
+              Choose plan
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-10 mt-[10%] px-[10%]">
+        <div class="flex justify-center pb-5">
+          <h2 class="font-bold lg:text-[40px] text-[30px]">
+            What our clients say
+          </h2>
+        </div>
+        <div class="flex justify-center items-center gap-[10%]">
+          <img src="./img/prev-btn.png" alt="" class="hidden lg:block" />
+          <div
+            class="bg-white border rounded-md p-[5%] flex items-start gap-5 lg:w-[70%] shadow-md shadow-gray-300 hover:shadow-gray-700"
+          >
+            <img src="./img/braces.png" alt="" />
+            <div>
+              <p class="text-[#424551] pb-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                amet lectus quam viverra mus lobortis fermentum amet, eu.
+                Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare
+                turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                Pulvinar neque pharetra arcu diam maecenas diam integer in.
+              </p>
+              <div class="flex items-center gap-2">
+                <img src="./img/image22.png" alt="" />
+                <div>
+                  <p class="text-[16px] font-medium">Courtney Alexander</p>
+                  <p class="text-[14px] text-[#787A80]">
+                    Position, Company name
+                  </p>
                 </div>
-                <button class="text-[14px] lg:mt-[150px] mt-20 flex gap-2 font-bold">Read more <img src="./img/Right.png"
-                        alt=""></button>
+              </div>
             </div>
-            <div class="lg:w-[30%] mt-10 lg:mt-0">
-                <img src="./img/pichand.png" alt="">
-                <div class="py-2 flex gap-2 text-[12px] justify-center items-center px-2">
-                    <p class="text-[#787A80] border-r-[2px] border-[#787A80] w-[20%]">SEO</p>
-                    <p class="text-[#787A80] border-r-[2px] border-[#787A80] w-[30%] flex gap-2 items-center"><img
-                            src="./img/Clock.png" alt="">July 5, 2020</p>
-                    <p class="text-[#787A80] w-[45%] flex gap-2 items-center"><img src="./img/Profile.png" alt="">By
-                        Diane Mccoy</p>
-                </div>
-                <h2 class="font-semibold text-[20px] py-2">The Basics of Blogging Search Engine Optimization.</h2>
-                <p class="text-[#424551] text-[16px]">Mauris tincidunt sollicitudin tristique odio eget volutpat.
-                    Fringilla viverra amet, mi interdum blandit...</p>
-                <button class="text-[14px] mt-5 flex gap-2 font-bold">Read more <img src="./img/Right.png"
-                        alt=""></button>
-            </div>
-        </section>
+          </div>
+          <img src="./img/prevbutton2.png" alt="" class="hidden lg:block" />
+        </div>
+      </section>
+
+      <section class="lg:flex px-[10%] my-[10%] gap-5">
+        <div class="lg:w-[30%]">
+          <h2 class="text-[40px] font-semibold pb-10">Latest news</h2>
+          <p class="text-[#424551] py-8">
+            Check more posts in our blog for featured news and advertising
+            insights
+          </p>
+          <button class="bg-[#7772F1] text-white w-[40%] py-2 px-5">
+            Go to blog
+          </button>
+        </div>
+        <div class="lg:w-[30%] mt-10 lg:mt-0">
+          <img src="./img/laptop.png" alt="" />
+          <div
+            class="py-2 flex gap-2 text-[12px] justify-center items-center px-2"
+          >
+            <p class="text-[#787A80] border-r-[2px] border-[#787A80] w-[20%]">
+              Marketing
+            </p>
+            <p
+              class="text-[#787A80] border-r-[2px] border-[#787A80] w-[30%] flex gap-2 items-center"
+            >
+              <img src="./img/Clock.png" alt="" />July 2, 2020
+            </p>
+            <p class="text-[#787A80] w-[45%] flex gap-2 items-center">
+              <img src="./img/Profile.png" alt="" />By Diane Mccoy
+            </p>
+          </div>
+          <button class="text-[14px] lg:mt-[150px] mt-20 flex gap-2 font-bold">
+            Read more <img src="./img/Right.png" alt="" />
+          </button>
+        </div>
+        <div class="lg:w-[30%] mt-10 lg:mt-0">
+          <img src="./img/pichand.png" alt="" />
+          <div
+            class="py-2 flex gap-2 text-[12px] justify-center items-center px-2"
+          >
+            <p class="text-[#787A80] border-r-[2px] border-[#787A80] w-[20%]">
+              SEO
+            </p>
+            <p
+              class="text-[#787A80] border-r-[2px] border-[#787A80] w-[30%] flex gap-2 items-center"
+            >
+              <img src="./img/Clock.png" alt="" />July 5, 2020
+            </p>
+            <p class="text-[#787A80] w-[45%] flex gap-2 items-center">
+              <img src="./img/Profile.png" alt="" />By Diane Mccoy
+            </p>
+          </div>
+          <h2 class="font-semibold text-[20px] py-2">
+            The Basics of Blogging Search Engine Optimization.
+          </h2>
+          <p class="text-[#424551] text-[16px]">
+            Mauris tincidunt sollicitudin tristique odio eget volutpat.
+            Fringilla viverra amet, mi interdum blandit...
+          </p>
+          <button class="text-[14px] mt-5 flex gap-2 font-bold">
+            Read more <img src="./img/Right.png" alt="" />
+          </button>
+        </div>
+      </section>
     </main>
 
     <footer class="w-full lg:h-[508px] h-auto bg-gray-900">
-        <div class="md:w-[76%] w-[90%] m-auto py-16 flex flex-wrap lg:flex-nowrap justify-between text-gray-400">
+      <div
+        class="md:w-[76%] w-[90%] m-auto py-16 flex flex-wrap lg:flex-nowrap justify-between text-gray-400"
+      >
+        <div>
+          <div>
+            <img src="./img/logo.png" alt="" />
+          </div>
+          <p class="text-gray-400 py-7">
+            Createx SEO Agency is a full-service digital marketing
+            <br class="hidden md:block" />
+            agency. We help businesses make more money
+            <br class="hidden md:block" />
+            through a wealth of performance data and market
+            <br class="hidden md:block" />
+            research. We create science-based SEO strategies
+            <br class="hidden md:block" />
+            to empower our clients.
+          </p>
+          <div class="flex gap-4 py-3">
             <div>
-                <div>
-                    <img src="./img/logo.png" alt="" />
-                </div>
-                <p class="text-gray-400 py-7">
-                    Createx SEO Agency is a full-service digital marketing
-                    <br class="hidden md:block" />
-                    agency. We help businesses make more money
-                    <br class="hidden md:block" />
-                    through a wealth of performance data and market
-                    <br class="hidden md:block" />
-                    research. We create science-based SEO strategies
-                    <br class="hidden md:block" />
-                    to empower our clients.
-                </p>
-                <div class="flex gap-4 py-3">
-                    <div>
-                        <img src="./img/Facebook.png" alt="" />
-                    </div>
-                    <div>
-                        <img src="./img/Vector.png" alt="" />
-                    </div>
-                    <div>
-                        <img src="./img/Twitter.png" alt="" />
-                    </div>
-                    <div>
-                        <img src="./img/Instagram.png" alt="" />
-                    </div>
-                </div>
+              <img src="./img/Facebook.png" alt="" />
             </div>
-
-            <div class="py-4 md:py-0">
-                <ul>
-                    <li class="text-white">COMPANY</li>
-                    <li class="py-2">About Us</li>
-                    <li class="py-2">Case Studies</li>
-                    <li class="py-2">Blog</li>
-                    <li class="py-2">Careers</li>
-                    <li class="py-2">Contacts</li>
-                </ul>
+            <div>
+              <img src="./img/Vector.png" alt="" />
             </div>
-            <div class="py-4 md:py-0">
-                <ul>
-                    <li class="text-white">SERVICES</li>
-                    <li class="py-2">Social Media</li>
-                    <li class="py-2">SEO</li>
-                    <li class="py-2">Research</li>
-                    <li class="py-2">Content & PR</li>
-                    <li class="py-2">Payed Traffic</li>
-                </ul>
+            <div>
+              <img src="./img/Twitter.png" alt="" />
             </div>
-            <div class="py-4 md:py-0">
-                <ul>
-                    <li class="text-white">CONTACT US</li>
-                    <li class="py-2">
-                        <img class="inline-block" src="./img/iPhone.png" alt="" /> (405)
-                        555-0128
-                    </li>
-                    <li class="py-2">
-                        <img class="inline-block" src="./img/Mail.png" alt="" />
-                        hello@createx.com
-                    </li>
-                </ul>
+            <div>
+              <img src="./img/Instagram.png" alt="" />
             </div>
-
-            <div class="py-5 md:py-0">
-                <h3 class="text-white">SIGN UP TO OUR NEWSLETTER</h3>
-                <div class="w-[280px] my-4 bg-[#1e212c] px-2 rounded-lg">
-                    <input class="w-[230px] bg-[#1e212c] py-2 outline-none" type="text" />
-                    <img class="inline-block " src="./img/Linemm (Stroke).png" alt="" />
-                </div>
-                <p class="text-[10px]">
-                    *Subscribe to our newsletter to receive communications and early
-                    <br />
-                    updates from Createx SEO Agency.
-                </p>
-            </div>
+          </div>
         </div>
 
-        <div class="border-t-2 border-gray-800">
-            <div class="md:w-[75%] w-[90%] m-auto flex flex-wrap justify-between py-[20px]">
-                <div class="flex gap-7 flex-wrap justify-center lg:justify-start">
-                    <div>
-                        <img src="./img/imagem.png" alt="" />
-                    </div>
-
-                    <div>
-                        <img src="./img/image (1).png" alt="" />
-                    </div>
-
-                    <div>
-                        <img src="./img/google.png" alt="" />
-                    </div>
-
-                    <div>
-                        <img src="./img/image (2).png" alt="" />
-                    </div>
-                </div>
-
-                <div class="flex gap-4 items-center mt-6 lg:mt-0 ml-20 lg:ml-0">
-                    <p class="text-white">GO TO TOP</p>
-                    <button class="py-3 px-4 bg-[#7772F1] rounded-md">
-                        <img src="./img/Up-chevron.png" alt="" />
-                    </button>
-                </div>
-            </div>
+        <div class="py-4 md:py-0">
+          <ul>
+            <li class="text-white">COMPANY</li>
+            <li class="py-2">About Us</li>
+            <li class="py-2">Case Studies</li>
+            <li class="py-2">Blog</li>
+            <li class="py-2">Careers</li>
+            <li class="py-2">Contacts</li>
+          </ul>
         </div>
-        <div class="py-5 bg-[#1e212c]">
-            <div class="md:w-[75%] w-[90%] m-auto text-white">
-                <p class="md:text-[16px] text-[10px] md:text-start text-center">
-                    © All rights reserved.Made with
-                    <img class="inline-block px-1" src="./img/Vector (Stroke).png" alt="" />by
-                    Createx Studio
-                </p>
-            </div>
+        <div class="py-4 md:py-0">
+          <ul>
+            <li class="text-white">SERVICES</li>
+            <li class="py-2">Social Media</li>
+            <li class="py-2">SEO</li>
+            <li class="py-2">Research</li>
+            <li class="py-2">Content & PR</li>
+            <li class="py-2">Payed Traffic</li>
+          </ul>
         </div>
+        <div class="py-4 md:py-0">
+          <ul>
+            <li class="text-white">CONTACT US</li>
+            <li class="py-2">
+              <img class="inline-block" src="./img/iPhone.png" alt="" /> (405)
+              555-0128
+            </li>
+            <li class="py-2">
+              <img class="inline-block" src="./img/Mail.png" alt="" />
+              hello@createx.com
+            </li>
+          </ul>
+        </div>
+
+        <div class="py-5 md:py-0">
+          <h3 class="text-white">SIGN UP TO OUR NEWSLETTER</h3>
+          <div class="w-[280px] my-4 bg-[#1e212c] px-2 rounded-lg">
+            <input
+              class="w-[230px] bg-[#1e212c] py-2 outline-none"
+              type="text"
+            />
+            <img class="inline-block" src="./img/Linemm (Stroke).png" alt="" />
+          </div>
+          <p class="text-[10px]">
+            *Subscribe to our newsletter to receive communications and early
+            <br />
+            updates from Createx SEO Agency.
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t-2 border-gray-800">
+        <div
+          class="md:w-[75%] w-[90%] m-auto flex flex-wrap justify-between py-[20px]"
+        >
+          <div class="flex gap-7 flex-wrap justify-center lg:justify-start">
+            <div>
+              <img src="./img/imagem.png" alt="" />
+            </div>
+
+            <div>
+              <img src="./img/image (1).png" alt="" />
+            </div>
+
+            <div>
+              <img src="./img/google.png" alt="" />
+            </div>
+
+            <div>
+              <img src="./img/image (2).png" alt="" />
+            </div>
+          </div>
+
+          <div class="flex gap-4 items-center mt-6 lg:mt-0 ml-auto lg:ml-0">
+            <p class="text-white">GO TO TOP</p>
+            <button class="py-3 px-4 bg-[#7772F1] rounded-md">
+              <img src="./img/Up-chevron.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="py-5 bg-[#1e212c]">
+        <div class="md:w-[75%] w-[90%] m-auto text-white">
+          <p class="md:text-[16px] text-[10px] md:text-start text-center">
+            © All rights reserved.Made with
+            <img
+              class="inline-block px-1"
+              src="./img/Vector (Stroke).png"
+              alt=""
+            />by Createx Studio
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
