@@ -18,65 +18,80 @@
 <body>
     <div>
         <header class="img_backi">
-            <nav class="lg:w-[70%] md:w-[75%] w-[90%] m-auto flex justify-between items-center py-5">
-                <div class="flex items-center sm:gap-10 gap-5">
-                    <div>
-                        <img src="./img/logom.png" alt="" />
-                    </div>
-                    <ul class="flex gap-3 sm:gap-5 text-gray-400">
-                        <li>
-                            <select class="bg-[#1E212C] hover:text-white cursor-pointer" name="" id="pageSelector"
-                                onchange="navigateToPage()">
-                                <option value="" disabled selected>
-                                    <p style="font-size: 18px; font-weight: bold">About</p>
-                                </option>
-
-                                <option value="index2.html">Homepage</option>
-                                <option value="index3.html">Services</option>
-                                <option value="index4.html">Service</option>
-                                <option value="index5.html">Case Studies</option>
-                                <option value="index6.html">Case Study</option>
-                                <option value="About.html">About us</option>
-                                <option value="index6.html">Careers</option>
-                                <option value="index6.html">Blog</option>
-                                <option value="Singlepost.html">Single Post</option>
-                                <option value="index6.html">Contacts</option>
-                            </select>
-
-                            <script>
-                                function navigateToPage() {
-                                    const selector = document.getElementById("pageSelector");
-                                    const selectedPage = selector.value;
-                                    if (selectedPage) {
-                                        window.location.href = selectedPage;
-                                    }
-                                }
-                            </script>
-                        </li>
-                        <li class="hover:text-white cursor-pointer hidden md:block">Case Studies</li>
-                        <li class="hover:text-white cursor-pointer hidden md:block">About Us</li>
-                        <li class="hover:text-white cursor-pointer hidden md:block">Blog</li>
-                        <li class="hover:text-white cursor-pointer hidden md:block">Contacts</li>
-                    </ul>
-                </div>
-                <div>
-                    <button
-                        class="w-full md:ml-0 ml-3 mt-3 sm:w-auto md:py-3 py-1 md:px-8 px-3 md:text-[16px] text-[12px] bg-[#7772F1] rounded-md text-white">
-                        Talk to a human
-                    </button>
-                </div>
-            </nav>
+            <nav
+            class="w-[90%] m-auto flex justify-between items-center py-5"
+          >
+            <div class="flex items-center gap-[200px] lg:gap-10 sm:gap-10">
+              <div>
+                <img src="../Maks/img/logom.png" alt="" />
+              </div>
+              <ul class="flex gap-3 text-gray-400 sm:gap-5">
+                <li>
+                  <select
+                    class="bg-[#1E212C] hover:text-white cursor-pointer outline-none"
+                    name=""
+                    id="pageSelector"
+                    onchange="navigateToPage()"
+                  >
+                    <option value="" disabled selected>
+                      <p style="font-size: 18px; font-weight: bold">About</p>
+                    </option>
+    
+                    <option value="">Homepage</option>
+                    <option value="index3.html">Services</option>
+                    <option value="index4.html">Service</option>
+                    <option value="index5.html">Case Studies</option>
+                    <option value="index6.html">Case Study</option>
+                    <option value="About.html">About us</option>
+                    <option value="index6.html">Careers</option>
+                    <option value="index6.html">Blog</option>
+                    <option value="Singlepost.html">Single Post</option>
+                    <option value="index6.html">Contacts</option>
+                  </select>
+    
+                  <script>
+                    function navigateToPage() {
+                      const selector = document.getElementById("pageSelector");
+                      const selectedPage = selector.value;
+                      if (selectedPage) {
+                        window.location.href = selectedPage;
+                      }
+                    }
+                  </script>
+                </li>
+                <li class="hidden cursor-pointer hover:text-white md:block">
+                  Case Studies
+                </li>
+                <li class="hidden cursor-pointer hover:text-white md:block">
+                  About Us
+                </li>
+                <li class="hidden cursor-pointer hover:text-white md:block">
+                  Blog
+                </li>
+                <li class="hidden cursor-pointer hover:text-white md:block">
+                  Contacts
+                </li>
+              </ul>
+            </div>
+            <div>
+              <button
+               id="but_1" class="w-full md:ml-0 ml-3 sm:w-auto md:py-3 py-1 md:px-8 px-3 md:text-[16px] text-[12px] bg-[#7772F1] hidden md:block rounded-md text-white"
+              >
+                Talk to a human
+              </button>
+            </div>
+          </nav>
 
             <div class="flex flex-col items-center">
-                <div class="flex items-center gap-2 text-gray-400 py-10">
+                <div class="flex items-center gap-2 py-10 text-gray-400">
                     <div>
                         <img src="./image/Home.png" alt="" />
                     </div>
                     <p>></p>
                     <p>Blog</p>
                 </div>
-                <h1 class="text-[72px] text-white font-bold">Blog</h1>
-                <p class="text-center text-gray-400 py-8 text-[20px]">
+                <h1 class="text-[40px] lg:text-[72px] text-white font-bold">Blog</h1>
+                <p class="text-center text-gray-400 py-8 text-[18px] lg:text-[20px]">
                     Thoughts, trends and up-to-date news in search and digital marketing. Subsribe to our blog <br> and
                     receive latest news weekly.
                 </p>
@@ -87,7 +102,7 @@
             </div>
         </header>
     </div>
-    <div class="flex justify-center gap-[30px] mt-5">
+    <div class="flex flex-col lg:flex-row items-center justify-center gap-[30px] mt-5">
         <div>
             <div>
                 <button
@@ -104,7 +119,7 @@
                 <img class="w-[30px] h-[20px]" src="./image/Profile.png" alt="">
                 <p>By Diane Mccoy</p>
             </div>
-            <p class="text-xl mt-3">How to Maximize Your ROI Through Scientific SEM?</p>
+            <p class="mt-3 text-xl">How to Maximize Your ROI Through Scientific SEM?</p>
             <div class="flex gap-2">
                 <p class="text-xl">Read more</p>
                 <img class="mt-1" src="./image/Right (2).png" alt="">
@@ -126,22 +141,21 @@
                 <img class="w-[30px] h-[20px]" src="./image/Profile.png" alt="">
                 <p>By Diane Mccoy</p>
             </div>
-            <p class="text-xl mt-3">The Basics of Blogging Search Engine Optimization.</p>
+            <p class="mt-3 text-xl">The Basics of Blogging Search Engine Optimization.</p>
             <div class="flex gap-2">
                 <p class="text-xl">Read more</p>
                 <img class="mt-1" src="./image/Right (2).png" alt="">
             </div>
         </div>
     </div>
-    <hr class="mt-3 w-[950px] ml-[200px]">
-    <div class="flex mt-8 justify-center">
+    <div class="flex flex-col items-start mt-8 lg:flex-row">
         <div>
-            <div class="flex">
+            <div class="flex flex-col lg:flex-row gap-[20px] items-center">
                 <div>
                     <div>
                         <img src="./image/pic.png" alt="">
                     </div>
-                    <div class="text-gray-400 flex gap-1 mt-3">
+                    <div class="flex gap-1 mt-3 text-gray-400">
                         <p>Marketing</p>
                         <button class="h-[20px] border-s-2"></button>
                         <img class="w-[20px] h-[20px]" src="./image/Clock (2).png" alt="">
@@ -151,7 +165,7 @@
                         <p>By Soham Alexander</p>
                     </div>
                     <p class="text-xl w-[400px] mt-3">Digital Marketing Game: What You Need to Know to Stay Ahead?</p>
-                    <p class="text-gray-400 mt-3">Nunc nulla vestibulum nunc quam arcu tristique <br> convallis. Posuere
+                    <p class="mt-3 text-gray-400">Nunc nulla vestibulum nunc quam arcu tristique <br> convallis. Posuere
                         augue
                         pellentesque mauris gravida...</p>
                     <div class="flex gap-2">
@@ -163,7 +177,7 @@
                     <div>
                         <img src="./image/pic (2).png" alt="">
                     </div>
-                    <div class="text-gray-400 flex gap-1 mt-3">
+                    <div class="flex gap-1 mt-3 text-gray-400">
                         <p>Marketing</p>
                         <button class="h-[20px] border-s-2"></button>
                         <img class="w-[20px] h-[20px]" src="./image/Clock (2).png" alt="">
@@ -173,7 +187,7 @@
                         <p>By Soham Alexander</p>
                     </div>
                     <p class="text-xl w-[400px] mt-3">How to Evaluate and Compare Social Media Tools Today.</p>
-                    <p class="text-gray-400 mt-3">Eu donec pellentesque et aliquet. Fringilla morbi etiam <br> turpis
+                    <p class="mt-3 text-gray-400">Eu donec pellentesque et aliquet. Fringilla morbi etiam <br> turpis
                         nisl
                         nunc,
                         quis sagittis ut. Pulvinar amet vitae..</p>
@@ -188,7 +202,7 @@
                     <div>
                         <img src="./image/pic (3).png" alt="">
                     </div>
-                    <div class="text-gray-400 flex gap-1 mt-3">
+                    <div class="flex gap-1 mt-3 text-gray-400">
                         <p>Marketing</p>
                         <button class="h-[20px] border-s-2"></button>
                         <img class="w-[20px] h-[20px]" src="./image/Clock (2).png" alt="">
@@ -198,7 +212,7 @@
                         <p>By Soham Alexander</p>
                     </div>
                     <p class="text-xl w-[400px] mt-3">Digital Marketing Game: What You Need to Know to Stay Ahead?</p>
-                    <p class="text-gray-400 mt-3">Nunc nulla vestibulum nunc quam arcu tristique <br> convallis. Posuere
+                    <p class="mt-3 text-gray-400">Nunc nulla vestibulum nunc quam arcu tristique <br> convallis. Posuere
                         augue
                         pellentesque mauris gravida...</p>
                     <div class="flex gap-2">
@@ -210,7 +224,7 @@
                     <div>
                         <img src="./image/pic (4).png" alt="">
                     </div>
-                    <div class="text-gray-400 flex gap-1 mt-3">
+                    <div class="flex gap-1 mt-3 text-gray-400">
                         <p>Marketing</p>
                         <button class="h-[20px] border-s-2"></button>
                         <img class="w-[20px] h-[20px]" src="./image/Clock (2).png" alt="">
@@ -220,7 +234,7 @@
                         <p>By Soham Alexander</p>
                     </div>
                     <p class="text-xl w-[400px] mt-3">How to Evaluate and Compare Social Media Tools Today.</p>
-                    <p class="text-gray-400 mt-3">Eu donec pellentesque et aliquet. Fringilla morbi etiam <br> turpis
+                    <p class="mt-3 text-gray-400">Eu donec pellentesque et aliquet. Fringilla morbi etiam <br> turpis
                         nisl
                         nunc,
                         quis sagittis ut. Pulvinar amet vitae..</p>
@@ -235,7 +249,7 @@
                     <div>
                         <img src="./image/pic (5).png" alt="">
                     </div>
-                    <div class="text-gray-400 flex gap-1 mt-3">
+                    <div class="flex gap-1 mt-3 text-gray-400">
                         <p>Marketing</p>
                         <button class="h-[20px] border-s-2"></button>
                         <img class="w-[20px] h-[20px]" src="./image/Clock (2).png" alt="">
@@ -245,7 +259,7 @@
                         <p>By Soham Alexander</p>
                     </div>
                     <p class="text-xl w-[400px] mt-3">Digital Marketing Game: What You Need to Know to Stay Ahead?</p>
-                    <p class="text-gray-400 mt-3">Nunc nulla vestibulum nunc quam arcu tristique <br> convallis. Posuere
+                    <p class="mt-3 text-gray-400">Nunc nulla vestibulum nunc quam arcu tristique <br> convallis. Posuere
                         augue
                         pellentesque mauris gravida...</p>
                     <div class="flex gap-2">
@@ -257,7 +271,7 @@
                     <div>
                         <img src="./image/pic (6).png" alt="">
                     </div>
-                    <div class="text-gray-400 flex gap-1 mt-3">
+                    <div class="flex gap-1 mt-3 text-gray-400">
                         <p>Marketing</p>
                         <button class="h-[20px] border-s-2"></button>
                         <img class="w-[20px] h-[20px]" src="./image/Clock (2).png" alt="">
@@ -267,7 +281,7 @@
                         <p>By Soham Alexander</p>
                     </div>
                     <p class="text-xl w-[400px] mt-3">How to Evaluate and Compare Social Media Tools Today.</p>
-                    <p class="text-gray-400 mt-3">Eu donec pellentesque et aliquet. Fringilla morbi etiam <br> turpis
+                    <p class="mt-3 text-gray-400">Eu donec pellentesque et aliquet. Fringilla morbi etiam <br> turpis
                         nisl
                         nunc,
                         quis sagittis ut. Pulvinar amet vitae..</p>
@@ -341,7 +355,7 @@
                     </div>
                 </div>
                 <div>
-                    <p class="text-2xl   mt-5">Tags</p>
+                    <p class="mt-5 text-2xl">Tags</p>
                     <div class="flex gap-2 mt-3">
                         <button class="w-[140px] h-[60px] rounded-xl border-2">#tips&tricks</button>
                         <button class="w-[140px] h-[60px] rounded-xl border-2">#strategy</button>
@@ -364,7 +378,7 @@
     <div class=" flex justify-center gap-[50px] pt-[50px]">
         <div>
             <p class="text-2xl">Subsribe to our blog</p>
-            <p class="text-gray-400 mt-3">And receive latest trends in search, marketing, <br> digital and news.</p>
+            <p class="mt-3 text-gray-400">And receive latest trends in search, marketing, <br> digital and news.</p>
             <div class="flex">
                 <div class="mt-[30px]">
                     <p>Email</p>
@@ -456,7 +470,7 @@
 
     <div class="border-t-2 border-gray-800">
         <div class="md:w-[75%] w-[90%] m-auto flex flex-wrap justify-between py-10">
-            <div class="flex gap-7 flex-wrap justify-center lg:justify-start">
+            <div class="flex flex-wrap justify-center gap-7 lg:justify-start">
                 <div>
                     <img src="./image/award (1).png" alt="">
                 </div>
@@ -474,7 +488,7 @@
                 </div>
             </div>
 
-            <div class="flex gap-4 items-center mt-6 lg:mt-0 ml-20 lg:ml-0">
+            <div class="flex items-center gap-4 mt-6 ml-20 lg:mt-0 lg:ml-0">
                 <p class="text-white">GO TO TOP</p>
                 <button class="py-4 px-4 bg-[#7772F1] rounded-md"><img src="./image/Up-chevron.png" alt=""></button>
             </div>
