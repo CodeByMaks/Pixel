@@ -1248,6 +1248,14 @@ video {
   width: 100%;
 }
 
+.w-\[55\%\] {
+  width: 55%;
+}
+
+.w-\[52\%\] {
+  width: 52%;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
